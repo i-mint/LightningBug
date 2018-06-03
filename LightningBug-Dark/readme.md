@@ -10,10 +10,10 @@ Installation
 
 Running well on Debian Stretch, with GTK+ 3.22 & GTK2-Engine installed 
 
--libgtk-3-0  (version 3.22)
--gtk2-engines-pixbuf (version 2.24)
--libgtk2.0-0 (version 2.24)
--gtk2-engines-murrine (version 0.98)
+libgtk-3-0  (version 3.22), 
+gtk2-engines-pixbuf (version 2.24), 
+libgtk2.0-0 (version 2.24),
+gtk2-engines-murrine (version 0.98)
 
 Not Running well on Linux Mint 18.3 Sylvia, with GTK+ 3.18
 
