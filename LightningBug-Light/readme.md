@@ -18,6 +18,6 @@ Running well on Debian Stretch, with GTK+ 3.22 & GTK2-Engine
 
 For a better result, Extract Archive File On Directory /usr/share/themes (as root), If you install theme on local system, /.themes or /.local/share/themes may be GTK2 Theme not working properly.
 
-*Running well on Ubuntu 18.04 LTS anda Linux Mint 19 Tara with GTK+ 3.22
+*Running well on Ubuntu 18.04 LTS and Linux Mint 19 Tara with GTK+ 3.22
 
 
