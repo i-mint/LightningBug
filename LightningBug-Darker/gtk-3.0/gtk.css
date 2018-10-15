@@ -2976,6 +2976,10 @@ NautilusQueryEditor .search-bar.toolbar {
 NautilusListView .view, NautilusListView iconview {
   border-bottom: 1px solid #d9d9d9; }
 
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
+  background-color: #e6e6e6; }
+.nemo-window .nemo-inactive-pane .iconview {
+  background-color: #e6e6e6; }
 .nemo-window .nemo-window-pane widget.entry {
   border: 1px solid;
   border-radius: 3px;
@@ -2985,6 +2989,9 @@ NautilusListView .view, NautilusListView iconview {
 .nemo-window .places-treeview {
   -NemoPlacesTreeView-disk-full-bg-color: #C3C3C3;
   -NemoPlacesTreeView-disk-full-fg-color: #b39700; }
+  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover, .nemo-window .places-treeview .iconview.cell:hover {
+    background-color: rgba(230, 194, 0, 0.15);
+    color: white; }
 .nemo-window .nemo-places-sidebar.frame {
   border-width: 0; }
 .nemo-window .sidebar {
@@ -2995,7 +3002,8 @@ NautilusListView .view, NautilusListView iconview {
     color: #C3C3C3; }
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
       background-color: #E6C200;
-      color: #ffffff; }
+      color: #ffffff;
+      padding-left: 4px; }
     .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
       color: #747474; }
       .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {

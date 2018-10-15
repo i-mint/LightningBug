@@ -1,23 +1,20 @@
-Credits
-=======
+# Credits
 
-This themes base on Mint-Y-Theme 
-Links : https://github.com/linuxmint/mint-y-theme 
-License : GPL v3
+This themes base on <b>Mint-Y-Theme</b></br>
+<b>Links :</b>  https://github.com/linuxmint/mint-y-theme </br>
+<b>License :</b> GPLv3 (https://choosealicense.com/licenses/gpl-3.0/)</br>
 
-Installation
-============
+# Installation
 
-Running well on Debian Stretch, with GTK+ 3.22 & GTK2-Engine
+<b>Needed :</b> GTK+ 3.22</br>
+<b>Have been test on :</b> Debian Stretch (9), Ubuntu 18.04 LTS, Linux Mint 19</br>
+<b>Install themes :</b> For a better result, Extract Archive File On Directory<i> /usr/share/themes (as root),</i> </br>
+If you install theme on local system, <i>/.themes or /.local/share/themes</i> may be GTK2 Theme not working properly.</br>
 
-*libgtk-3-0  (version 3.22.11-1), 
-*gtk2-engines-pixbuf (version 2.24.31-2), 
-*libgtk2.0-0 (version 2.24.31-2), 
-*gtk2-engines-murrine (version 0.98.1.1-6)
+## Change themes
 
-
-For a better result, Extract Archive File On Directory /usr/share/themes (as root), If you install theme on local system, /.themes or /.local/share/themes may be GTK2 Theme not working properly.
-
-*Running well on Ubuntu 18.04 LTS and Linux Mint 19 Tara with GTK+ 3.22
+"This is the theme of gtk+ 3 and gk+ 2. You can use it on Linux distributions in every desktop environment that supports it"</br>
+<b>Debian, Ubuntu (Gnome Desktop) :</b> Use Tweak Tool to change the themes, Gnome Tweak > Appeareance > Themes</br>
+<b>Linux Mint (Cinnamon):</b> Menu > Settings > Themes > Themes > Controls</br>
 
 
