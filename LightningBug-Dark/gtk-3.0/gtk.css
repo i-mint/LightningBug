@@ -2973,45 +2973,61 @@ NautilusQueryEditor .search-bar.toolbar {
 NautilusListView .view, NautilusListView iconview {
   border-bottom: 1px solid #1a1a1a; }
 
-.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-  background-color: #121212; }
-.nemo-window .nemo-inactive-pane .iconview {
-  background-color: #121212; }
-.nemo-window .nemo-window-pane widget.entry {
-  border: 1px solid;
-  border-radius: 3px;
-  color: #f0f0f0;
-  border-color: #1a1a1a;
-  background-color: #1f1f1f;
-  box-shadow: inset 1px 0 #B8860B, inset -1px 0 #B8860B, inset 0 1px #B8860B, inset 0 -1px #B8860B; }
-.nemo-window .places-treeview {
-  -NemoPlacesTreeView-disk-full-bg-color: #C3C3C3;
-  -NemoPlacesTreeView-disk-full-fg-color: #886308; }
-  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover, .nemo-window .places-treeview .iconview.cell:hover {
-    background-color: rgba(184, 134, 11, 0.15);
-    color: white; }
-.nemo-window .nemo-places-sidebar.frame {
-  border-width: 0; }
-.nemo-window .sidebar {
-  color: #C3C3C3;
-  background-color: #242424; }
-  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
-    background-color: transparent;
-    color: #C3C3C3; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-      background-color: #B8860B;
-      color: #ffffff;
-      padding-left: 4px; }
-    .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
-      color: #747474; }
-      .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
-        color: #C3C3C3; }
-  .nemo-window .sidebar separator {
-    background-color: transparent; }
-.nemo-window widget .toolbar .image-button, .nemo-window widget .toolbar headerbar button.titlebutton, headerbar .nemo-window widget .toolbar button.titlebutton,
-.nemo-window widget .toolbar .titlebar button.titlebutton,
-.titlebar .nemo-window widget .toolbar button.titlebutton {
-  padding: 0; }
+.nemo-window {
+  /*--
+    //add 1.1.1
+   .nemo-inactive-pane {
+     .view {background-color: if($variant == 'light', darken($base_color, 10%), darken($base_color, 5%));}
+     .iconview{background-color: if($variant == 'light', darken($base_color, 10%), darken($base_color, 5%));}
+   }
+   --*/ }
+  .nemo-window .nemo-window-pane .view, .nemo-window .nemo-window-pane iconview {
+    background-color: #292929;
+    color: #f0f0f0; }
+  .nemo-window .nemo-window-pane .iconview {
+    background-color: #292929;
+    color: #f0f0f0; }
+  .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
+    background-color: #1f1f1f;
+    color: rgba(240, 240, 240, 0.55); }
+  .nemo-window .nemo-inactive-pane .iconview {
+    background-color: #1f1f1f;
+    color: rgba(240, 240, 240, 0.55); }
+  .nemo-window .nemo-window-pane widget.entry {
+    border: 1px solid;
+    border-radius: 3px;
+    color: #f0f0f0;
+    border-color: #1a1a1a;
+    background-color: #1f1f1f;
+    box-shadow: inset 1px 0 #B8860B, inset -1px 0 #B8860B, inset 0 1px #B8860B, inset 0 -1px #B8860B; }
+  .nemo-window .places-treeview {
+    -NemoPlacesTreeView-disk-full-bg-color: #C3C3C3;
+    -NemoPlacesTreeView-disk-full-fg-color: #886308; }
+    .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover, .nemo-window .places-treeview .iconview.cell:hover {
+      background-color: rgba(184, 134, 11, 0.15);
+      color: white; }
+  .nemo-window .nemo-places-sidebar.frame {
+    border-width: 0; }
+  .nemo-window .sidebar {
+    color: #C3C3C3;
+    background-color: #242424; }
+    .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
+      background-color: transparent;
+      color: #C3C3C3; }
+      .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
+        background-color: #B8860B;
+        color: #ffffff;
+        padding-left: 4px; }
+      .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
+        color: #747474; }
+        .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
+          color: #C3C3C3; }
+    .nemo-window .sidebar separator {
+      background-color: transparent; }
+  .nemo-window widget .toolbar .image-button, .nemo-window widget .toolbar headerbar button.titlebutton, headerbar .nemo-window widget .toolbar button.titlebutton,
+  .nemo-window widget .toolbar .titlebar button.titlebutton,
+  .titlebar .nemo-window widget .toolbar button.titlebutton {
+    padding: 0; }
 
 CajaWindow EelEditableLabel.entry {
   transition: none; }
@@ -3028,6 +3044,20 @@ CajaWindow CajaEmblemSidebar GtkViewport {
   color: #C3C3C3;
   border-width: 0px; }
 
+/* next version 1.1.3
+.caja-side-pane {
+  & .frame {
+    & .view {
+      background-color: $dark_sidebar_bg;
+      color: $dark_sidebar_fg;
+      & .cell:hover {
+        background-color: transparentize($selected_bg_color, 0.85);
+        border-left: 4px solid lighten($selected_bg_color, 20%); padding-left: 0px;
+      }
+    }
+  }
+}
+*/
 .gedit-headerbar-paned {
   color: #101010; }
 
