@@ -2973,6 +2973,19 @@ NautilusQueryEditor .search-bar.toolbar {
 NautilusListView .view, NautilusListView iconview {
   border-bottom: 1px solid #1a1a1a; }
 
+.nautilus-window .searchbar-container entry.search {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-radius: 20px; }
+  .nautilus-window .searchbar-container entry.search image {
+    color: #B8860B; }
+  .nautilus-window .searchbar-container entry.search:focus {
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    color: #B8860B; }
+    .nautilus-window .searchbar-container entry.search:focus image {
+      color: #B8860B; }
+
 .nemo-window {
   /*--
     //add 1.1.1
