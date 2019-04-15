@@ -2881,7 +2881,7 @@ filechooser placessidebar.sidebar {
   filechooser placessidebar.sidebar row.sidebar-row {
     border: none;
     color: #C3C3C3;
-    padding-left: 4px; }
+    border-left: 4px solid transparent; }
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon,
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon {
       color: rgba(195, 195, 195, 0.6); }
