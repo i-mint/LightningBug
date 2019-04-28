@@ -1555,11 +1555,17 @@ notebook {
       color: rgba(240, 240, 240, 0.55);
       background-color: red;
       background-color: #292929; }
+      notebook > header > tabs > tab:backdrop {
+        color: rgba(240, 240, 240, 0.22);
+        background-color: rgba(31, 31, 31, 0.56); }
       notebook > header > tabs > tab:hover:not(:checked) {
-        color: rgba(240, 240, 240, 0.775);
         background-color: red;
         background-color: #424242;
-        border-color: #1a1a1a; }
+        border-color: #1a1a1a;
+        color: rgba(240, 240, 240, 0.78); }
+        notebook > header > tabs > tab:hover:not(:checked):backdrop {
+          color: rgba(240, 240, 240, 0.34);
+          background-color: rgba(31, 31, 31, 0.23); }
       notebook > header > tabs > tab:checked {
         color: #f0f0f0;
         background-color: red;
@@ -1567,6 +1573,10 @@ notebook {
         border-color: #1a1a1a;
         border-left: 4px solid #f3bc36;
         padding-left: 2px; }
+        notebook > header > tabs > tab:checked:backdrop {
+          color: rgba(240, 240, 240, 0.67);
+          background-color: rgba(31, 31, 31, 0.56);
+          border-left: 4px solid rgba(243, 188, 54, 0.23); }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         min-height: 22px;
         min-width: 16px;
@@ -2770,6 +2780,41 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .ne
     filechooser placessidebar.sidebar row.sidebar-row:disabled:selected,
     filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover, .nemo-window .nemo-window-pane widget.entry:disabled:selected {
       color: #dcc385; }
+    row:selected label:backdrop, label:backdrop:selected, .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
+    .view text:backdrop:selected,
+    iconview text:backdrop:selected,
+    textview text:backdrop:selected,
+    iconview text:backdrop:selected:focus,
+    textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
+    textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+    modelbutton.flat:backdrop:active,
+    modelbutton.flat:active arrow:backdrop,
+    modelbutton.flat:backdrop:selected,
+    modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
+    filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected,
+    filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .nemo-window-pane widget.entry:backdrop:selected {
+      color: rgba(255, 255, 255, 0.56); }
+  .view:backdrop:selected, iconview:backdrop:selected, iconview:backdrop:selected:focus,
+  .view text:backdrop:selected,
+  iconview text:backdrop:selected,
+  textview text:backdrop:selected,
+  iconview text:backdrop:selected:focus,
+  textview text:backdrop:selected:focus, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
+  textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop,
+  modelbutton.flat:backdrop:active,
+  modelbutton.flat:active arrow:backdrop,
+  modelbutton.flat:backdrop:selected,
+  modelbutton.flat:selected arrow:backdrop, treeview.view:backdrop:selected:focus, row:backdrop:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active:hover,
+  filechooser placessidebar.sidebar row.sidebar-row:backdrop:selected,
+  filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .nemo-window-pane widget.entry:backdrop:selected {
+    background-color: rgba(184, 134, 11, 0.56); }
+
+notebook stack scrolledwindow:backdrop {
+  background-color: #060606; }
+notebook stack .view, notebook stack iconview {
+  color: #f0f0f0; }
+  notebook stack .view:backdrop, notebook stack iconview:backdrop {
+    color: rgba(240, 240, 240, 0.56); }
 
 GeditNotebook.notebook tab.reorderable-page.top:active, GeditNotebook.notebook tab.reorderable-page.top.active-page, GeditNotebook.notebook tab.reorderable-page.top.active-page:hover, GeditNotebook.notebook tab.top:active, GeditNotebook.notebook tab.top.active-page, GeditNotebook.notebook tab.top.active-page:hover,
 ScratchMainWindow .notebook tab.reorderable-page.top:active,
@@ -2882,6 +2927,9 @@ filechooser placessidebar.sidebar {
     border: none;
     color: #C3C3C3;
     border-left: 4px solid transparent; }
+    .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop,
+    filechooser placessidebar.sidebar row.sidebar-row:backdrop {
+      color: rgba(195, 195, 195, 0.56); }
     .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon,
     filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon {
       color: rgba(195, 195, 195, 0.6); }
@@ -2890,7 +2938,14 @@ filechooser placessidebar.sidebar {
     filechooser placessidebar.sidebar row.sidebar-row:hover {
       background-color: rgba(184, 134, 11, 0.15);
       border-left: 4px solid #f3bc36;
-      padding-left: 0px; }
+      padding-left: 0px;
+      color: #d5d5d5; }
+      .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop, .nautilus-window placessidebar.sidebar row.sidebar-row:hover:backdrop,
+      filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:backdrop,
+      filechooser placessidebar.sidebar row.sidebar-row:hover:backdrop {
+        color: rgba(213, 213, 213, 0.56);
+        background-color: rgba(184, 134, 11, 0.03);
+        border-left: 4px solid rgba(243, 188, 54, 0.56); }
     .nautilus-window placessidebar.sidebar row.sidebar-row:disabled, .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label, .nautilus-window placessidebar.sidebar row.sidebar-row:disabled image,
     filechooser placessidebar.sidebar row.sidebar-row:disabled,
     filechooser placessidebar.sidebar row.sidebar-row:disabled label,
