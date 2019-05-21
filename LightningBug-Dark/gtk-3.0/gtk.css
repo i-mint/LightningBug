@@ -1649,9 +1649,9 @@ scrollbar {
 
 switch {
   font-size: 1px;
-  min-width: 52px;
-  min-height: 24px;
-  background-size: 52px 24px;
+  min-width: 30px;
+  min-height: 30px;
+  background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: center center; }
   switch slider {
@@ -2132,6 +2132,8 @@ frame > border.flat,
 
 scrolledwindow viewport.frame {
   border-style: none; }
+scrolledwindow .view:backdrop, scrolledwindow iconview:backdrop {
+  color: rgba(240, 240, 240, 0.78); }
 scrolledwindow overshoot.top {
   background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(184, 134, 11, 0.2)), to(rgba(184, 134, 11, 0)));
   background-size: 100% 60%;
@@ -2809,13 +2811,21 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .ne
   filechooser placessidebar.sidebar row.sidebar-row:backdrop:active:hover, .nemo-window .nemo-window-pane widget.entry:backdrop:selected {
     background-color: rgba(184, 134, 11, 0.56); }
 
-notebook stack scrolledwindow:backdrop {
-  background-color: #060606; }
-notebook stack .view, notebook stack iconview {
-  color: #f0f0f0; }
-  notebook stack .view:backdrop, notebook stack iconview:backdrop {
-    color: rgba(240, 240, 240, 0.56); }
-
+/*
+//1.1.5
+notebook {
+  stack {
+    scrolledwindow {
+      //background-color: $base_color;
+      &:backdrop {background-color: if($variant == 'dark', darken($base_color, 10%), darken($bg_color, 7%));}
+    }
+    .view {
+      color: $fg_color;
+      &:backdrop {color: transparentize($fg_color, 0.44);}
+    }
+  }
+}
+*/
 GeditNotebook.notebook tab.reorderable-page.top:active, GeditNotebook.notebook tab.reorderable-page.top.active-page, GeditNotebook.notebook tab.reorderable-page.top.active-page:hover, GeditNotebook.notebook tab.top:active, GeditNotebook.notebook tab.top.active-page, GeditNotebook.notebook tab.top.active-page:hover,
 ScratchMainWindow .notebook tab.reorderable-page.top:active,
 ScratchMainWindow .notebook tab.reorderable-page.top.active-page,
@@ -3040,6 +3050,11 @@ NautilusListView .view, NautilusListView iconview {
     color: #B8860B; }
     .nautilus-window .searchbar-container entry.search:focus image {
       color: #B8860B; }
+
+.nautilus-window .nautilus-desktop {
+  color: #e3e3e3; }
+  .nautilus-window .nautilus-desktop:backdrop {
+    color: rgba(227, 227, 227, 0.78); }
 
 .nemo-window {
   /*--
