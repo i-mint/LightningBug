@@ -2475,6 +2475,8 @@ row.activatable:selected:active {
   color: #2c2a21; }
 row.activatable:selected.has-open-popup, row.activatable:selected:hover {
   background-color: #a6790a; }
+row.activatable:selected .sidebar-icon {
+  color: #2c2a21; }
 
 .app-notification {
   padding: 10px;
@@ -3252,14 +3254,15 @@ label.header {
   border-bottom-width: 0; }
 
 event, .sidebar event {
-  border-radius: 0;
-  background-color: #333324;
-  background-image: linear-gradient(to right, #333324, #333324);
-  color: #e3e3e3;
   margin: 0 1px 1px 2px;
   font-size: 0.9rem; }
-  event label, .sidebar event label {
-    color: inherit; }
+  event label, event, .sidebar event label, .sidebar event {
+    color: #4f411c; }
+  event:backdrop, .sidebar event:backdrop {
+    opacity: 0.5; }
+
+event.slanted-end label, event.slanted-end {
+  color: #4f411c; }
 
 label.month-name {
   font-size: 16pt;
