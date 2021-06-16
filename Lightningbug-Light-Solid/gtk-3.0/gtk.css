@@ -1744,35 +1744,35 @@ notebook {
     notebook > header > tabs > tab {
       color: rgba(51, 51, 51, 0.55);
       background-color: #ebebe1;
-      border-left: 4px solid #e7e7db; }
+      border-right: 4px solid #e7e7db; }
       notebook > header > tabs > tab:hover:not(:checked) {
         color: rgba(51, 51, 51, 0.775);
-        background-color: #f1f1ea;
-        border-left: 4px solid rgba(51, 51, 51, 0.26);
+        background-color: #d7d7c3;
+        border-right: 4px solid rgba(51, 51, 51, 0.26);
         animation-name: notebooktabhover;
         animation-duration: 1s;
         animation-iteration-count: infinite; }
 @keyframes notebooktabhover {
   0% {
-    border-left: 4px solid rgba(51, 51, 51, 0.26); }
+    border-right: 4px solid rgba(51, 51, 51, 0.36); }
   50% {
-    border-left: 4px solid rgba(51, 51, 51, 0.39); }
+    border-right: 4px solid rgba(51, 51, 51, 0.49); }
   100% {
-    border-left: 4px solid rgba(51, 51, 51, 0.53); } }
+    border-right: 4px solid rgba(51, 51, 51, 0.63); } }
       notebook > header > tabs > tab:checked {
         background-color: #f3f3ed;
         color: #333333;
-        border-left: 4px solid #f1d228;
+        border-right: 4px solid #f1d228;
         animation-name: notebooktabchecked;
         animation-duration: 1s;
         animation-iteration-count: 2; }
 @keyframes notebooktabchecked {
   0% {
-    border-left: 4px solid #efcf1f; }
+    border-right: 4px solid #efcf1f; }
   50% {
-    border-left: 4px solid #b0960d; }
+    border-right: 4px solid #b0960d; }
   100% {
-    border-left: 4px solid #f1d228; } }
+    border-right: 4px solid #f1d228; } }
       notebook > header > tabs > tab button.flat {
         min-height: 22px;
         min-width: 16px;
