@@ -1635,6 +1635,9 @@ popover, popover.background {
       color: rgba(51, 51, 51, 0.55);
       border-color: transparent;
       background-color: transparent; }
+  popover .linked:not(.vertical) button:checked, popover.background .linked:not(.vertical) button:checked {
+    background-color: #f1d228;
+    color: #3d3929; }
 
 cursor-handle {
   background-color: transparent;
