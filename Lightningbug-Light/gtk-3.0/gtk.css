@@ -101,7 +101,7 @@ label:disabled {
 
 assistant .sidebar {
   background-color: #ffffff;
-  border-top: 1px solid #e5e5d8; }
+  border-top: 1px solid #d8d8c5; }
 assistant.csd .sidebar {
   border-top-style: none; }
 assistant .sidebar label {
@@ -141,7 +141,7 @@ entry {
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #333333;
-  border-color: #e5e5d8;
+  border-color: #d8d8c5;
   background-color: #fcf5cf; }
   entry.search {
     border-radius: 4px; }
@@ -169,7 +169,7 @@ entry {
       color: inherit; }
   entry:disabled {
     color: rgba(51, 51, 51, 0.56);
-    border-color: rgba(229, 229, 216, 0.56);
+    border-color: rgba(216, 216, 197, 0.56);
     background-color: rgba(252, 245, 207, 0.56); }
   entry.warning {
     color: white;
@@ -515,7 +515,7 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
   border-style: solid; }
 
 .linked:not(.vertical):not(.path-bar) > entry + entry {
-  border-left-color: rgba(229, 229, 216, 0.3); }
+  border-left-color: rgba(216, 216, 197, 0.3); }
 .linked:not(.vertical):not(.path-bar) > entry.error + entry,
 .linked:not(.vertical):not(.path-bar) > entry + entry.error {
   border-left-color: #FC4138; }
@@ -580,7 +580,7 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
   box-shadow: none; }
 
 .linked.vertical > entry + entry {
-  border-top-color: rgba(229, 229, 216, 0.3); }
+  border-top-color: rgba(216, 216, 197, 0.3); }
 .linked.vertical > entry.error + entry,
 .linked.vertical > entry + entry.error {
   border-top-color: #FC4138; }
@@ -892,7 +892,7 @@ toolbar, .inline-toolbar {
 .inline-toolbar {
   background-color: #efefe7;
   border-style: solid;
-  border-color: #e5e5d8;
+  border-color: #d8d8c5;
   border-width: 0 1px 1px;
   padding: 3px;
   border-radius: 0  0 3px 3px; }
@@ -900,13 +900,13 @@ toolbar, .inline-toolbar {
 searchbar {
   background-color: #f5f5f0;
   border-style: solid;
-  border-color: #e5e5d8;
+  border-color: #d8d8c5;
   border-width: 0 0 1px;
   padding: 3px; }
 
 actionbar {
   padding: 6px;
-  border-top: 1px solid #e5e5d8;
+  border-top: 1px solid #d8d8c5;
   background-color: #efefe7; }
 
 headerbar, .titlebar:not(headerbar) {
@@ -973,7 +973,7 @@ headerbar, .titlebar:not(headerbar) {
 .titlebar {
   border-radius: 4px 4px 0 0; }
 
-headerbar entry, headerbar button, headerbar separator {
+headerbar entry, headerbar button {
   margin-top: 6px;
   margin-bottom: 6px; }
 separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
@@ -1534,7 +1534,7 @@ menu, .menu {
   padding: 0;
   border-radius: 0;
   background-color: rgba(239, 239, 231, 0.98);
-  border: 1px solid #e5e5d8; }
+  border: 1px solid #d8d8c5; }
   .csd menu,
   .csd .menu {
     padding: 4px 0px;
@@ -1606,7 +1606,7 @@ popover, popover.background {
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.12); }
   .csd popover, popover,
   .csd popover.background, popover.background {
-    border: 1px solid #e5e5d8; }
+    border: 1px solid #d8d8c5; }
   popover separator, popover.background separator {
     background-color: rgba(239, 239, 231, 0.98); }
   popover label.separator, popover.background label.separator {
@@ -1655,7 +1655,7 @@ cursor-handle {
 notebook {
   padding: 0; }
   notebook.frame {
-    border: 1px solid #e5e5d8; }
+    border: 1px solid #d8d8c5; }
     notebook.frame > header {
       margin: -1px; }
       notebook.frame > header.top {
@@ -1807,13 +1807,13 @@ scrollbar {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #e5e5d8; }
+    border-bottom: 1px solid #d8d8c5; }
   scrollbar.bottom {
-    border-top: 1px solid #e5e5d8; }
+    border-top: 1px solid #d8d8c5; }
   scrollbar.left {
-    border-right: 1px solid #e5e5d8; }
+    border-right: 1px solid #d8d8c5; }
   scrollbar.right {
-    border-left: 1px solid #e5e5d8; }
+    border-left: 1px solid #d8d8c5; }
   scrollbar button {
     border: none; }
   scrollbar.vertical button.down {
@@ -2356,7 +2356,7 @@ levelbar block.empty {
   border-color: rgba(51, 51, 51, 0.2); }
 
 printdialog paper {
-  border: 1px solid #e5e5d8;
+  border: 1px solid #d8d8c5;
   background: #ffffff;
   padding: 0; }
 printdialog .dialog-action-box {
@@ -2367,7 +2367,7 @@ frame > border,
   margin: 0;
   padding: 0;
   border-radius: 0;
-  border: 1px solid #e5e5d8; }
+  border: 1px solid #d8d8c5; }
 
 frame.flat > border,
 frame > border.flat,
@@ -2454,7 +2454,7 @@ undershoot.right, scrolledwindow undershoot.right, filechooser placessidebar.sid
 
 junction, scrolledwindow junction {
   border-color: transparent;
-  border-image: linear-gradient(to bottom, #e5e5d8 1px, transparent 1px) 0 0 0 1/0 1px stretch;
+  border-image: linear-gradient(to bottom, #d8d8c5 1px, transparent 1px) 0 0 0 1/0 1px stretch;
   background-color: #fafafa; }
   junction:dir(rtl), scrolledwindow junction:dir(rtl) {
     border-image-slice: 0 1 0 0; }
@@ -2467,9 +2467,14 @@ separator {
   min-width: 1px;
   min-height: 1px; }
 
+separator.sidebar, hdyleaflet > separator {
+  background-color: #d8d8c5; }
+  separator.sidebar:backdrop, hdyleaflet > separator:backdrop {
+    opacity: 0.6; }
+
 list {
   background-color: #ffffff;
-  border-color: #e5e5d8; }
+  border-color: #d8d8c5; }
   list row {
     padding: 2px; }
 
@@ -2534,7 +2539,7 @@ expander arrow {
 
 calendar {
   color: #333333;
-  border: 1px solid #e5e5d8;
+  border: 1px solid #d8d8c5;
   border-radius: 3px;
   padding: 2px; }
   calendar:selected {
@@ -2581,7 +2586,7 @@ messagedialog.csd .dialog-action-area button:only-child {
   border-right-style: none; }
 
 filechooser #pathbarbox {
-  border-bottom: 1px solid rgba(229, 229, 216, 0.5); }
+  border-bottom: 1px solid rgba(216, 216, 197, 0.5); }
 
 filechooser .linked.path-bar button.image-button, filechooser .linked.path-bar button.text-button, filechooser .linked.path-bar button {
   border-right: none; }
@@ -2590,21 +2595,21 @@ filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
 
-.sidebar {
+.sidebar:not(separator) {
   border-style: none; }
   filechooser placessidebar.sidebar,
   .nautilus-window placessidebar.sidebar, filechooser.maximized placessidebar.sidebar,
-  .nautilus-window.maximized placessidebar.sidebar, .nemo-window.maximize .nemo-places-sidebar, .sidebar {
+  .nautilus-window.maximized placessidebar.sidebar, .nemo-window.maximize .nemo-places-sidebar, .sidebar:not(separator) {
     background-color: #efefe7; }
-  stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl) {
-    border-right: 1px solid #e5e5d8;
+  stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(separator):dir(ltr), .sidebar:not(separator).left, .sidebar:not(separator).left:dir(rtl) {
+    border-right: 1px solid #d8d8c5;
     border-left-style: none; }
-  stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:dir(rtl), .sidebar.right {
-    border-left: 1px solid #e5e5d8;
+  stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(separator):dir(rtl), .sidebar:not(separator).right {
+    border-left: 1px solid #d8d8c5;
     border-right-style: none; }
-  .sidebar list {
+  .sidebar:not(separator) list {
     background-color: transparent; }
-  paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
+  paned .sidebar:not(separator).left, paned .sidebar:not(separator).right, paned .sidebar:not(separator).left:dir(rtl), paned .sidebar:not(separator):dir(rtl), paned .sidebar:not(separator):dir(ltr), paned .sidebar:not(separator) {
     border-style: none; }
 
 stacksidebar row {
@@ -2686,7 +2691,7 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #e5e5d8, #e5e5d8);
+  background-image: linear-gradient(to bottom, #d8d8c5, #d8d8c5);
   background-size: 1px 1px; }
   paned > separator:selected {
     background-image: linear-gradient(to bottom, #f1d228, #f1d228); }
@@ -2694,7 +2699,7 @@ paned > separator {
     min-width: 5px;
     min-height: 5px;
     background-color: #f5f5f0;
-    background-image: linear-gradient(to bottom, #e5e5d8, #e5e5d8), linear-gradient(to bottom, #e5e5d8, #e5e5d8);
+    background-image: linear-gradient(to bottom, #d8d8c5, #d8d8c5), linear-gradient(to bottom, #d8d8c5, #d8d8c5);
     background-size: 1px 1px, 1px 1px; }
 paned.horizontal > separator {
   background-repeat: repeat-y; }
@@ -2878,7 +2883,7 @@ button.circular-button {
   padding: 3px 6px 4px 6px;
   color: alpha(#d1b30f,0.9);
   background-color: #ffffff;
-  border: 1px solid #e5e5d8;
+  border: 1px solid #d8d8c5;
   border-radius: 2.5px;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.05); }
 
@@ -3045,7 +3050,7 @@ modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:f
 filechooser placessidebar.sidebar separator,
 .nautilus-window placessidebar.sidebar separator, .nemo-window .nemo-places-sidebar separator {
   background-color: black;
-  opacity: 0.2; }
+  opacity: 0.07; }
 
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
   padding: 3px 6px 3px 6px;
@@ -3090,12 +3095,12 @@ filechooser placessidebar.sidebar separator,
     color: #3d3929; }
 
 .gedit-document-panel-dragged-row {
-  border: 1px solid #e5e5d8;
+  border: 1px solid #d8d8c5;
   background-color: #e1e1d1;
   color: #333333; }
 
 .gedit-side-panel-paned statusbar {
-  border-top: 1px solid #e5e5d8;
+  border-top: 1px solid #d8d8c5;
   background-color: #f5f5f0; }
 
 .gedit-side-panel-paned .view, .gedit-side-panel-paned iconview {
@@ -3105,7 +3110,7 @@ filechooser placessidebar.sidebar separator,
 .gedit-search-slider {
   background-color: #f9f9f6;
   padding: 6px;
-  border-color: #e5e5d8;
+  border-color: #d8d8c5;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
   border-style: solid; }
@@ -3131,7 +3136,7 @@ filechooser placessidebar.sidebar separator,
   background-image: linear-gradient(to bottom, rgba(239, 239, 231, 0.94), rgba(239, 239, 231, 0.94)); }
 
 .gedit-bottom-panel-paned > separator {
-  background-image: linear-gradient(to bottom, #e5e5d8, #e5e5d8); }
+  background-image: linear-gradient(to bottom, #d8d8c5, #d8d8c5); }
 
 .gedit-document-panel {
   background-color: rgba(239, 239, 231, 0.94); }
@@ -3239,10 +3244,10 @@ label.header {
 
 .year-view .sidebar {
   padding: 4px;
-  border: 1px none #e5e5d8; }
+  border: 1px none #d8d8c5; }
 
 .year-view .sidebar:backdrop {
-  border-color: #e5e5d8;
+  border-color: #d8d8c5;
   opacity: 0.5; }
 
 .year-view .sidebar:dir(ltr) {
@@ -3288,7 +3293,7 @@ label.month-name {
 
 .week-header {
   padding: 0px;
-  border-bottom: 1px solid #e5e5d8; }
+  border-bottom: 1px solid #d8d8c5; }
 
 .week-header .week-number {
   font-size: 16pt;
@@ -3310,7 +3315,7 @@ label.month-name {
  * Month cell
  */
 monthcell {
-  border: solid 1px rgba(229, 229, 216, 0.3);
+  border: solid 1px rgba(216, 216, 197, 0.3);
   border-width: 1px 0 0 1px;
   background: transparent;
   padding: 1px 3px 0 3px;
@@ -3426,7 +3431,7 @@ button.documents-favorite:active:hover {
     color: #615829; }
 
 .nautilus-window searchbar {
-  border-top: 1px solid #e5e5d8; }
+  border-top: 1px solid #d8d8c5; }
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
 
@@ -3497,11 +3502,11 @@ button.nautilus-circular-button.image-button {
     min-height: 0; }
 
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, #e5e5d8, #e5e5d8); }
+  background-image: linear-gradient(to bottom, #d8d8c5, #d8d8c5); }
   .nautilus-window paned > separator:dir(ltr) {
-    margin-left: -1px; }
+    margin-left: 0px; }
   .nautilus-window paned > separator:dir(rtl) {
-    margin-right: -1px; }
+    margin-right: 0px; }
 
 filechooser.csd.background, filechooser placessidebar list,
 .nautilus-window.csd.background,
@@ -3648,7 +3653,7 @@ terminal-window notebook > header.top,
     min-height: 24px; }
 
 terminal-window notebook > header.top > tabs > tab:checked {
-  box-shadow: inset 0 -1px #e5e5d8; }
+  box-shadow: inset 0 -1px #d8d8c5; }
 
 .nemo-window .nemo-places-sidebar .places-treeview.view, .nemo-window .nemo-places-sidebar iconview.places-treeview {
   color: #4d4d4d;
@@ -3685,8 +3690,8 @@ terminal-window notebook > header.top > tabs > tab:checked {
 @define-color theme_unfocused_text_color #333333;
 @define-color theme_unfocused_bg_color #f5f5f0;
 @define-color theme_unfocused_base_color #ffffff;
-@define-color borders #e5e5d8;
-@define-color unfocused_borders #e5e5d8;
+@define-color borders #d8d8c5;
+@define-color unfocused_borders #d8d8c5;
 @define-color warning_color #f27835;
 @define-color error_color #FC4138;
 @define-color success_color #73d216;
