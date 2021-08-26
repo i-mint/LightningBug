@@ -972,8 +972,10 @@ StScrollBar {
   margin-top: 24px;
   margin-bottom: 14px; }
 .run-dialog .run-dialog-entry {
-  width: 20em; }
-.run-dialog .run-dialog-description {
+  width: 20em;
+  min-height: 1.4em; }
+.run-dialog entry
+.run-dialog-description {
   font-size: 9pt;
   text-align: center;
   color: black; }
