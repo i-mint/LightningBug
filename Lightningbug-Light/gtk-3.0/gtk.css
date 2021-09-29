@@ -1752,13 +1752,23 @@ notebook {
     notebook > header > tabs > arrow {
       color: rgba(51, 51, 51, 0.55); }
       notebook > header > tabs > arrow:hover {
-        color: rgba(51, 51, 51, 0.775); }
+        color: rgba(51, 51, 51, 0.7705); }
       notebook > header > tabs > arrow:active {
         color: #333333; }
       notebook > header > tabs > arrow:disabled {
         color: rgba(51, 51, 51, 0.25); }
     notebook > header.top {
-      margin-left: 1px; }
+      margin-left: 1px;
+      margin-top: 1px; }
+    notebook > header.bottom {
+      margin-left: 1px;
+      margin-bottom: 1px; }
+    notebook > header.left {
+      margin-left: 1px;
+      margin-bottom: 1px; }
+    notebook > header.right {
+      margin-right: 1px;
+      margin-top: 1px; }
     notebook > header > tabs > tab {
       color: rgba(51, 51, 51, 0.55);
       background-color: rgba(235, 235, 225, 0.94);
@@ -3544,7 +3554,8 @@ filechooser.csd.background, filechooser placessidebar list,
   background-color: transparent; }
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  opacity: 0.93; }
+  opacity: 0.93;
+  margin-top: -3px; }
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border: none;
