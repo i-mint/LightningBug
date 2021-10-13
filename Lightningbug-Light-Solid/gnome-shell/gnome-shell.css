@@ -1222,10 +1222,18 @@ StScrollBar {
   #panel .panel-button {
     font-weight: bold;
     color: #e3e3e3;
-    -natural-hpadding: 12px;
-    -minimum-hpadding: 6px; }
+    -natural-hpadding: 6px;
+    -minimum-hpadding: 6px;
+    border-radius: 0px; }
     #panel .panel-button:hover {
-      color: white; }
+      color: white;
+      box-shadow: none; }
+      #panel .panel-button:hover.clock-display {
+        box-shadow: none; }
+        #panel .panel-button:hover.clock-display .clock {
+          box-shadow: none;
+          color: white;
+          border-radius: 0px; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
       color: #d1b30f; }
     #panel .panel-button .system-status-icon {
@@ -1240,13 +1248,15 @@ StScrollBar {
       .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active {
         color: #4d4d4d; }
   #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-    background-color: rgba(0, 0, 0, 0.01);
-    box-shadow: inset 0 -2px 0 0 #f3d740; }
+    background-color: #29291f;
+    box-shadow: inset 0 -2px 0 0 #d1b30f; }
   #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
     box-shadow: none; }
     #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
-      background-color: rgba(0, 0, 0, 0.01);
-      box-shadow: inset 0 -2px 0 0 #f3d740; }
+      background-color: #29291f;
+      color: #d1b30f;
+      box-shadow: inset 0 -2px 0 0 #d1b30f;
+      border-radius: 0px; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
     spacing: 2px; }
@@ -1275,6 +1285,9 @@ StScrollBar {
 #overview {
   spacing: 24px;
   background-color: transparent; }
+
+#overviewGroup {
+  background-color: #29291f; }
 
 .overview-controls {
   padding-bottom: 32px; }
