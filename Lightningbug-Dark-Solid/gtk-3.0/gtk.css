@@ -1077,6 +1077,9 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     color: rgba(44, 42, 33, 0.75);
     border-color: rgba(184, 134, 11, 0.67);
     background-color: rgba(184, 134, 11, 0.67); }
+.primary-toolbar .nautilus-path-bar:not(.vertical) > button:first-child, headerbar .nautilus-path-bar:not(.vertical) > button:first-child, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:first-child, headerbar .nautilus-path-bar:not(.vertical) button.flat:first-child, .primary-toolbar .path-bar:not(.vertical) > button:first-child, headerbar .path-bar:not(.vertical) > button:first-child, .primary-toolbar .path-bar:not(.vertical) button.flat:first-child, headerbar .path-bar:not(.vertical) button.flat:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
 .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat, headerbar .nautilus-path-bar:not(.vertical) button.flat, .primary-toolbar .path-bar:not(.vertical) button.flat, headerbar .path-bar:not(.vertical) button.flat {
   background-color: transparent;
   border-color: transparent;
@@ -1085,7 +1088,8 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   color: transparent; }
 .primary-toolbar .path-bar-box, headerbar .path-bar-box {
   background-color: transparent;
-  border: 0.5px solid rgba(255, 255, 255, 0.1); }
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px; }
 .selection-mode.primary-toolbar button, headerbar.selection-mode button, .selection-mode.primary-toolbar button.flat, headerbar.selection-mode button.flat {
   border-color: transparent;
   background-color: transparent;
@@ -3662,6 +3666,14 @@ filechooser placessidebar.sidebar,
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
   opacity: 1; }
+filechooser .linked entry.search:focus, filechooser .linked entry.search:disabled, filechooser .linked entry.search:backdrop, filechooser .linked entry.search,
+.nautilus-window .linked entry.search:focus,
+.nautilus-window .linked entry.search:disabled,
+.nautilus-window .linked entry.search:backdrop,
+.nautilus-window .linked entry.search {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin-right: 0px; }
 
 filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar, .nemo-window .nemo-places-sidebar scrollbar {
