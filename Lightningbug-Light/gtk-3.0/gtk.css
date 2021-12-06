@@ -17,6 +17,8 @@
 .background {
   color: #333333;
   background-color: rgba(245, 245, 240, 0.999); }
+  .background.popup {
+    background-color: transparent; }
 
 *:disabled {
   -gtk-icon-effect: dim; }
@@ -1554,7 +1556,7 @@ menu, .menu {
   .csd menu,
   .csd .menu {
     padding: 4px 0px;
-    border-radius: 2px; }
+    border-radius: 4px; }
   menu separator, .csd menu separator, .menu separator, .csd .menu separator {
     margin: 2px 0;
     background-color: rgba(239, 239, 231, 0.98); }
@@ -2950,7 +2952,7 @@ decoration {
     .ssd decoration.maximized {
       border-radius: 0; }
   .csd.popup decoration {
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.12); }
   tooltip.csd decoration {
     border-radius: 2px;
