@@ -1622,6 +1622,9 @@ popover, popover.background {
   background-clip: border-box;
   background-color: #efefe7;
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.12); }
+  popover:backdrop,
+  popover.background:backdrop {
+    color: rgba(51, 51, 51, 0.5); }
   .csd popover, popover,
   .csd popover.background, popover.background {
     border: 1px solid #d8d8c5; }
