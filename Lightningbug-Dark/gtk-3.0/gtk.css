@@ -3729,6 +3729,10 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .nemo-window.maximize .nemo-places-sidebar {
   opacity: 1; }
 
+.thunar treeview.view:selected {
+  border: none;
+  box-shadow: none; }
+
 @define-color theme_fg_color #e3e3e3;
 @define-color theme_text_color #e3e3e3;
 @define-color theme_bg_color #181811;
