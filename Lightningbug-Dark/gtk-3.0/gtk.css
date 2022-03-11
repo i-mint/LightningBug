@@ -4108,6 +4108,66 @@ modelbutton.flat:checked arrow:backdrop, treeview.view:backdrop:selected, row:ba
   color: #a8a8a8;
 }
 
+paned.gedit-side-panel-paned treeview.view {
+  background-color: rgba(42, 42, 29, 0.93);
+  border-color: #12120d;
+}
+paned.gedit-side-panel-paned treeview.view label, paned.gedit-side-panel-paned treeview.view {
+  color: #a8a8a8;
+}
+paned.gedit-side-panel-paned treeview.view:hover {
+  background-color: rgba(184, 134, 11, 0.3);
+  border-left: 4px solid #f1b627;
+  padding-left: 0px;
+  animation-name: geditsidepane;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+paned.gedit-side-panel-paned treeview.view:hover label, paned.gedit-side-panel-paned treeview.view:hover {
+  color: #e3e3e3;
+}
+@keyframes geditsidepane {
+  0% {
+    border-left: 4px solid #f3be3f;
+  }
+  50% {
+    border-left: 4px solid rgba(63, 63, 44, 0.93);
+  }
+  100% {
+    border-left: 4px solid #f1b627;
+  }
+}
+paned.gedit-side-panel-paned treeview.view:hover:backdrop {
+  background-color: rgba(184, 134, 11, 0.1);
+  border-left: 4px solid rgba(241, 182, 39, 0.4);
+  padding-left: 0px;
+}
+paned.gedit-side-panel-paned treeview.view:hover:backdrop label, paned.gedit-side-panel-paned treeview.view:hover:backdrop {
+  color: rgba(168, 168, 168, 0.6);
+}
+paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:selected:hover, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus, paned.gedit-side-panel-paned treeview.view:checked:hover {
+  background: image(#B8860B);
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+}
+paned.gedit-side-panel-paned treeview.view:selected label, paned.gedit-side-panel-paned treeview.view:selected, paned.gedit-side-panel-paned treeview.view:selected:focus label, paned.gedit-side-panel-paned treeview.view:selected:focus, paned.gedit-side-panel-paned treeview.view:selected:hover label, paned.gedit-side-panel-paned treeview.view:selected:hover, paned.gedit-side-panel-paned treeview.view:checked label, paned.gedit-side-panel-paned treeview.view:checked, paned.gedit-side-panel-paned treeview.view:checked:focus label, paned.gedit-side-panel-paned treeview.view:checked:focus, paned.gedit-side-panel-paned treeview.view:checked:hover label, paned.gedit-side-panel-paned treeview.view:checked:hover {
+  color: #2c2a21;
+}
+paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop {
+  box-shadow: none;
+  border: none;
+}
+paned.gedit-side-panel-paned treeview.view:selected:backdrop label, paned.gedit-side-panel-paned treeview.view:selected:backdrop, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop label, paned.gedit-side-panel-paned treeview.view:selected:focus:backdrop, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop label, paned.gedit-side-panel-paned treeview.view:selected:hover:backdrop, paned.gedit-side-panel-paned treeview.view:checked:backdrop label, paned.gedit-side-panel-paned treeview.view:checked:backdrop, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop label, paned.gedit-side-panel-paned treeview.view:checked:focus:backdrop, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop label, paned.gedit-side-panel-paned treeview.view:checked:hover:backdrop {
+  color: rgba(44, 42, 33, 0.6);
+}
+paned.gedit-side-panel-paned treeview.view:backdrop {
+  border-color: #12120d;
+}
+paned.gedit-side-panel-paned treeview.view:backdrop label, paned.gedit-side-panel-paned treeview.view:backdrop {
+  color: rgba(168, 168, 168, 0.6);
+}
+
 label.primary-label {
   font-size: 16pt;
   font-weight: bold;
