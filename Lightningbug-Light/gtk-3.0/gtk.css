@@ -95,11 +95,6 @@ textview border {
   background-color: #fafaf8;
 }
 
-XfdesktopIconView.view {
-  background: transparent;
-  color: white;
-}
-
 rubberband, .content-view rubberband, treeview.view rubberband, flowbox rubberband,
 .rubberband {
   border: 1px solid #d8b90e;
@@ -5459,7 +5454,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 @define-color theme_bg_color #f5f5f0;
 @define-color theme_base_color #ffffff;
 @define-color theme_selected_bg_color #f1d228;
-@define-color theme_selected_fg_color #3d3929;
+@define-color theme_selected_fg_color #ffffff;
 @define-color fg_color #333333;
 @define-color text_color #333333;
 @define-color bg_color #f5f5f0;
