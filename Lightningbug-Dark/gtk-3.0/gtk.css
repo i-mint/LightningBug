@@ -4886,6 +4886,27 @@ terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: none;
 }
 
+.linked.path-bar > button:not(.toggle) {
+  border-radius: 4px;
+}
+.linked.path-bar > button.toggle {
+  background-color: rgba(67, 67, 35, 0.92);
+  color: rgba(255, 255, 255, 0.57);
+  border: 0.1px solid rgba(0, 0, 0, 0.95);
+}
+.linked.path-bar > button.toggle:hover {
+  background-color: rgba(98, 98, 50, 0.92);
+  color: rgba(255, 255, 255, 0.9);
+  border-right: 0.1px solid black;
+}
+.linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked {
+  background-color: rgba(104, 104, 54, 0.92);
+  border-right: 0.1px solid black;
+}
+.linked.path-bar > button.toggle:active label, .linked.path-bar > button.toggle:active image, .linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked label, .linked.path-bar > button.toggle:checked image, .linked.path-bar > button.toggle:checked {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .xfce4-panel.panel button.flat, .xfce4-panel.panel button.toggle, .xfce4-panel.panel button {
   color: #E6E6C5;
   background-color: transparent;
