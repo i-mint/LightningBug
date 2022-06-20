@@ -4886,25 +4886,73 @@ terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: none;
 }
 
-.linked.path-bar > button:not(.toggle) {
-  border-radius: 4px;
-}
-.linked.path-bar > button.toggle {
+.linked.path-bar > button.toggle,
+.thunar toolbar button.toggle,
+.thunar .inline-toolbar button.toggle {
   background-color: rgba(67, 67, 35, 0.92);
   color: rgba(255, 255, 255, 0.57);
   border: 0.1px solid rgba(0, 0, 0, 0.95);
 }
-.linked.path-bar > button.toggle:hover {
+.linked.path-bar > button.toggle:hover,
+.thunar toolbar button.toggle:hover,
+.thunar .inline-toolbar button.toggle:hover {
   background-color: rgba(98, 98, 50, 0.92);
   color: rgba(255, 255, 255, 0.9);
   border-right: 0.1px solid black;
 }
-.linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked {
+.linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked,
+.thunar toolbar button.toggle:active,
+.thunar .inline-toolbar button.toggle:active,
+.thunar toolbar button.toggle:checked,
+.thunar .inline-toolbar button.toggle:checked {
   background-color: rgba(104, 104, 54, 0.92);
   border-right: 0.1px solid black;
 }
-.linked.path-bar > button.toggle:active label, .linked.path-bar > button.toggle:active image, .linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked label, .linked.path-bar > button.toggle:checked image, .linked.path-bar > button.toggle:checked {
+.linked.path-bar > button.toggle:active label, .linked.path-bar > button.toggle:active image, .linked.path-bar > button.toggle:active, .linked.path-bar > button.toggle:checked label, .linked.path-bar > button.toggle:checked image, .linked.path-bar > button.toggle:checked,
+.thunar toolbar button.toggle:active label,
+.thunar .inline-toolbar button.toggle:active label,
+.thunar toolbar button.toggle:active image,
+.thunar .inline-toolbar button.toggle:active image,
+.thunar toolbar button.toggle:active,
+.thunar .inline-toolbar button.toggle:active,
+.thunar toolbar button.toggle:checked label,
+.thunar .inline-toolbar button.toggle:checked label,
+.thunar toolbar button.toggle:checked image,
+.thunar .inline-toolbar button.toggle:checked image,
+.thunar toolbar button.toggle:checked,
+.thunar .inline-toolbar button.toggle:checked {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.thunar toolbar, .thunar .inline-toolbar {
+  background-color: rgba(37, 37, 19, 0.92);
+}
+.thunar toolbar button:not(button.flat), .thunar .inline-toolbar button:not(button.flat) {
+  color: rgba(255, 255, 255, 0.9);
+  outline-offset: -3px;
+  background-color: rgba(61, 61, 31, 0.92);
+  border-color: rgba(46, 46, 24, 0.92);
+}
+.thunar toolbar button:not(button.flat):hover, .thunar .inline-toolbar button:not(button.flat):hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(84, 84, 43, 0.92);
+  border-color: rgba(46, 46, 24, 0.92);
+  background: blue;
+}
+.thunar toolbar button:not(button.flat):active, .thunar .inline-toolbar button:not(button.flat):active {
+  color: #2c2a21;
+  background-color: #B8860B;
+  border-color: rgba(46, 46, 24, 0.92);
+}
+.thunar toolbar button.flat:hover, .thunar .inline-toolbar button.flat:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(84, 84, 43, 0.92);
+  border-color: rgba(46, 46, 24, 0.92);
+}
+.thunar toolbar button.flat:active, .thunar .inline-toolbar button.flat:active {
+  color: #2c2a21;
+  background-color: #B8860B;
+  border-color: rgba(46, 46, 24, 0.92);
 }
 
 .xfce4-panel.panel button.flat, .xfce4-panel.panel button.toggle, .xfce4-panel.panel button {
@@ -5559,24 +5607,34 @@ terminal-window notebook > header.top > tabs > tab:checked {
   color: inherit;
 }
 
-.budgie-run-dialog entry.search, .budgie-run-dialog entry.search:focus {
-  background-color: #181811;
+.budgie-run-dialog {
+  background-color: rgba(42, 42, 29, 0.97);
+  border: none;
+  border-radius: 3px 3px 0 0;
+}
+.budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus {
+  background-color: transparent;
   padding: 9px 4px;
   box-shadow: none;
-  border-radius: 4px;
-  border-color: transparent;
+  border: none;
   border-bottom: 2px solid #B8860B;
 }
-.budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image, .budgie-run-dialog entry.search, .budgie-run-dialog entry.search:focus label, .budgie-run-dialog entry.search:focus image, .budgie-run-dialog entry.search:focus {
+.budgie-run-dialog entry.search label, .budgie-run-dialog entry.search image, .budgie-run-dialog entry.search,
+.budgie-run-dialog entry.search:focus label,
+.budgie-run-dialog entry.search:focus image,
+.budgie-run-dialog entry.search:focus {
   color: #e3e3e3;
 }
-.budgie-run-dialog entry.search image, .budgie-run-dialog entry.search:focus image {
+.budgie-run-dialog entry.search image,
+.budgie-run-dialog entry.search:focus image {
   padding: 0 9px;
 }
 .budgie-run-dialog list row:selected {
   background-color: #B8860B;
 }
-.budgie-run-dialog list row:selected label, .budgie-run-dialog list row:selected image {
+.budgie-run-dialog list row:selected label,
+.budgie-run-dialog list row:selected image, .budgie-run-dialog list row:selected {
   color: #2c2a21;
 }
 
