@@ -4988,64 +4988,75 @@ terminal-window notebook > header.top > tabs > tab:checked {
 }
 
 .xfce4-panel.panel button.flat, .xfce4-panel.panel button.toggle, .xfce4-panel.panel button {
-  color: #F6F6D4;
+  color: rgba(18, 18, 18, 0.9);
   background-color: transparent;
   border-radius: 4px;
   border-color: transparent;
 }
+.xfce4-panel.panel button.flat label, .xfce4-panel.panel button.toggle label, .xfce4-panel.panel button label, .xfce4-panel.panel button.flat image, .xfce4-panel.panel button.toggle image, .xfce4-panel.panel button image {
+  color: inherit;
+}
 .xfce4-panel.panel button:hover {
-  color: #F6F6D4;
-  background-color: rgba(241, 210, 40, 0.1);
-  border-color: #28281a;
+  color: rgba(18, 18, 18, 0.9);
+  background-color: rgba(241, 210, 40, 0.3);
+  border-color: rgba(40, 40, 26, 0.3);
 }
 .xfce4-panel.panel button:active {
   color: #3d3929;
   background-color: #d1b30f;
-  border-color: #28281a;
+  border-color: #d1b30f;
 }
 .xfce4-panel.panel button:checked {
   color: #3d3929;
   background-color: #f1d228;
-  border-color: #28281a;
+  border-color: rgba(40, 40, 26, 0.3);
+}
+.xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked image {
+  color: inherit;
 }
 
 .xfce4-panel.panel {
-  background-color: #3B3B26;
-  color: #F6F6D4;
+  background-color: #e5e5d8;
+  color: rgba(18, 18, 18, 0.9);
   border-color: #28281a;
   font-weight: normal;
   text-shadow: none;
   -gtk-icon-shadow: none;
 }
-.xfce4-panel.panel .tasklist button,
-.xfce4-panel.panel #clock-button {
-  color: #F6F6D4;
-  background-color: #4e4e32;
+.xfce4-panel.panel label, .xfce4-panel.panel image {
+  color: inherit;
+}
+.xfce4-panel.panel .tasklist button {
+  color: rgba(18, 18, 18, 0.9);
+  background-color: rgba(196, 196, 167, 0.5);
   border-radius: 4px;
-  border-color: rgba(40, 40, 26, 0.5);
+  border-color: rgba(40, 40, 26, 0.3);
 }
-.xfce4-panel.panel .tasklist button:hover,
-.xfce4-panel.panel #clock-button:hover {
-  background-color: #60603e;
-  color: #F6F6D4;
-  border-color: #28281a;
+.xfce4-panel.panel .tasklist button label, .xfce4-panel.panel .tasklist button image {
+  color: inherit;
 }
-.xfce4-panel.panel .tasklist button:active,
-.xfce4-panel.panel #clock-button:active {
+.xfce4-panel.panel .tasklist button:hover {
+  background-color: #b6b692;
+  color: rgba(18, 18, 18, 0.9);
+  border-color: rgba(40, 40, 26, 0.3);
+}
+.xfce4-panel.panel .tasklist button:active {
   background-color: #d1b30f;
   color: #3d3929;
-  border-color: #28281a;
+  border-color: #d1b30f;
 }
-.xfce4-panel.panel .tasklist button:checked,
-.xfce4-panel.panel #clock-button:checked {
+.xfce4-panel.panel .tasklist button:checked {
   background-color: #f1d228;
   color: #3d3929;
-  border-color: #28281a;
+  border-color: rgba(40, 40, 26, 0.3);
   font-weight: normal;
+}
+.xfce4-panel.panel .tasklist button:checked label, .xfce4-panel.panel .tasklist button:checked image {
+  color: inherit;
 }
 .xfce4-panel.panel wnck-pager {
   background-color: rgba(241, 210, 40, 0.12);
-  border-right: 2px solid #3B3B26;
+  border-right: 2px solid #e5e5d8;
 }
 .xfce4-panel.panel wnck-pager:hover, .xfce4-panel.panel wnck-pager:selected {
   background-color: #f1d228;
