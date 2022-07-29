@@ -318,6 +318,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .popup-menu-content {
   padding: 16px 0;
+  background-color: #212117;
+  box-shadow: none;
+  border-color: #12120d;
+  border-radius: 5px;
 }
 
 .popup-menu-item {
@@ -332,17 +336,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-right: 0;
   padding-left: 1.75em;
 }
-.popup-menu-item:checked {
-  background-color: #12120d;
+.popup-menu-item:checked, .popup-menu-item:checked:hover, .popup-menu-item:active {
+  background-color: #12120d !important;
   box-shadow: none;
+  border-radius: 0 !important;
 }
 .popup-menu-item:selected, .popup-menu-item:hover {
   color: #e3e3e3;
-  background-color: rgba(184, 134, 11, 0.12);
-}
-.popup-menu-item:active {
-  background-color: #B8860B;
-  color: #2c2a21;
+  background-color: rgba(184, 134, 11, 0.12) !important;
+  border-radius: 0 !important;
 }
 .popup-menu-item:insensitive {
   color: rgba(227, 227, 227, 0.5);
@@ -365,6 +367,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: none;
   border-top: 1px solid rgba(18, 18, 13, 0.8);
   border-bottom: 1px solid rgba(18, 18, 13, 0.8);
+  border-radius: 0 !important;
 }
 
 .popup-menu-ornament {
@@ -432,11 +435,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .datemenu-calendar-column:ltr {
   margin-right: 8px;
-  border-left-width: 1px;
+  border-left-width: 0;
 }
 .datemenu-calendar-column:rtl {
   margin-left: 8px;
-  border-right-width: 1px;
+  border-right-width: 0;
 }
 .datemenu-calendar-column .datemenu-displays-box {
   spacing: 6px;
@@ -594,7 +597,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 22px;
   padding: 0;
   margin: 2px;
-  border-radius: 13px;
+  border-radius: 999px !important;
   border: 1px solid transparent;
   font-feature-settings: "tnum";
 }
@@ -604,6 +607,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
   color: #e3e3e3;
   background-color: #090906;
+  box-shadow: inset 0 0 0 1px #B8860B;
+  font-weight: bold !important;
 }
 .calendar .calendar-day-base.calendar-day-heading {
   color: #e3e3e3;
@@ -623,10 +628,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: rgba(227, 227, 227, 0.55);
 }
 .calendar .calendar-today {
-  font-weight: bold;
+  font-weight: bold !important;
   border: 1px solid transparent;
-  background-color: #B8860B;
-  color: #2c2a21;
+  background-color: #B8860B !important;
+  color: #2c2a21 !important;
 }
 .calendar .calendar-today:hover, .calendar .calendar-today:focus {
   background-color: #c6910c;
@@ -645,7 +650,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .calendar .calendar-day-with-events.calendar-work-day {
   color: #fdfdfd;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .calendar .calendar-other-month-day {
   color: rgba(227, 227, 227, 0.5);
@@ -863,6 +868,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .message-list .message-list-placeholder {
   spacing: 12px;
+}
+.message-list:ltr {
+  border-right-width: 1px;
+  border-color: #12120d;
+}
+.message-list:rtl {
+  border-left-width: 1px;
+  border-color: #12120d;
 }
 
 .message-list-sections {
