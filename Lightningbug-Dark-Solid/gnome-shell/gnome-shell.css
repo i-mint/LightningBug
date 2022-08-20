@@ -1497,7 +1497,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Top Bar */
 #panel {
-  background-color: #232316;
+  background-color: #181811;
   font-weight: bold;
   height: 1.86em;
   font-feature-settings: "tnum";
@@ -1515,7 +1515,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel .panel-corner {
   -panel-corner-radius: 6px;
-  -panel-corner-background-color: #232316;
+  -panel-corner-background-color: #181811;
   -panel-corner-border-width: 2px;
   -panel-corner-border-color: transparent;
 }
@@ -1524,7 +1524,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel .panel-button {
   font-weight: bold;
-  color: #E6E6C5;
+  color: #F6F6D4;
   -natural-hpadding: 6px;
   -minimum-hpadding: 6px;
   border-radius: 0px;
@@ -1560,14 +1560,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #fdfdfd;
 }
 #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-  background-color: #232316;
+  background-color: #181811;
   box-shadow: inset 0 -2px 0 0 #f1b627;
 }
 #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
   box-shadow: none;
 }
 #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
-  background-color: #232316;
+  background-color: #181811;
   color: #f1b627;
   box-shadow: inset 0 -2px 0 0 #f1b627;
   border-radius: 0px;
@@ -1610,7 +1610,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #overviewGroup {
-  background-color: #232316;
+  background-color: #181811;
 }
 
 .overview-controls {
@@ -1636,7 +1636,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .window-caption {
   color: #f1b627;
-  background-color: #232316;
+  background-color: #181811;
   border: 1px solid #f1b627;
   border-radius: 6px;
   padding: 6px 12px;

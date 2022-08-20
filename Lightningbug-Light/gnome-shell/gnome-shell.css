@@ -39,8 +39,8 @@ stage {
 }
 
 .workspace-thumbnails, #dash {
-  color: #F6F6D4;
-  background-color: #515134;
+  color: #141414;
+  background-color: white;
   border: 1px solid #333333;
 }
 
@@ -1496,7 +1496,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Top Bar */
 #panel {
-  background-color: #3B3B26;
+  background-color: #ffffff;
   font-weight: bold;
   height: 1.86em;
   font-feature-settings: "tnum";
@@ -1514,7 +1514,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel .panel-corner {
   -panel-corner-radius: 6px;
-  -panel-corner-background-color: #3B3B26;
+  -panel-corner-background-color: #ffffff;
   -panel-corner-border-width: 2px;
   -panel-corner-border-color: transparent;
 }
@@ -1523,13 +1523,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel .panel-button {
   font-weight: bold;
-  color: #F6F6D4;
+  color: #141414;
   -natural-hpadding: 6px;
   -minimum-hpadding: 6px;
   border-radius: 0px;
 }
 #panel .panel-button:hover {
-  color: white;
+  color: #474747;
   box-shadow: none;
 }
 #panel .panel-button:hover.clock-display {
@@ -1537,7 +1537,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel .panel-button:hover.clock-display .clock {
   box-shadow: none;
-  color: white;
+  color: #474747;
   border-radius: 0px;
 }
 #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
@@ -1559,14 +1559,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #4d4d4d;
 }
 #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-  background-color: #3B3B26;
+  background-color: #ffffff;
   box-shadow: inset 0 -2px 0 0 #d1b30f;
 }
 #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
   box-shadow: none;
 }
 #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
-  background-color: #3B3B26;
+  background-color: #ffffff;
   color: #d1b30f;
   box-shadow: inset 0 -2px 0 0 #d1b30f;
   border-radius: 0px;
@@ -1609,7 +1609,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #overviewGroup {
-  background-color: #3B3B26;
+  background-color: #ffffff;
 }
 
 .overview-controls {
@@ -1635,7 +1635,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .window-caption {
   color: #d1b30f;
-  background-color: #3B3B26;
+  background-color: #ffffff;
   border: 1px solid #d1b30f;
   border-radius: 6px;
   padding: 6px 12px;
@@ -1928,7 +1928,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .show-apps .overview-icon {
-  color: #F6F6D4;
+  color: #141414;
 }
 .show-apps:hover .overview-icon, .show-apps:selected .overview-icon {
   background-color: rgba(209, 179, 15, 0.2);
