@@ -4931,27 +4931,27 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar menubar,
 .thunar toolbar,
 .thunar .inline-toolbar {
-  background-image: linear-gradient(to bottom, #e7e7db, #e7e7db);
+  background: image(#e7e7db);
 }
-.thunar menubar button:not(button.flat),
-.thunar toolbar button:not(button.flat),
-.thunar .inline-toolbar button:not(button.flat) {
+.thunar menubar button:not(.flat),
+.thunar toolbar button:not(.flat),
+.thunar .inline-toolbar button:not(.flat) {
   color: rgba(18, 18, 18, 0.9);
   outline-offset: -3px;
   background-color: #d9d9c6;
   border-color: #d0d0b9;
 }
-.thunar menubar button:not(button.flat):hover,
-.thunar toolbar button:not(button.flat):hover,
-.thunar .inline-toolbar button:not(button.flat):hover {
+.thunar menubar button:not(.flat):hover,
+.thunar toolbar button:not(.flat):hover,
+.thunar .inline-toolbar button:not(.flat):hover {
   color: rgba(18, 18, 18, 0.9);
   background-color: #cacab0;
   border-color: #d0d0b9;
   background: blue;
 }
-.thunar menubar button:not(button.flat):active,
-.thunar toolbar button:not(button.flat):active,
-.thunar .inline-toolbar button:not(button.flat):active {
+.thunar menubar button:not(.flat):active,
+.thunar toolbar button:not(.flat):active,
+.thunar .inline-toolbar button:not(.flat):active {
   color: #3d3929;
   background-color: #f1d228;
   border-color: #d0d0b9;
@@ -5697,8 +5697,10 @@ terminal-window notebook > header.top > tabs > tab:checked {
   background-color: transparent;
 }
 .raven calendar.raven-calendar:selected {
-  background-color: transparent;
-  color: darkcyan;
+  background-color: #f1d228;
+  color: #3d3929;
+  border-bottom: 9px solid transparent;
+  border-radius: 0;
 }
 .raven button {
   color: #333333;
