@@ -592,8 +592,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .calendar .calendar-day-base {
   font-size: 7pt;
   text-align: center;
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   margin: 2px;
   border-radius: 999px !important;
@@ -656,13 +656,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .calendar .calendar-week-number {
   font-size: 6pt;
-  font-weight: bold;
-  height: 1.8em;
-  width: 2.3em;
-  border-radius: 2px;
-  margin: 6px;
-  background-color: #f1f1ea;
-  color: #404040;
+  font-weight: bold !important;
+  height: 1.6em !important;
+  width: 1.6em !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 6px !important;
+  background-color: #d6d6d6;
+  color: #333333;
+  text-align: center !important;
 }
 
 /* Events */
