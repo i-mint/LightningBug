@@ -4538,7 +4538,18 @@ button.documents-favorite:active:hover {
 .titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected, .nautilus-canvas-item.dim-label:selected:focus,
 .nautilus-list-dim-label:selected,
 .nautilus-list-dim-label:selected:focus {
-  color: #615829;
+  color: #86730c;
+}
+.nautilus-canvas-item.dim-label:selected:backdrop, label.nautilus-canvas-item.separator:selected:backdrop, headerbar .nautilus-canvas-item.subtitle:selected:backdrop,
+.titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected:backdrop, .nautilus-canvas-item.dim-label:selected:focus:backdrop,
+.nautilus-list-dim-label:selected:backdrop,
+.nautilus-list-dim-label:selected:focus:backdrop {
+  color: rgba(131, 113, 13, 0.715);
+}
+.nautilus-canvas-item.dim-label:backdrop, label.nautilus-canvas-item.separator:backdrop, headerbar .nautilus-canvas-item.subtitle:backdrop,
+.titlebar:not(headerbar) .nautilus-canvas-item.subtitle:backdrop,
+.nautilus-list-dim-label:backdrop {
+  color: #bbbbb7;
 }
 
 .nautilus-window searchbar {
