@@ -3379,36 +3379,36 @@ filechooserbutton:drop(active) {
   border-color: transparent;
 }
 
-.sidebar:not(separator) {
+.sidebar:not(list) {
   border-style: none;
 }
 .thunar .sidebar treeview.view, .nemo-window.maximize .nemo-places-sidebar, filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar, filechooser placessidebar.sidebar,
-.nautilus-window placessidebar.sidebar, .sidebar:not(separator) {
+.nautilus-window placessidebar.sidebar, .sidebar:not(list) {
   background-color: #2a2a1d;
   color: #a8a8a8;
 }
 
-.sidebar:not(separator) .view:backdrop label, .sidebar:not(separator) iconview:backdrop label, .sidebar:not(separator) .view:backdrop, .sidebar:not(separator) iconview:backdrop, .sidebar:not(separator) row.sidebar-row:backdrop label, .sidebar:not(separator) row.sidebar-row:backdrop, .sidebar:not(separator) .view.cell:backdrop label, .sidebar:not(separator) iconview.cell:backdrop label, .sidebar:not(separator) .view.cell:backdrop, .sidebar:not(separator) iconview.cell:backdrop, .sidebar:not(separator):backdrop label, .sidebar:not(separator):backdrop {
+.sidebar:not(list) .view:backdrop label, .sidebar:not(list) iconview:backdrop label, .sidebar:not(list) .view:backdrop, .sidebar:not(list) iconview:backdrop, .sidebar:not(list) row.sidebar-row:backdrop label, .sidebar:not(list) row.sidebar-row:backdrop, .sidebar:not(list) .view.cell:backdrop label, .sidebar:not(list) iconview.cell:backdrop label, .sidebar:not(list) .view.cell:backdrop, .sidebar:not(list) iconview.cell:backdrop, .sidebar:not(list):backdrop label, .sidebar:not(list):backdrop {
   color: rgba(168, 168, 168, 0.7);
 }
-.sidebar:not(separator) .view:backdrop:hover label, .sidebar:not(separator) iconview:backdrop:hover label, .sidebar:not(separator) .view:backdrop:hover, .sidebar:not(separator) iconview:backdrop:hover, .sidebar:not(separator) row.sidebar-row:backdrop:hover label, .sidebar:not(separator) row.sidebar-row:backdrop:hover, .sidebar:not(separator) .view.cell:backdrop:hover label, .sidebar:not(separator) iconview.cell:backdrop:hover label, .sidebar:not(separator) .view.cell:backdrop:hover, .sidebar:not(separator) iconview.cell:backdrop:hover, .sidebar:not(separator):backdrop:hover label, .sidebar:not(separator):backdrop:hover {
+.sidebar:not(list) .view:backdrop:hover label, .sidebar:not(list) iconview:backdrop:hover label, .sidebar:not(list) .view:backdrop:hover, .sidebar:not(list) iconview:backdrop:hover, .sidebar:not(list) row.sidebar-row:backdrop:hover label, .sidebar:not(list) row.sidebar-row:backdrop:hover, .sidebar:not(list) .view.cell:backdrop:hover label, .sidebar:not(list) iconview.cell:backdrop:hover label, .sidebar:not(list) .view.cell:backdrop:hover, .sidebar:not(list) iconview.cell:backdrop:hover, .sidebar:not(list):backdrop:hover label, .sidebar:not(list):backdrop:hover {
   color: rgba(168, 168, 168, 0.8);
 }
-stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(separator):dir(ltr), .sidebar:not(separator).left, .sidebar:not(separator).left:dir(rtl) {
+stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:not(list):dir(ltr), .sidebar:not(list).left, .sidebar:not(list).left:dir(rtl) {
   border-right: 1px solid #d8d8c5;
   border-left-style: none;
 }
 
-stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(separator):dir(rtl), .sidebar:not(separator).right {
+stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list, .sidebar:not(list):dir(rtl), .sidebar:not(list).right {
   border-left: 1px solid #d8d8c5;
   border-right-style: none;
 }
 
-.sidebar:not(separator) list {
+.sidebar:not(list) list {
   background-color: transparent;
 }
-paned .sidebar:not(separator).left, paned .sidebar:not(separator).right, paned .sidebar:not(separator).left:dir(rtl), paned .sidebar:not(separator):dir(rtl), paned .sidebar:not(separator):dir(ltr), paned .sidebar:not(separator) {
+paned .sidebar:not(list).left, paned .sidebar:not(list).right, paned .sidebar:not(list).left:dir(rtl), paned .sidebar:not(list):dir(rtl), paned .sidebar:not(list):dir(ltr), paned .sidebar:not(list) {
   border-style: none;
 }
 
@@ -3934,7 +3934,7 @@ modelbutton.flat:active arrow,
 modelbutton.flat:selected,
 modelbutton.flat:selected arrow,
 modelbutton.flat:checked,
-modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(separator) .view:selected, .sidebar:not(separator) iconview:selected, .sidebar:not(separator) row.sidebar-row:selected, .sidebar:not(separator) .view.cell:selected, .sidebar:not(separator):selected {
+modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(list) .view:selected, .sidebar:not(list) iconview:selected, .sidebar:not(list) row.sidebar-row:selected, .sidebar:not(list) .view.cell:selected, .sidebar:not(list):selected {
   background-color: #f1d228;
 }
 row:selected label, label:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:selected.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:active.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:active, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover, filechooser placessidebar.sidebar row.sidebar-row:active,
@@ -3950,7 +3950,7 @@ modelbutton.flat:active arrow,
 modelbutton.flat:selected,
 modelbutton.flat:selected arrow,
 modelbutton.flat:checked,
-modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(separator) .view:selected, .sidebar:not(separator) iconview:selected, .sidebar:not(separator) row.sidebar-row:selected, .sidebar:not(separator) .view.cell:selected, .sidebar:not(separator):selected {
+modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(list) .view:selected, .sidebar:not(list) iconview:selected, .sidebar:not(list) row.sidebar-row:selected, .sidebar:not(list) .view.cell:selected, .sidebar:not(list):selected {
   color: #3d3929;
 }
 row:selected label:disabled, label:disabled:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:disabled:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:disabled:active, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:disabled:active,
@@ -3962,7 +3962,7 @@ modelbutton.flat:active arrow:disabled,
 modelbutton.flat:disabled:selected,
 modelbutton.flat:selected arrow:disabled,
 modelbutton.flat:disabled:checked,
-modelbutton.flat:checked arrow:disabled, treeview.view:disabled:selected, row:disabled:selected, calendar:disabled:selected, .sidebar:not(separator) .view:disabled:selected, .sidebar:not(separator) iconview:disabled:selected, .sidebar:not(separator) row.sidebar-row:disabled:selected, .sidebar:disabled:not(separator):selected {
+modelbutton.flat:checked arrow:disabled, treeview.view:disabled:selected, row:disabled:selected, calendar:disabled:selected, .sidebar:not(list) .view:disabled:selected, .sidebar:not(list) iconview:disabled:selected, .sidebar:not(list) row.sidebar-row:disabled:selected, .sidebar:disabled:not(list):selected {
   color: #978629;
 }
 
@@ -3975,7 +3975,7 @@ modelbutton.flat:active arrow:backdrop,
 modelbutton.flat:backdrop:selected,
 modelbutton.flat:selected arrow:backdrop,
 modelbutton.flat:backdrop:checked,
-modelbutton.flat:checked arrow:backdrop, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected, .sidebar:not(separator) .view:backdrop:selected, .sidebar:not(separator) iconview:backdrop:selected, .sidebar:not(separator) row.sidebar-row:backdrop:selected, .sidebar:backdrop:not(separator):selected {
+modelbutton.flat:checked arrow:backdrop, treeview.view:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected, .sidebar:not(list) .view:backdrop:selected, .sidebar:not(list) iconview:backdrop:selected, .sidebar:not(list) row.sidebar-row:backdrop:selected, .sidebar:backdrop:not(list):selected {
   color: rgba(61, 57, 41, 0.7);
   background-color: #e6c50f;
 }
@@ -4869,7 +4869,7 @@ headerbar .path-buttons-box:not(.vertical) button image.subtitle,
 .path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
 .titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover label.subtitle,
 .path-buttons-box:not(.vertical) button:hover image, .path-buttons-box:not(.vertical) button:hover {
-  color: black;
+  color: white;
 }
 .path-buttons-box:not(.vertical) button.current-dir {
   color: rgba(250, 250, 229, 0.9);
