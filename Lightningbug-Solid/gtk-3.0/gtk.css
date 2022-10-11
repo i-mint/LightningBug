@@ -4874,6 +4874,9 @@ headerbar .path-buttons-box:not(.vertical) button image.subtitle,
 .path-buttons-box:not(.vertical) button.current-dir {
   color: rgba(250, 250, 229, 0.9);
 }
+.path-buttons-box:not(.vertical) button.current-dir:active {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .nautilus-path-bar > button.popup.toggle {
   color: rgba(250, 250, 229, 0.9);
@@ -4893,6 +4896,9 @@ headerbar .path-buttons-box:not(.vertical) button image.subtitle,
   background-color: #f1d228;
   border-color: #2e2e18;
   border-right-width: 0;
+}
+.nautilus-path-bar > button.popup.toggle:active label, .nautilus-path-bar > button.popup.toggle:active image, .nautilus-path-bar > button.popup.toggle:checked label, .nautilus-path-bar > button.popup.toggle:checked image {
+  color: inherit;
 }
 
 terminal-window notebook > header.top,
