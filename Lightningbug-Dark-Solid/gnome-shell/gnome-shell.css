@@ -318,7 +318,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .popup-menu-content {
   padding: 16px 0;
-  background-color: #212117;
+  background-color: #2a2a1d;
   box-shadow: none;
   border-color: #12120d;
   border-radius: 5px;
@@ -337,13 +337,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding-left: 1.75em;
 }
 .popup-menu-item:checked, .popup-menu-item:checked:hover, .popup-menu-item:active {
-  background-color: #12120d !important;
+  color: #e3e3e3 !important;
+  background-color: #15150f !important;
   box-shadow: none;
   border-radius: 0 !important;
+  font-weight: bold !important;
 }
 .popup-menu-item:selected, .popup-menu-item:hover {
-  color: #e3e3e3;
-  background-color: rgba(184, 134, 11, 0.12) !important;
+  color: #e3e3e3 !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
   border-radius: 0 !important;
 }
 .popup-menu-item:insensitive {
@@ -363,10 +365,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-sub-menu {
-  background-color: #1e1e15;
+  background-color: #212117 !important;
   box-shadow: none;
-  border-top: 1px solid rgba(18, 18, 13, 0.8);
-  border-bottom: 1px solid rgba(18, 18, 13, 0.8);
+  border-bottom: 1px solid #181811;
+  border-top: 1px solid #181811;
   border-radius: 0 !important;
 }
 
@@ -1501,7 +1503,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel {
   background-color: #181811;
   font-weight: bold;
-  height: 1.86em;
+  height: 35px;
   font-feature-settings: "tnum";
 }
 #panel.unlock-screen, #panel.login-screen {
@@ -1517,8 +1519,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel .panel-corner {
   -panel-corner-radius: 6px;
-  -panel-corner-background-color: #181811;
-  -panel-corner-border-width: 2px;
+  -panel-corner-background-color: transparent;
+  -panel-corner-border-width: 0px;
   -panel-corner-border-color: transparent;
 }
 #panel .panel-corner:active, #panel .panel-corner:overview, #panel .panel-corner:focus {
@@ -1530,21 +1532,45 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -natural-hpadding: 6px;
   -minimum-hpadding: 6px;
   border-radius: 0px;
+  border: 3px solid transparent;
 }
 #panel .panel-button:hover {
-  color: white;
+  color: rgba(246, 246, 212, 0.8);
+  background: rgba(184, 134, 11, 0.3);
+  border-radius: 7px;
   box-shadow: none;
+  border: 3px solid #181811;
 }
 #panel .panel-button:hover.clock-display {
   box-shadow: none;
+  border: 3px solid #181811;
+  background-color: transparent;
 }
 #panel .panel-button:hover.clock-display .clock {
   box-shadow: none;
-  color: white;
-  border-radius: 0px;
+  color: rgba(246, 246, 212, 0.8);
+  background: rgba(184, 134, 11, 0.3);
+  border-radius: 7px;
+  border: 3px solid #181811;
+  box-shadow: none;
 }
-#panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-  color: #f1b627;
+#panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked, #panel .panel-button:checked:hover, #panel .panel-button:active:hover {
+  color: #2c2a21;
+  background: #B8860B;
+  border-radius: 7px;
+  box-shadow: none;
+  border: 3px solid #181811;
+}
+#panel .panel-button:active .clock, #panel .panel-button:overview .clock, #panel .panel-button:focus .clock, #panel .panel-button:checked .clock, #panel .panel-button:checked:hover .clock, #panel .panel-button:active:hover .clock {
+  color: #2c2a21;
+  background-color: #B8860B;
+  border-radius: 7px;
+  box-shadow: none;
+  border: 3px solid #181811;
+  border-radius: 7px;
+}
+#panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display, #panel .panel-button:checked:hover.clock-display, #panel .panel-button:active:hover.clock-display {
+  background-color: transparent;
 }
 #panel .panel-button .system-status-icon {
   icon-size: 1.09em;
@@ -1560,19 +1586,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active {
   color: #fdfdfd;
-}
-#panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-  background-color: #181811;
-  box-shadow: inset 0 -2px 0 0 #f1b627;
-}
-#panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
-  box-shadow: none;
-}
-#panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
-  background-color: #181811;
-  color: #f1b627;
-  box-shadow: inset 0 -2px 0 0 #f1b627;
-  border-radius: 0px;
 }
 #panel .panel-status-indicators-box,
 #panel .panel-status-menu-box {
