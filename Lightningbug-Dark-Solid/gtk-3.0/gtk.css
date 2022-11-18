@@ -1430,9 +1430,9 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:acti
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button {
-  color: rgba(250, 250, 229, 0.9);
-  background-color: #54542b;
-  border-color: #2e2e18;
+  background-color: #434323;
+  color: rgba(250, 250, 229, 0.57);
+  border: 0.1px solid rgba(0, 0, 0, 0.95);
   border-radius: 0%;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
@@ -1440,12 +1440,14 @@ headerbar .linked:not(.vertical).path-bar > button {
 headerbar .linked:not(.vertical).path-bar > button label,
 .primary-toolbar .linked:not(.vertical).path-bar > button image,
 headerbar .linked:not(.vertical).path-bar > button image {
-  color: rgba(250, 250, 229, 0.9);
+  color: inherit;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
 headerbar .linked:not(.vertical).path-bar > button:hover {
-  background-color: #6f6f39;
+  background-color: #626232;
+  color: rgba(250, 250, 229, 0.9);
+  border-right: 0.1px solid black;
   border-radius: 0%;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked,
@@ -1455,8 +1457,8 @@ headerbar .linked:not(.vertical).path-bar > button:active,
 headerbar .linked:not(.vertical).path-bar > button:checked {
   color: #2c2a21;
   background-color: #B8860B;
-  border-color: #2e2e18;
   border-radius: 0%;
+  border-right: 0.1px solid black;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active image, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked image,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active label,
@@ -1467,7 +1469,7 @@ headerbar .linked:not(.vertical).path-bar > button:active image,
 headerbar .linked:not(.vertical).path-bar > button:checked label,
 .primary-toolbar .linked:not(.vertical).path-bar > button:checked image,
 headerbar .linked:not(.vertical).path-bar > button:checked image {
-  color: #2c2a21;
+  color: inherit;
 }
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active:backdrop, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked:backdrop,
 .primary-toolbar .linked:not(.vertical).path-bar > button:active:backdrop,
