@@ -971,13 +971,18 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: rgba(61, 57, 41, 0.5);
 }
 .message .message-close-button {
-  color: #595959;
+  color: #3d3929;
+  background-color: #f75653;
+  border-radius: 999px;
+  padding: 7px;
 }
 .message .message-close-button:hover {
-  color: gray;
+  color: #3d3929;
+  background-color: #f87370;
 }
 .message .message-close-button:active {
-  color: #999999;
+  color: #3d3929;
+  background-color: #f63936;
 }
 .message .message-body, .message:hover .message-body {
   color: #1a1a1a;
