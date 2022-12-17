@@ -3205,19 +3205,6 @@ junction:dir(rtl) {
 scrolledwindow viewport.frame {
   border-style: none;
 }
-separator {
-  background-color: rgba(0, 0, 0, 0.1);
-  min-width: 1px;
-  min-height: 1px;
-}
-
-separator.sidebar, hdyleaflet > separator {
-  background-color: #d8d8c5;
-}
-separator.sidebar:backdrop, hdyleaflet > separator:backdrop {
-  opacity: 0.6;
-}
-
 list {
   background-color: #ffffff;
   border-color: #d8d8c5;
@@ -3563,6 +3550,21 @@ paned.vertical > separator.wide {
   padding: 0;
   background-repeat: repeat-x, repeat-x;
   background-position: bottom, top;
+}
+
+separator {
+  background-color: rgba(0, 0, 0, 0.1);
+  min-width: 1px;
+  min-height: 1px;
+}
+
+separator.sidebar:dir(ltr), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar:dir(rtl), separator.sidebar.right {
+  background-color: #d8d8c5;
+  border: 0;
+}
+.titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar.left, .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.right {
+  background-color: #d9d9c6;
+  margin: 0;
 }
 
 infobar {
@@ -3984,7 +3986,9 @@ modelbutton.flat:checked arrow:backdrop, treeview.view:backdrop:selected, row:ba
 
 .nemo-window .nemo-places-sidebar separator, filechooser placessidebar.sidebar separator,
 .nautilus-window placessidebar.sidebar separator {
-  background-color: black;
+  min-width: 1px;
+  min-height: 1px;
+  background-color: #000000;
   opacity: 0.07;
 }
 
