@@ -3358,6 +3358,12 @@ messagedialog.csd .dialog-action-area button:only-child {
 filechooser #pathbarbox {
   border-bottom: 1px solid rgba(216, 216, 197, 0.5);
 }
+filechooser #pathbarbox.view.vertical > stack, filechooser iconview#pathbarbox.vertical > stack {
+  background-color: #e7e7db;
+}
+filechooser #pathbarbox.view.vertical > stack:backdrop, filechooser iconview#pathbarbox.vertical > stack:backdrop {
+  background-color: #edede4;
+}
 filechooser .linked.path-bar > button {
   background-color: #dfdfcf;
   color: rgba(18, 18, 18, 0.57);
@@ -3373,6 +3379,9 @@ filechooser .linked.path-bar > button:active, filechooser .linked.path-bar > but
   border-color: #e2e2e2;
   background-color: #f1d228;
   border-right: 0.1px solid #000000;
+}
+filechooser .linked.path-bar > button:backdrop {
+  opacity: 0.7;
 }
 
 filechooserbutton:drop(active) {
@@ -3519,11 +3528,11 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #d8d8c5, #d8d8c5);
+  background-image: image(#d8d8c5);
   background-size: 1px 1px;
 }
 paned > separator:selected {
-  background-image: linear-gradient(to bottom, #f1d228, #f1d228);
+  background-image: image(#f1d228);
 }
 paned > separator.wide {
   min-width: 5px;
@@ -4663,7 +4672,7 @@ button.nautilus-circular-button.image-button label {
 }
 
 .nautilus-window paned > separator {
-  background-image: linear-gradient(to bottom, #d8d8c5, #d8d8c5);
+  background-image: image(#d8d8c5);
 }
 .nautilus-window paned > separator:dir(ltr) {
   margin-left: 0px;
