@@ -1814,18 +1814,26 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .grouped-window-list-item-box:hover {
   color: #F6F6D4;
-  background-color: rgba(36, 36, 25, 0.8);
+  background-color: #242419;
+  border-color: #0f0f0b;
 }
 .grouped-window-list-item-box:focus, .grouped-window-list-item-box:focus:hover {
-  background-color: #242419;
   color: #F6F6D4;
+  background-color: #303022;
+  font-weight: bold;
+  border-color: #242419;
 }
 .grouped-window-list-item-box.top, .grouped-window-list-item-box.bottom, .grouped-window-list-item-box.left, .grouped-window-list-item-box.right {
   color: rgba(246, 246, 212, 0.6);
 }
+.grouped-window-list-item-box.top:hover, .grouped-window-list-item-box.bottom:hover, .grouped-window-list-item-box.left:hover, .grouped-window-list-item-box.right:hover {
+  color: #F6F6D4;
+}
 .grouped-window-list-item-box.top:focus:hover, .grouped-window-list-item-box.top:focus, .grouped-window-list-item-box.bottom:focus:hover, .grouped-window-list-item-box.bottom:focus, .grouped-window-list-item-box.left:focus:hover, .grouped-window-list-item-box.left:focus, .grouped-window-list-item-box.right:focus:hover, .grouped-window-list-item-box.right:focus {
   color: #F6F6D4;
-  background-color: #242419;
+  background-color: #303022;
+  font-weight: bold;
+  border-color: #242419;
 }
 .grouped-window-list-item-box.top, .grouped-window-list-item-box.bottom {
   padding-left: 4px;
@@ -1837,8 +1845,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 4px;
 }
 .grouped-window-list-item-box.top:focus, .grouped-window-list-item-box.top:focus:hover, .grouped-window-list-item-box.bottom:focus, .grouped-window-list-item-box.bottom:focus:hover {
-  color: #F6F6D4;
-  background-color: #242419;
   border-color: #f1b627;
 }
 .grouped-window-list-item-box.left, .grouped-window-list-item-box.right {
@@ -1851,8 +1857,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 4px;
 }
 .grouped-window-list-item-box.left:focus, .grouped-window-list-item-box.left:focus:hover, .grouped-window-list-item-box.right:focus, .grouped-window-list-item-box.right:focus:hover {
-  color: #F6F6D4;
-  background-color: #242419;
   border-color: #f1b627;
 }
 .grouped-window-list-thumbnail-menu {

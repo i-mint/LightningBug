@@ -5079,18 +5079,21 @@ terminal-window notebook > header.top > tabs > tab:checked {
 }
 
 .xfce4-panel.panel button.flat, .xfce4-panel.panel button.toggle, .xfce4-panel.panel button {
-  color: rgba(18, 18, 18, 0.9);
+  color: #424242;
   background-color: transparent;
   border-radius: 4px;
   border-color: transparent;
 }
-.xfce4-panel.panel button.flat label, .xfce4-panel.panel button.toggle label, .xfce4-panel.panel button label, .xfce4-panel.panel button.flat image, .xfce4-panel.panel button.toggle image, .xfce4-panel.panel button image {
+.xfce4-panel.panel button.flat label, .xfce4-panel.panel button.toggle label, .xfce4-panel.panel button label,
+.xfce4-panel.panel button.flat image,
+.xfce4-panel.panel button.toggle image,
+.xfce4-panel.panel button image {
   color: inherit;
 }
 .xfce4-panel.panel button:hover {
-  color: rgba(18, 18, 18, 0.9);
-  background-color: rgba(241, 210, 40, 0.3);
-  border-color: rgba(240, 240, 240, 0.3);
+  color: #424242;
+  background-color: rgba(241, 210, 40, 0.6);
+  border-color: rgba(241, 210, 40, 0.6);
 }
 .xfce4-panel.panel button:active {
   color: #3d3929;
@@ -5100,54 +5103,62 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .xfce4-panel.panel button:checked {
   color: #3d3929;
   background-color: #f1d228;
-  border-color: rgba(240, 240, 240, 0.3);
+  border-color: #f1d228;
 }
-.xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked image {
+.xfce4-panel.panel button:checked label,
+.xfce4-panel.panel button:checked image {
   color: inherit;
 }
 
 .xfce4-panel.panel {
-  background-color: rgba(229, 229, 216, 0.93);
-  color: rgba(18, 18, 18, 0.9);
-  border-color: #f0f0f0;
+  background-color: #CFCFC3;
+  color: #424242;
+  border-color: #c1c1b2;
   font-weight: normal;
   text-shadow: none;
+  min-height: 35px;
   -gtk-icon-shadow: none;
 }
-.xfce4-panel.panel label, .xfce4-panel.panel image {
+.xfce4-panel.panel label,
+.xfce4-panel.panel image {
   color: inherit;
 }
-.xfce4-panel.panel .tasklist button {
-  color: rgba(18, 18, 18, 0.9);
-  background-color: rgba(196, 196, 167, 0.43);
+.xfce4-panel.panel .tasklist .toggle {
+  color: rgba(66, 66, 66, 0.7);
+  background-color: #CFCFC3;
   border-radius: 4px;
-  border-color: rgba(240, 240, 240, 0.3);
+  border-color: #c1c1b2;
 }
-.xfce4-panel.panel .tasklist button label, .xfce4-panel.panel .tasklist button image {
+.xfce4-panel.panel .tasklist .toggle label,
+.xfce4-panel.panel .tasklist .toggle image {
   color: inherit;
 }
-.xfce4-panel.panel .tasklist button:hover {
-  background-color: rgba(182, 182, 146, 0.93);
-  color: rgba(18, 18, 18, 0.9);
-  border-color: rgba(240, 240, 240, 0.3);
+.xfce4-panel.panel .tasklist .toggle:hover {
+  color: #424242;
+  background-color: #c6c6b8;
+  border-color: #c1c1b2;
 }
-.xfce4-panel.panel .tasklist button:active {
-  background-color: #d1b30f;
-  color: #3d3929;
-  border-color: #d1b30f;
+.xfce4-panel.panel .tasklist .toggle:active, .xfce4-panel.panel .tasklist .toggle:checked {
+  color: #424242;
+  background-color: #e6e6df;
+  font-weight: bold;
+  border-color: #c6c6b8;
 }
-.xfce4-panel.panel .tasklist button:checked {
-  background-color: #f1d228;
-  color: #3d3929;
-  border-color: rgba(240, 240, 240, 0.3);
-  font-weight: normal;
+.xfce4-panel.panel .horizontal .tasklist .toggle {
+  border-right: 4px solid transparent;
 }
-.xfce4-panel.panel .tasklist button:checked label, .xfce4-panel.panel .tasklist button:checked image {
-  color: inherit;
+.xfce4-panel.panel .horizontal .tasklist .toggle:active, .xfce4-panel.panel .horizontal .tasklist .toggle:checked {
+  border-right: 4px solid #d1b30f;
+}
+.xfce4-panel.panel .vertical .tasklist .toggle {
+  border-bottom: 4px solid transparent;
+}
+.xfce4-panel.panel .vertical .tasklist .toggle:active, .xfce4-panel.panel .vertical .tasklist .toggle:checked {
+  border-bottom: 4px solid #d1b30f;
 }
 .xfce4-panel.panel wnck-pager {
-  background-color: rgba(241, 210, 40, 0.12);
-  border-right: 2px solid rgba(229, 229, 216, 0.93);
+  background-color: rgba(241, 210, 40, 0.2);
+  border-right: 2px solid #CFCFC3;
 }
 .xfce4-panel.panel wnck-pager:hover, .xfce4-panel.panel wnck-pager:selected {
   background-color: #f1d228;
@@ -5438,16 +5449,16 @@ terminal-window notebook > header.top > tabs > tab:checked {
 }
 
 .budgie-panel {
-  background-color: #ffffff;
+  background-color: #CFCFC3;
   background-image: none;
   box-shadow: none;
-  border-color: #f0f0f0;
+  border-color: #c1c1b2;
 }
 .budgie-panel label, .budgie-panel image {
-  color: #141414;
+  color: #424242;
 }
 .bottom .budgie-panel {
-  box-shadow: inset 0 1px 0 0 #f0f0f0;
+  box-shadow: inset 0 1px 0 0 #c1c1b2;
 }
 .budgie-panel button {
   background-color: transparent;
@@ -5457,10 +5468,10 @@ terminal-window notebook > header.top > tabs > tab:checked {
   margin: 3px;
 }
 .budgie-panel button label, .budgie-panel button image {
-  color: #141414;
+  color: #424242;
 }
 .budgie-panel button:hover {
-  background-color: #f0f0f0;
+  background-color: #c1c1b2;
 }
 .budgie-panel button:active, .budgie-panel button:checked, .budgie-panel button:selected {
   color: #3d3929;
@@ -5475,7 +5486,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
   margin: 2px 4px;
 }
 .budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button image {
-  color: #141414;
+  color: #424242;
 }
 .budgie-panel button#tasklist-button:hover {
   background: rgba(241, 210, 40, 0.3);
@@ -5509,23 +5520,23 @@ terminal-window notebook > header.top > tabs > tab:checked {
 }
 .top .budgie-panel button.launcher,
 .top .budgie-panel button.flat.running {
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid #CFCFC3;
 }
 .bottom .budgie-panel button.launcher,
 .bottom .budgie-panel button.flat.running {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #CFCFC3;
 }
 .left .budgie-panel button.launcher,
 .left .budgie-panel button.flat.running {
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #CFCFC3;
 }
 .right .budgie-panel button.launcher,
 .right .budgie-panel button.flat.running {
-  border-right: 2px solid #ffffff;
+  border-right: 2px solid #CFCFC3;
 }
 .budgie-panel button.launcher:hover,
 .budgie-panel button.flat.running:hover {
-  background: #ffffff;
+  background: #CFCFC3;
 }
 .top .budgie-panel button.launcher:hover,
 .top .budgie-panel button.flat.running:hover {
@@ -5598,7 +5609,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .budgie-panel button.launcher:checked, .budgie-panel button.launcher:selected,
 .budgie-panel button.flat.running:checked,
 .budgie-panel button.flat.running:selected {
-  background: #ffffff;
+  background: #CFCFC3;
 }
 .top .budgie-panel button.launcher:checked, .top .budgie-panel button.launcher:selected,
 .top .budgie-panel button.flat.running:checked,
@@ -5621,26 +5632,26 @@ terminal-window notebook > header.top > tabs > tab:checked {
   border-right: 2px solid #f1d228;
 }
 .budgie-panel.transparent {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(207, 207, 195, 0.3);
 }
 .budgie-panel separator {
-  background-color: rgba(20, 20, 20, 0.4);
+  background-color: rgba(66, 66, 66, 0.4);
 }
 .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  background-color: #e8e8e8;
+  background-color: #bbbbaa;
   border-radius: 0;
 }
 .budgie-panel .workspace-switcher .workspace-layout .workspace-item label, .budgie-panel .workspace-switcher .workspace-layout .workspace-item image {
-  color: #141414;
+  color: #424242;
 }
 .top .budgie-panel .workspace-switcher .workspace-layout .workspace-item, .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  border-right: 2px solid rgba(20, 20, 20, 0.2);
+  border-right: 2px solid rgba(66, 66, 66, 0.2);
 }
 .left .budgie-panel .workspace-switcher .workspace-layout .workspace-item, .right .budgie-panel .workspace-switcher .workspace-layout .workspace-item {
-  border-bottom: 2px solid rgba(20, 20, 20, 0.2);
+  border-bottom: 2px solid rgba(66, 66, 66, 0.2);
 }
 .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
-  background-color: #bababa;
+  background-color: #929277;
 }
 .top .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace, .bottom .budgie-panel .workspace-switcher .workspace-layout .workspace-item.current-workspace {
   border-right: 2px solid #f1d228;
@@ -5657,11 +5668,11 @@ terminal-window notebook > header.top > tabs > tab:checked {
   opacity: 1;
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button {
-  background-color: #ffffff;
+  background-color: #CFCFC3;
   border-radius: 4px;
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button label, .budgie-panel .workspace-switcher button.image-button.workspace-add-button image {
-  color: #141414;
+  color: #424242;
 }
 .budgie-panel .workspace-switcher button.image-button.workspace-add-button:active {
   background-color: #f1d228;
