@@ -1000,23 +1000,25 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .message-media-control {
   padding: 12px 24px;
   color: #bdbdbd;
+  border-radius: 5px;
+  margin: 10px 6px;
 }
 .message-media-control:hover {
-  background-color: rgba(208, 152, 12, 0.12);
+  background-color: rgba(184, 134, 11, 0.12);
   color: #e3e3e3;
 }
 .message-media-control:active {
-  background-color: rgba(174, 127, 10, 0.12);
-  color: #e3e3e3;
+  background-color: #B8860B;
+  color: #2c2a21;
 }
 .message-media-control:insensitive {
   color: #7d7d7d;
 }
 .message-media-control:last-child:ltr {
-  border-radius: 0 7px 7px 0;
+  border-radius: 5px;
 }
 .message-media-control:last-child:rtl {
-  border-radius: 7px 0 0 7px;
+  border-radius: 5px;
 }
 
 .media-message-cover-icon {
@@ -1221,7 +1223,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   width: 20em;
   min-height: 1.4em;
 }
-.run-dialog entry .run-dialog-description {
+.run-dialog .run-dialog-description {
   font-size: 9pt;
   text-align: center;
   color: #b0b0b0;
