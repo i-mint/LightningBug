@@ -392,7 +392,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #panel {
   font-weight: bold;
-  height: 27px;
+  height: 36px;
   width: 32px;
 }
 #panel:highlight {
@@ -457,21 +457,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #424242;
   font-size: 1em;
   padding: 0px;
+  spacing: 4px;
   background-color: #CFCFC3;
-  border-style: solid;
-  border-color: #c1c1b2;
 }
 .panel-top {
-  border-bottom-width: 2px;
+  box-shadow: 0 1px #525241;
 }
 .panel-bottom {
-  border-top-width: 2px;
+  box-shadow: 0 -1px #525241;
 }
 .panel-left {
-  border-right-width: 2px;
+  box-shadow: 1px 0 #525241;
 }
 .panel-right {
-  border-left-width: 2px;
+  box-shadow: -1px 0 #525241;
 }
 .panel-dummy {
   background-color: rgba(252, 65, 56, 0.5);
@@ -1134,14 +1133,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .menu-favorites-box {
   margin: auto;
   margin-left: 1px;
-  padding: 7px 0;
+  padding: 7px 2px;
   transition-duration: 300;
-  background-color: #f1d228;
+  background-color: #d6d6d6;
   border: 1px solid transparent;
   border-radius: 4px;
 }
 .menu-favorites-button {
-  padding: 7px 2px;
+  padding: 7px 4px;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
 }
@@ -1252,8 +1251,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .menu-category-button-greyed {
   padding: 3px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 4px;
+  text-shadow: none;
+  border-color: transparent;
   color: rgba(51, 51, 51, 0.55);
-  border: 1px solid rgba(0, 0, 0, 0);
   font-style: italic;
 }
 .menu-category-button-greyed StIcon {
@@ -1591,28 +1595,28 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace {
-  border: 1px solid #c1c1b2;
+  border: 2px solid rgba(82, 82, 65, 0.5);
   background-gradient-direction: none;
-  background-color: rgba(241, 210, 40, 0.2);
+  background-color: #f1f1ee;
 }
 
 .workspace-graph .workspace:active {
-  border: 1px solid #f1d228;
+  border: 2px solid #d1b30f;
   background-gradient-direction: none;
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: #f1f1ee;
-  -active-window-border: #c1c1b2;
-  -inactive-window-background: #f1f1ee;
-  -inactive-window-border: #c1c1b2;
+  -active-window-background: #f1d228;
+  -active-window-border: #525241;
+  -inactive-window-background: #f1d228;
+  -inactive-window-border: #525241;
 }
 
 .workspace-graph .workspace:active .windows {
   -active-window-background: #d1b30f;
-  -active-window-border: #c1c1b2;
+  -active-window-border: #525241;
   -inactive-window-background: #dadad1;
-  -inactive-window-border: #c1c1b2;
+  -inactive-window-border: #525241;
 }
 
 #panel-launchers-box {
@@ -1815,7 +1819,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .grouped-window-list-item-box:hover {
   color: #424242;
   background-color: #c6c6b8;
-  border-color: #c1c1b2;
+  border-color: #525241;
 }
 .grouped-window-list-item-box:focus, .grouped-window-list-item-box:focus:hover {
   color: #424242;
@@ -1862,11 +1866,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .grouped-window-list-thumbnail-menu {
   background-color: #CFCFC3;
   color: #424242;
-  border-color: #c1c1b2;
+  border-color: #525241;
   border-radius: 4px;
   padding: 0px;
   box-shadow: none;
-  border: 1px solid #c1c1b2;
+  border: 1px solid #525241;
 }
 .grouped-window-list-thumbnail-menu .item-box {
   background-color: #CFCFC3;
