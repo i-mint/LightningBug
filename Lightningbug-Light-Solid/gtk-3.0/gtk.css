@@ -22,6 +22,9 @@
 .background.popup {
   background-color: transparent;
 }
+.background.csd.unified {
+  border-radius: 4px;
+}
 
 *:disabled {
   -gtk-icon-effect: dim;
@@ -3826,6 +3829,9 @@ decoration:backdrop {
 .popup decoration {
   box-shadow: none;
   border-radius: 0;
+}
+.csd.unified decoration {
+  border-radius: 4px;
 }
 .ssd decoration {
   border-radius: 4px 4px 0 0;

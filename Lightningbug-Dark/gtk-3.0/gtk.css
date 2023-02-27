@@ -22,6 +22,9 @@
 .background.popup {
   background-color: transparent;
 }
+.background.csd.unified {
+  border-radius: 4px;
+}
 
 *:disabled {
   -gtk-icon-effect: dim;
@@ -3806,7 +3809,7 @@ stackswitcher button.circular {
 }
 
 decoration {
-  border-radius: 3px 3px 0 0;
+  border-radius: 4px 4px 0 0;
   border-width: 0px;
   box-shadow: 0 0 0 1px rgba(13, 13, 7, 0.92), 0 8px 8px 0 rgba(0, 0, 0, 0.35);
   margin: 10px;
@@ -3822,8 +3825,11 @@ decoration:backdrop {
   box-shadow: none;
   border-radius: 0;
 }
+.csd.unified decoration {
+  border-radius: 4px;
+}
 .ssd decoration {
-  border-radius: 3px 3px 0 0;
+  border-radius: 4px 4px 0 0;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.65);
 }
 .ssd decoration.maximized {
