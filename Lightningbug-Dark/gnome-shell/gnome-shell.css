@@ -604,13 +604,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-feature-settings: "tnum";
 }
 .calendar .calendar-day-base:hover, .calendar .calendar-day-base:focus {
-  background-color: rgba(184, 134, 11, 0.12);
+  color: #FFFFFF;
+  background-color: rgba(227, 227, 227, 0.1);
 }
 .calendar .calendar-day-base:active, .calendar .calendar-day-base:selected {
-  color: #e3e3e3;
-  background-color: #090906;
-  box-shadow: inset 0 0 0 1px #B8860B;
-  font-weight: bold !important;
+  color: #FFFFFF;
+  background-color: #181811;
+  box-shadow: inset 0 0 0 2px #B8860B !important;
+  font-weight: bold;
 }
 .calendar .calendar-day-base.calendar-day-heading {
   color: #e3e3e3;
