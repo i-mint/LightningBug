@@ -6,7 +6,7 @@ stage {
   color: rgba(0, 0, 0, 0);
 }
 
-.sound-button, .menu #notification .notification-button, .menu #notification .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
+.sound-button {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
@@ -14,26 +14,26 @@ stage {
   border-color: #171711;
   background-color: #242419;
 }
-.sound-button, .menu #notification .notification-button, .menu #notification .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
+.sound-button {
   border-radius: 4px;
 }
-.sound-button:hover, .menu #notification .notification-button:hover, .menu #notification .notification-icon-button:hover, .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover {
+.sound-button:hover {
   color: #e3e3e3;
   border-color: #0e0e0a;
   background-color: #303022;
 }
-.sound-button:active, .menu #notification .notification-button:active, .menu #notification .notification-icon-button:active, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-icon-button:active {
+.sound-button:active {
   color: #2c2a21;
   border-color: #171711;
   background-color: #B8860B;
 }
-.sound-button:insensitive, .menu #notification .notification-button:insensitive, .menu #notification .notification-icon-button:insensitive, .popup-menu #notification .notification-button:insensitive, .popup-menu #notification .notification-icon-button:insensitive {
+.sound-button:insensitive {
   color: rgba(227, 227, 227, 0.55);
   border-color: transparent;
   background-color: transparent;
 }
 
-.modal-dialog-button-box .modal-dialog-button, .notification-button, .notification-icon-button {
+.modal-dialog-button-box .modal-dialog-button {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
@@ -42,20 +42,20 @@ stage {
   border-color: rgba(6, 6, 4, 0.4);
   background-color: rgba(108, 108, 75, 0.4);
 }
-.modal-dialog-button-box .modal-dialog-button:hover, .notification-button:hover, .notification-icon-button:hover {
+.modal-dialog-button-box .modal-dialog-button:hover {
   color: #a8a8a8;
   border-color: rgba(6, 6, 4, 0.4);
   background-color: rgba(129, 129, 89, 0.5);
 }
-.modal-dialog-button-box .modal-dialog-button:focus, .notification-button:focus, .notification-icon-button:focus {
+.modal-dialog-button-box .modal-dialog-button:focus {
   color: #B8860B;
 }
-.modal-dialog-button-box .modal-dialog-button:active, .notification-button:active, .notification-icon-button:active {
+.modal-dialog-button-box .modal-dialog-button:active {
   color: #2c2a21;
   border-color: rgba(6, 6, 4, 0.4);
   background-color: #B8860B;
 }
-.modal-dialog-button-box .modal-dialog-button:insensitive, .notification-button:insensitive, .notification-icon-button:insensitive {
+.modal-dialog-button-box .modal-dialog-button:insensitive {
   color: #505047;
   border-color: rgba(6, 6, 4, 0.4);
   background-color: rgba(108, 108, 75, 0.25);
@@ -802,8 +802,28 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .menu #notification, .menu #notification.multi-line-notification, .popup-menu #notification, .popup-menu #notification.multi-line-notification {
   color: #2c2a21;
 }
-.menu #notification .notification-button, .menu #notification .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
+.menu #notification .notification-button,
+.menu #notification .notification-icon-button, .popup-menu #notification .notification-button,
+.popup-menu #notification .notification-icon-button {
+  color: #2c2a21;
+  background-color: #a77a0b;
+  border: 1px solid rgba(44, 42, 33, 0.9);
+  border-radius: 4px;
   padding: 5px;
+}
+.menu #notification .notification-button:hover,
+.menu #notification .notification-icon-button:hover, .popup-menu #notification .notification-button:hover,
+.popup-menu #notification .notification-icon-button:hover {
+  background-color: #eaaa0f;
+}
+.menu #notification .notification-button:active, .menu #notification .notification-button:checked,
+.menu #notification .notification-icon-button:active,
+.menu #notification .notification-icon-button:checked, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-button:checked,
+.popup-menu #notification .notification-icon-button:active,
+.popup-menu #notification .notification-icon-button:checked {
+  color: #2c2a21;
+  background-color: #f1b627;
+  border: 1px solid #000000;
 }
 #notification.multi-line-notification {
   padding-bottom: 13px;
@@ -833,7 +853,19 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #2c2a21;
 }
 .notification-button, .notification-icon-button {
+  color: #2c2a21;
+  background-color: #a77a0b;
+  border: 1px solid rgba(44, 42, 33, 0.9);
+  border-radius: 4px;
   padding: 5px;
+}
+.notification-button:hover, .notification-icon-button:hover {
+  background-color: #eaaa0f;
+}
+.notification-button:active, .notification-button:checked, .notification-icon-button:active, .notification-icon-button:checked {
+  color: #2c2a21;
+  background-color: #f1b627;
+  border: 1px solid #000000;
 }
 .notification-icon-button > StIcon {
   icon-size: 36px;
