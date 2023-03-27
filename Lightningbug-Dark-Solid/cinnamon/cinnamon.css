@@ -97,7 +97,7 @@ stage {
   transition-duration: 300ms;
   border-radius: 3px;
   color: #a8a8a8;
-  border-color: rgba(6, 6, 4, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
   background-color: rgba(108, 108, 75, 0.4);
 }
 .notification StEntry image {
@@ -105,7 +105,7 @@ stage {
 }
 .notification StEntry:focus {
   color: #2c2a21;
-  border-color: rgba(6, 6, 4, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
   background-color: #B8860B;
 }
 .notification StEntry:insensitive {
@@ -527,8 +527,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
   color: #a8a8a8;
-  border-color: rgba(6, 6, 4, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
   background-color: rgba(108, 108, 75, 0.4);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
 }
 .expo-workspaces-name-entry image, .expo-workspaces-name-entry image:hover,
 .expo-workspaces-name-entry#selected image,
@@ -537,13 +540,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .expo-workspaces-name-entry:focus,
 .expo-workspaces-name-entry#selected:focus {
-  border: 1px solid #B8860B;
+  border: 1px solid rgba(0, 0, 0, 0.7);
   background-color: #B8860B;
   color: #2c2a21;
   font-style: italic;
   transition-duration: 300;
-  selection-background-color: #2c2a21;
-  selected-color: #B8860B;
+  selection-background-color: #d3d5de;
+  selected-color: #2c2a21;
+  border-radius: 4px;
 }
 
 .expo-workspace-thumbnail-frame {
@@ -1019,7 +1023,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   selected-color: #2c2a21;
   selection-background-color: #d3d5de;
   color: #a8a8a8;
-  border-color: rgba(6, 6, 4, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
   background-color: rgba(108, 108, 75, 0.4);
 }
 .run-dialog-entry image, .run-dialog-entry image:hover {
@@ -1027,7 +1031,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .run-dialog-entry:focus {
   color: #2c2a21;
-  border-color: rgba(6, 6, 4, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
   background-color: #B8860B;
   caret-color: #2c2a21;
   border-width: 1px;

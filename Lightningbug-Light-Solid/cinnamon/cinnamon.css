@@ -97,20 +97,20 @@ stage {
   transition-duration: 300ms;
   border-radius: 3px;
   color: #4d4d4d;
-  border-color: rgba(215, 215, 194, 0.4);
-  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(153, 153, 102, 0.4);
+  background-color: rgba(180, 180, 142, 0.4);
 }
 .notification StEntry image {
   color: inherit;
 }
 .notification StEntry:focus {
   color: #3d3929;
-  border-color: rgba(215, 215, 194, 0.4);
+  border-color: rgba(153, 153, 102, 0.4);
   background-color: #f1d228;
 }
 .notification StEntry:insensitive {
   color: rgba(77, 77, 77, 0.55);
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(180, 180, 142, 0.25);
 }
 
 StScrollView.vfade {
@@ -527,8 +527,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
   color: #4d4d4d;
-  border-color: rgba(215, 215, 194, 0.4);
-  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(153, 153, 102, 0.4);
+  background-color: rgba(180, 180, 142, 0.4);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
 }
 .expo-workspaces-name-entry image, .expo-workspaces-name-entry image:hover,
 .expo-workspaces-name-entry#selected image,
@@ -537,13 +540,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .expo-workspaces-name-entry:focus,
 .expo-workspaces-name-entry#selected:focus {
-  border: 1px solid #f1d228;
+  border: 1px solid rgba(0, 0, 0, 0.7);
   background-color: #f1d228;
   color: #3d3929;
   font-style: italic;
   transition-duration: 300;
-  selection-background-color: #3d3929;
-  selected-color: #f1d228;
+  selection-background-color: #c2c6d6;
+  selected-color: #3d3929;
+  border-radius: 4px;
 }
 
 .expo-workspace-thumbnail-frame {
@@ -1019,15 +1023,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   selected-color: #3d3929;
   selection-background-color: #c2c6d6;
   color: #4d4d4d;
-  border-color: rgba(215, 215, 194, 0.4);
-  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(153, 153, 102, 0.4);
+  background-color: rgba(180, 180, 142, 0.4);
 }
 .run-dialog-entry image, .run-dialog-entry image:hover {
   color: inherit;
 }
 .run-dialog-entry:focus {
   color: #3d3929;
-  border-color: rgba(215, 215, 194, 0.4);
+  border-color: rgba(153, 153, 102, 0.4);
   background-color: #f1d228;
   caret-color: #3d3929;
   border-width: 1px;
