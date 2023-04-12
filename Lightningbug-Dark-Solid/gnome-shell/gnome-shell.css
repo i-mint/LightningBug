@@ -190,6 +190,9 @@ StEntry:focus {
   border-color: #f1b627;
   background-color: #513c05;
 }
+StEntry:focus StLabel.hint-text {
+  margin-left: 14px;
+}
 StEntry:insensitive {
   color: rgba(227, 227, 227, 0.55);
   border-color: #1e1e15;
