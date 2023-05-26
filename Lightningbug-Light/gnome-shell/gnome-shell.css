@@ -1542,6 +1542,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -natural-hpadding: 6px;
   -minimum-hpadding: 6px;
   border-radius: 0px;
+}
+#panel .panel-button.clock-display .clock, #panel .panel-button {
   border: 3px solid transparent;
 }
 #panel .panel-button:hover {
@@ -1553,7 +1555,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 #panel .panel-button:hover.clock-display {
   box-shadow: none;
-  border: 3px solid #CFCFC3;
   background-color: transparent;
 }
 #panel .panel-button:hover.clock-display .clock {
@@ -1607,6 +1608,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel .screencast-indicator,
 #panel .remote-access-indicator {
   color: #f27835;
+}
+#panel .clock-display > * > *:last-child {
+  color: #424242;
 }
 
 #appMenu {
