@@ -5161,7 +5161,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .xfce4-panel.panel .tasklist .toggle:active, .xfce4-panel.panel .tasklist .toggle:checked {
   color: #424242;
   background-color: #e6e6df;
-  font-weight: bold;
+  font-weight: normal;
   border-color: #c6c6b8;
 }
 .xfce4-panel.panel .horizontal .tasklist .toggle {

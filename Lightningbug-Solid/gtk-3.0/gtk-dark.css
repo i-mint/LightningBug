@@ -22,6 +22,9 @@
 .background.popup {
   background-color: transparent;
 }
+.background.csd.unified {
+  border-radius: 4px;
+}
 
 *:disabled {
   -gtk-icon-effect: dim;
@@ -3806,7 +3809,7 @@ stackswitcher button.circular {
 }
 
 decoration {
-  border-radius: 3px 3px 0 0;
+  border-radius: 4px 4px 0 0;
   border-width: 0px;
   box-shadow: 0 0 0 1px #0d0d07, 0 8px 8px 0 rgba(0, 0, 0, 0.35);
   margin: 10px;
@@ -3822,8 +3825,11 @@ decoration:backdrop {
   box-shadow: none;
   border-radius: 0;
 }
+.csd.unified decoration {
+  border-radius: 4px;
+}
 .ssd decoration {
-  border-radius: 3px 3px 0 0;
+  border-radius: 4px 4px 0 0;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.65);
 }
 .ssd decoration.maximized {
@@ -4694,7 +4700,7 @@ filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser pl
 .nautilus-window placessidebar.sidebar row.sidebar-row:hover {
   background-color: rgba(184, 134, 11, 0.12);
   border-left: 4px solid #f1b627;
-  color: #e3e3e3;
+  color: rgba(255, 255, 255, 0.8);
   animation-name: sidebarbug;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -4710,9 +4716,14 @@ filechooser placessidebar.sidebar row.sidebar-row.has-open-popup, filechooser pl
     border-left: 4px solid #f1b627;
   }
 }
-filechooser placessidebar.sidebar row.sidebar-row.has-open-popup .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:hover .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row:hover .sidebar-icon {
+filechooser placessidebar.sidebar row.sidebar-row.has-open-popup label.sidebar-label, filechooser placessidebar.sidebar row.sidebar-row:hover label.sidebar-label,
+.nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup label.sidebar-label,
+.nautilus-window placessidebar.sidebar row.sidebar-row:hover label.sidebar-label {
+  color: inherit;
+}
+filechooser placessidebar.sidebar row.sidebar-row.has-open-popup image.sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:hover image.sidebar-icon,
+.nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup image.sidebar-icon,
+.nautilus-window placessidebar.sidebar row.sidebar-row:hover image.sidebar-icon {
   color: #f2b931;
 }
 filechooser placessidebar.sidebar row.sidebar-row:disabled, filechooser placessidebar.sidebar row.sidebar-row:disabled label, filechooser placessidebar.sidebar row.sidebar-row:disabled image,
@@ -4729,20 +4740,22 @@ filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filec
 .nautilus-window placessidebar.sidebar row.sidebar-row:active {
   border-left: 4px solid #B8860B;
 }
-filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup label, filechooser placessidebar.sidebar row.sidebar-row:selected label, filechooser placessidebar.sidebar row.sidebar-row:selected:hover label, filechooser placessidebar.sidebar row.sidebar-row:active:hover label, filechooser placessidebar.sidebar row.sidebar-row:active label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover label,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active label {
-  color: #2c2a21;
-}
-filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon,
-.nautilus-window placessidebar.sidebar row.sidebar-row:active .sidebar-icon {
+filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup label.sidebar-label,
+filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup image.sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected label.sidebar-label,
+filechooser placessidebar.sidebar row.sidebar-row:selected image.sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected:hover label.sidebar-label,
+filechooser placessidebar.sidebar row.sidebar-row:selected:hover image.sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active:hover label.sidebar-label,
+filechooser placessidebar.sidebar row.sidebar-row:active:hover image.sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:active label.sidebar-label,
+filechooser placessidebar.sidebar row.sidebar-row:active image.sidebar-icon,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup label.sidebar-label,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup image.sidebar-icon,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected label.sidebar-label,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected image.sidebar-icon,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover label.sidebar-label,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover image.sidebar-icon,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover label.sidebar-label,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active:hover image.sidebar-icon,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active label.sidebar-label,
+.nautilus-window placessidebar.sidebar row.sidebar-row:active image.sidebar-icon {
   color: inherit;
 }
 filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected:hover:backdrop, filechooser placessidebar.sidebar row.sidebar-row:active:hover:backdrop, filechooser placessidebar.sidebar row.sidebar-row:active:backdrop,
@@ -4932,8 +4945,15 @@ terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #12120d;
 }
 
+.nemo-window .nemo-places-sidebar {
+  border: none;
+}
+.nemo-window .nemo-places-sidebar .places-treeview.view, .nemo-window .nemo-places-sidebar iconview.places-treeview {
+  background-color: #2a2a1d;
+  color: #a8a8a8;
+}
 .nemo-window .nemo-places-sidebar .places-treeview.view:hover, .nemo-window .nemo-places-sidebar iconview.places-treeview:hover {
-  color: #e3e3e3;
+  color: rgba(255, 255, 255, 0.8);
   background-color: rgba(184, 134, 11, 0.12);
 }
 .nemo-window .nemo-places-sidebar .places-treeview.view:selected.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:active.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:active, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover {
@@ -5129,7 +5149,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .xfce4-panel.panel .tasklist .toggle:active, .xfce4-panel.panel .tasklist .toggle:checked {
   color: #F6F6D4;
   background-color: #303022;
-  font-weight: bold;
+  font-weight: normal;
   border-color: #242419;
 }
 .xfce4-panel.panel .horizontal .tasklist .toggle {
