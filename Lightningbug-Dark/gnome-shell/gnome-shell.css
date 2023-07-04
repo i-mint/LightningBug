@@ -344,7 +344,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: #15150f !important;
   box-shadow: none;
   border-radius: 0 !important;
-  font-weight: bold !important;
 }
 .popup-menu-item:selected, .popup-menu-item:hover {
   color: #e3e3e3 !important;
@@ -368,6 +367,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-sub-menu {
+  color: #b8b8b5;
+  font-size: 0.89em;
   background-color: #212117 !important;
   box-shadow: none;
   border-bottom: 1px solid #181811;
