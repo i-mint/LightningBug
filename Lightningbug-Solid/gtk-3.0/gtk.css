@@ -5001,7 +5001,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar menubar,
 .thunar toolbar,
 .thunar .inline-toolbar {
-  background: image(#252513);
+  background-color: #252513;
 }
 .thunar menubar button:not(.flat),
 .thunar toolbar button:not(.flat),
@@ -5050,12 +5050,12 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar .inline-toolbar:backdrop {
   transition: 200ms ease-out;
   color: rgba(250, 250, 229, 0.6);
-  background-image: linear-gradient(to bottom, #2a2a16, #2a2a16);
+  background-color: #2a2a16;
 }
 .csd .thunar menubar:backdrop,
 .csd .thunar toolbar:backdrop,
 .csd .thunar .inline-toolbar:backdrop {
-  background-image: linear-gradient(to bottom, #2a2a16, #2a2a16);
+  background-color: #2a2a16;
 }
 .thunar .linked.path-bar > button:not(.toggle),
 .thunar button.path-bar-button:not(.toggle) {
