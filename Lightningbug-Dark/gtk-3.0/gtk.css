@@ -5099,6 +5099,17 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar button.path-bar-button:backdrop {
   opacity: 0.7;
 }
+.thunar notebook tabs > tab button.flat > image {
+  border-radius: 4px;
+}
+.thunar notebook tabs > tab button.flat:hover > image {
+  color: #e3e3e3;
+  border-color: #171711;
+  background-color: #2d2d20;
+}
+.thunar notebook tabs > tab button.flat:active > image {
+  background-color: #242419;
+}
 
 .xfce4-panel.panel button.flat, .xfce4-panel.panel button.toggle, .xfce4-panel.panel button {
   color: #F6F6D4;
