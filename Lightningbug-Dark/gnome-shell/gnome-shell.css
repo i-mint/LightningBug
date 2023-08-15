@@ -594,10 +594,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-size: 7pt;
   color: #e3e3e3;
   text-align: center;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  margin: 2px;
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  margin: 2px !important;
   border-radius: 999px !important;
   border: 1px solid transparent;
   font-feature-settings: "tnum";
