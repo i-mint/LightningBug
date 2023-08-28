@@ -844,27 +844,71 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
   box-shadow: none;
 }
 
-.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .xfce4-panel.panel #pulseaudio-button menu .linked button, .primary-toolbar .nautilus-path-bar:not(.vertical) > button, headerbar .nautilus-path-bar:not(.vertical) > button, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat, headerbar .nautilus-path-bar:not(.vertical) button.flat, .primary-toolbar .path-bar:not(.vertical) > button, headerbar .path-bar:not(.vertical) > button, .primary-toolbar .path-bar:not(.vertical) button.flat, headerbar .path-bar:not(.vertical) button.flat, headerbar .nautilus-path-bar:not(.vertical) > button:hover, headerbar .nautilus-path-bar:not(.vertical) button.flat:hover, headerbar .path-bar:not(.vertical) > button:hover, headerbar .path-bar:not(.vertical) button.flat:hover, headerbar .nautilus-path-bar:not(.vertical) > button:active, headerbar .nautilus-path-bar:not(.vertical) button.flat:active, headerbar .path-bar:not(.vertical) > button:active, headerbar .path-bar:not(.vertical) button.flat:active, headerbar .nautilus-path-bar:not(.vertical) > button:checked, headerbar .nautilus-path-bar:not(.vertical) button.flat:checked, headerbar .path-bar:not(.vertical) > button:checked, headerbar .path-bar:not(.vertical) button.flat:checked, headerbar .nautilus-path-bar:not(.vertical) > button:disabled, headerbar .nautilus-path-bar:not(.vertical) button.flat:disabled, headerbar .path-bar:not(.vertical) > button:disabled, headerbar .path-bar:not(.vertical) button.flat:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
+.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .xfce4-panel.panel #pulseaudio-button menu .linked button, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat,
+filechooser box.path-bar-box.horizontal .linked > button,
+filechooser box.path-bar-box.horizontal .linked button.flat,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat,
+.nautilus-window box.path-bar-box.horizontal .linked > button,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat,
+filechooser box.path-bar-box.horizontal .linked > button:hover,
+filechooser box.path-bar-box.horizontal .linked button.flat:hover,
+.nautilus-window box.path-bar-box.horizontal .linked > button:hover,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:hover,
+filechooser box.path-bar-box.horizontal .linked > button:active,
+filechooser box.path-bar-box.horizontal .linked button.flat:active,
+.nautilus-window box.path-bar-box.horizontal .linked > button:active,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:active,
+filechooser box.path-bar-box.horizontal .linked > button:checked,
+filechooser box.path-bar-box.horizontal .linked button.flat:checked,
+.nautilus-window box.path-bar-box.horizontal .linked > button:checked,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:checked,
+filechooser box.path-bar-box.horizontal .linked > button:disabled,
+filechooser box.path-bar-box.horizontal .linked button.flat:disabled,
+.nautilus-window box.path-bar-box.horizontal .linked > button:disabled,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button, .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button, headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
   border-radius: 0;
   border-right-style: none;
 }
 
-.xfce4-panel.panel #pulseaudio-button menu .linked button:first-child, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:first-child, headerbar .nautilus-path-bar:not(.vertical) > button:first-child, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:first-child, headerbar .nautilus-path-bar:not(.vertical) button.flat:first-child, .primary-toolbar .path-bar:not(.vertical) > button:first-child, headerbar .path-bar:not(.vertical) > button:first-child, .primary-toolbar .path-bar:not(.vertical) button.flat:first-child, headerbar .path-bar:not(.vertical) button.flat:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
+.xfce4-panel.panel #pulseaudio-button menu .linked button:first-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:first-child,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:first-child,
+filechooser box.path-bar-box.horizontal .linked > button:first-child,
+filechooser box.path-bar-box.horizontal .linked button.flat:first-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:first-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:first-child,
+.nautilus-window box.path-bar-box.horizontal .linked > button:first-child,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button:first-child, headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button:first-child, spinbutton:not(.vertical) button:first-child, spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .inline-toolbar button:first-child:backdrop, .linked:not(.vertical) > button:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.xfce4-panel.panel #pulseaudio-button menu .linked button:last-child, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:last-child, headerbar .nautilus-path-bar:not(.vertical) > button:last-child, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:last-child, headerbar .nautilus-path-bar:not(.vertical) button.flat:last-child, .primary-toolbar .path-bar:not(.vertical) > button:last-child, headerbar .path-bar:not(.vertical) > button:last-child, .primary-toolbar .path-bar:not(.vertical) button.flat:last-child, headerbar .path-bar:not(.vertical) button.flat:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
+.xfce4-panel.panel #pulseaudio-button menu .linked button:last-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:last-child,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:last-child,
+filechooser box.path-bar-box.horizontal .linked > button:last-child,
+filechooser box.path-bar-box.horizontal .linked button.flat:last-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:last-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:last-child,
+.nautilus-window box.path-bar-box.horizontal .linked > button:last-child,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button:last-child, headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button:last-child, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .inline-toolbar button:last-child:backdrop, .linked:not(.vertical) > button:last-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-right-style: solid;
 }
-.xfce4-panel.panel #pulseaudio-button menu .linked button:only-child, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:only-child, headerbar .nautilus-path-bar:not(.vertical) > button:only-child, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:only-child, headerbar .nautilus-path-bar:not(.vertical) button.flat:only-child, .primary-toolbar .path-bar:not(.vertical) > button:only-child, headerbar .path-bar:not(.vertical) > button:only-child, .primary-toolbar .path-bar:not(.vertical) button.flat:only-child, headerbar .path-bar:not(.vertical) button.flat:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
+.xfce4-panel.panel #pulseaudio-button menu .linked button:only-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:only-child,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:only-child,
+filechooser box.path-bar-box.horizontal .linked > button:only-child,
+filechooser box.path-bar-box.horizontal .linked button.flat:only-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:only-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:only-child,
+.nautilus-window box.path-bar-box.horizontal .linked > button:only-child,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button:only-child, headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button:only-child, spinbutton:not(.vertical) button:only-child, spinbutton:not(.vertical) entry:only-child, .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .inline-toolbar button:only-child:backdrop, .linked:not(.vertical) > button:only-child {
   border-radius: 4px;
@@ -1370,27 +1414,6 @@ headerbar entry:focus image {
   border-color: rgba(241, 210, 40, 0.67);
   background-color: rgba(241, 210, 40, 0.67);
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button:first-child, headerbar .nautilus-path-bar:not(.vertical) > button:first-child, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:first-child, headerbar .nautilus-path-bar:not(.vertical) button.flat:first-child, .primary-toolbar .path-bar:not(.vertical) > button:first-child, headerbar .path-bar:not(.vertical) > button:first-child, .primary-toolbar .path-bar:not(.vertical) button.flat:first-child, headerbar .path-bar:not(.vertical) button.flat:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-.primary-toolbar .nautilus-path-bar:not(.vertical) button.flat, headerbar .nautilus-path-bar:not(.vertical) button.flat, .primary-toolbar .path-bar:not(.vertical) button.flat, headerbar .path-bar:not(.vertical) button.flat {
-  background-color: transparent;
-  border-color: transparent;
-  margin: 0px;
-}
-.primary-toolbar .nautilus-path-bar:not(.vertical) .dim-label, headerbar .nautilus-path-bar:not(.vertical) .dim-label, .primary-toolbar .nautilus-path-bar:not(.vertical) label.separator, headerbar .nautilus-path-bar:not(.vertical) label.separator, .primary-toolbar .nautilus-path-bar:not(.vertical) headerbar .subtitle, headerbar .nautilus-path-bar:not(.vertical) .subtitle,
-.primary-toolbar .nautilus-path-bar:not(.vertical) .titlebar:not(headerbar) .subtitle,
-.titlebar:not(headerbar) .primary-toolbar .nautilus-path-bar:not(.vertical) .subtitle, .primary-toolbar .path-bar:not(.vertical) .dim-label, headerbar .path-bar:not(.vertical) .dim-label, .primary-toolbar .path-bar:not(.vertical) label.separator, headerbar .path-bar:not(.vertical) label.separator, .primary-toolbar .path-bar:not(.vertical) headerbar .subtitle, headerbar .path-bar:not(.vertical) .subtitle,
-.primary-toolbar .path-bar:not(.vertical) .titlebar:not(headerbar) .subtitle,
-.titlebar:not(headerbar) .primary-toolbar .path-bar:not(.vertical) .subtitle {
-  color: transparent;
-}
-.primary-toolbar .path-bar-box, headerbar .path-bar-box {
-  background-color: transparent;
-  border: 0.5px solid rgba(250, 250, 229, 0.14);
-  border-radius: 4px;
-}
 .selection-mode.primary-toolbar button, headerbar.selection-mode button {
   border-color: transparent;
   background-color: transparent;
@@ -1786,41 +1809,218 @@ headerbar spinbutton:not(.vertical) > entry + button:not(:active):hover {
   padding-right: 4px;
 }
 
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button, headerbar .nautilus-path-bar:not(.vertical) > button, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat, headerbar .nautilus-path-bar:not(.vertical) button.flat, .primary-toolbar .path-bar:not(.vertical) > button, headerbar .path-bar:not(.vertical) > button, .primary-toolbar .path-bar:not(.vertical) button.flat, headerbar .path-bar:not(.vertical) button.flat {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat,
+filechooser box.path-bar-box.horizontal .linked > button,
+filechooser box.path-bar-box.horizontal .linked button.flat,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat,
+.nautilus-window box.path-bar-box.horizontal .linked > button,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat {
   background-color: rgba(67, 67, 35, 0.92);
   color: rgba(250, 250, 229, 0.57);
   border: 0.1px solid rgba(0, 0, 0, 0.95);
   margin: 0px;
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button:backdrop, headerbar .nautilus-path-bar:not(.vertical) > button:backdrop, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:backdrop, headerbar .nautilus-path-bar:not(.vertical) button.flat:backdrop, .primary-toolbar .path-bar:not(.vertical) > button:backdrop, headerbar .path-bar:not(.vertical) > button:backdrop, .primary-toolbar .path-bar:not(.vertical) button.flat:backdrop, headerbar .path-bar:not(.vertical) button.flat:backdrop {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:backdrop,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:backdrop,
+filechooser box.path-bar-box.horizontal .linked > button:backdrop,
+filechooser box.path-bar-box.horizontal .linked button.flat:backdrop,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:backdrop,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:backdrop,
+.nautilus-window box.path-bar-box.horizontal .linked > button:backdrop,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:backdrop {
   opacity: 0.7;
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button:hover, headerbar .nautilus-path-bar:not(.vertical) > button:hover, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:hover, headerbar .nautilus-path-bar:not(.vertical) button.flat:hover, .primary-toolbar .path-bar:not(.vertical) > button:hover, headerbar .path-bar:not(.vertical) > button:hover, .primary-toolbar .path-bar:not(.vertical) button.flat:hover, headerbar .path-bar:not(.vertical) button.flat:hover {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:hover,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:hover,
+filechooser box.path-bar-box.horizontal .linked > button:hover,
+filechooser box.path-bar-box.horizontal .linked button.flat:hover,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:hover,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:hover,
+.nautilus-window box.path-bar-box.horizontal .linked > button:hover,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:hover {
   background-color: rgba(98, 98, 50, 0.92);
   color: rgba(250, 250, 229, 0.9);
   border-right: 0.1px solid rgba(0, 0, 0, 0.95);
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button:active, headerbar .nautilus-path-bar:not(.vertical) > button:active, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:active, headerbar .nautilus-path-bar:not(.vertical) button.flat:active, .primary-toolbar .path-bar:not(.vertical) > button:active, headerbar .path-bar:not(.vertical) > button:active, .primary-toolbar .path-bar:not(.vertical) button.flat:active, headerbar .path-bar:not(.vertical) button.flat:active, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:checked, headerbar .nautilus-path-bar:not(.vertical) > button:checked, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:checked, headerbar .nautilus-path-bar:not(.vertical) button.flat:checked, .primary-toolbar .path-bar:not(.vertical) > button:checked, headerbar .path-bar:not(.vertical) > button:checked, .primary-toolbar .path-bar:not(.vertical) button.flat:checked, headerbar .path-bar:not(.vertical) button.flat:checked, .primary-toolbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child, headerbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child, .primary-toolbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child, headerbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child, .primary-toolbar .path-bar:not(.vertical) > button.image-button:last-child, headerbar .path-bar:not(.vertical) > button.image-button:last-child, .primary-toolbar .path-bar:not(.vertical) button.image-button.flat:last-child, headerbar .path-bar:not(.vertical) button.image-button.flat:last-child {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active,
+filechooser box.path-bar-box.horizontal .linked > button:active,
+filechooser box.path-bar-box.horizontal .linked button.flat:active,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active,
+.nautilus-window box.path-bar-box.horizontal .linked > button:active,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:active, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:checked,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:checked,
+filechooser box.path-bar-box.horizontal .linked > button:checked,
+filechooser box.path-bar-box.horizontal .linked button.flat:checked,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:checked,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:checked,
+.nautilus-window box.path-bar-box.horizontal .linked > button:checked,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:checked, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:last-child,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:last-child,
+filechooser box.path-bar-box.horizontal .linked > button.image-button.text-button:last-child,
+filechooser box.path-bar-box.horizontal .linked button.image-button.text-button.flat:last-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:last-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:last-child,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button.text-button:last-child,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.text-button.flat:last-child {
   background-color: rgba(104, 104, 54, 0.92);
   border-right: 0.1px solid rgba(0, 0, 0, 0.95);
   background-clip: border-box;
   border-right: 2px solid #d1b30f;
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button:active label, headerbar .nautilus-path-bar:not(.vertical) > button:active label, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:active label, headerbar .nautilus-path-bar:not(.vertical) button.flat:active label, .primary-toolbar .path-bar:not(.vertical) > button:active label, headerbar .path-bar:not(.vertical) > button:active label, .primary-toolbar .path-bar:not(.vertical) button.flat:active label, headerbar .path-bar:not(.vertical) button.flat:active label, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:active image, headerbar .nautilus-path-bar:not(.vertical) > button:active image, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:active image, headerbar .nautilus-path-bar:not(.vertical) button.flat:active image, .primary-toolbar .path-bar:not(.vertical) > button:active image, headerbar .path-bar:not(.vertical) > button:active image, .primary-toolbar .path-bar:not(.vertical) button.flat:active image, headerbar .path-bar:not(.vertical) button.flat:active image, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:active, headerbar .nautilus-path-bar:not(.vertical) > button:active, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:active, headerbar .nautilus-path-bar:not(.vertical) button.flat:active, .primary-toolbar .path-bar:not(.vertical) > button:active, headerbar .path-bar:not(.vertical) > button:active, .primary-toolbar .path-bar:not(.vertical) button.flat:active, headerbar .path-bar:not(.vertical) button.flat:active, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:checked label, headerbar .nautilus-path-bar:not(.vertical) > button:checked label, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:checked label, headerbar .nautilus-path-bar:not(.vertical) button.flat:checked label, .primary-toolbar .path-bar:not(.vertical) > button:checked label, headerbar .path-bar:not(.vertical) > button:checked label, .primary-toolbar .path-bar:not(.vertical) button.flat:checked label, headerbar .path-bar:not(.vertical) button.flat:checked label, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:checked image, headerbar .nautilus-path-bar:not(.vertical) > button:checked image, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:checked image, headerbar .nautilus-path-bar:not(.vertical) button.flat:checked image, .primary-toolbar .path-bar:not(.vertical) > button:checked image, headerbar .path-bar:not(.vertical) > button:checked image, .primary-toolbar .path-bar:not(.vertical) button.flat:checked image, headerbar .path-bar:not(.vertical) button.flat:checked image, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:checked, headerbar .nautilus-path-bar:not(.vertical) > button:checked, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:checked, headerbar .nautilus-path-bar:not(.vertical) button.flat:checked, .primary-toolbar .path-bar:not(.vertical) > button:checked, headerbar .path-bar:not(.vertical) > button:checked, .primary-toolbar .path-bar:not(.vertical) button.flat:checked, headerbar .path-bar:not(.vertical) button.flat:checked, .primary-toolbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child label, headerbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child label, .primary-toolbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child label, headerbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child label, .primary-toolbar .path-bar:not(.vertical) > button.image-button:last-child label, headerbar .path-bar:not(.vertical) > button.image-button:last-child label, .primary-toolbar .path-bar:not(.vertical) button.image-button.flat:last-child label, headerbar .path-bar:not(.vertical) button.image-button.flat:last-child label, .primary-toolbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child image, headerbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child image, .primary-toolbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child image, headerbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child image, .primary-toolbar .path-bar:not(.vertical) > button.image-button:last-child image, headerbar .path-bar:not(.vertical) > button.image-button:last-child image, .primary-toolbar .path-bar:not(.vertical) button.image-button.flat:last-child image, headerbar .path-bar:not(.vertical) button.image-button.flat:last-child image, .primary-toolbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child, headerbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child, .primary-toolbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child, headerbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child, .primary-toolbar .path-bar:not(.vertical) > button.image-button:last-child, headerbar .path-bar:not(.vertical) > button.image-button:last-child, .primary-toolbar .path-bar:not(.vertical) button.image-button.flat:last-child, headerbar .path-bar:not(.vertical) button.image-button.flat:last-child {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active label,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active label,
+filechooser box.path-bar-box.horizontal .linked > button:active label,
+filechooser box.path-bar-box.horizontal .linked button.flat:active label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active label,
+.nautilus-window box.path-bar-box.horizontal .linked > button:active label,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:active label, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active image,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active image,
+filechooser box.path-bar-box.horizontal .linked > button:active image,
+filechooser box.path-bar-box.horizontal .linked button.flat:active image,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active image,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active image,
+.nautilus-window box.path-bar-box.horizontal .linked > button:active image,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:active image, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active,
+filechooser box.path-bar-box.horizontal .linked > button:active,
+filechooser box.path-bar-box.horizontal .linked button.flat:active,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active,
+.nautilus-window box.path-bar-box.horizontal .linked > button:active,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:active, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:checked label,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:checked label,
+filechooser box.path-bar-box.horizontal .linked > button:checked label,
+filechooser box.path-bar-box.horizontal .linked button.flat:checked label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:checked label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:checked label,
+.nautilus-window box.path-bar-box.horizontal .linked > button:checked label,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:checked label, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:checked image,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:checked image,
+filechooser box.path-bar-box.horizontal .linked > button:checked image,
+filechooser box.path-bar-box.horizontal .linked button.flat:checked image,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:checked image,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:checked image,
+.nautilus-window box.path-bar-box.horizontal .linked > button:checked image,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:checked image, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:checked,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:checked,
+filechooser box.path-bar-box.horizontal .linked > button:checked,
+filechooser box.path-bar-box.horizontal .linked button.flat:checked,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:checked,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:checked,
+.nautilus-window box.path-bar-box.horizontal .linked > button:checked,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:checked, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:last-child label,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:last-child label,
+filechooser box.path-bar-box.horizontal .linked > button.image-button.text-button:last-child label,
+filechooser box.path-bar-box.horizontal .linked button.image-button.text-button.flat:last-child label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:last-child label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:last-child label,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button.text-button:last-child label,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.text-button.flat:last-child label, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:last-child image,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:last-child image,
+filechooser box.path-bar-box.horizontal .linked > button.image-button.text-button:last-child image,
+filechooser box.path-bar-box.horizontal .linked button.image-button.text-button.flat:last-child image,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:last-child image,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:last-child image,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button.text-button:last-child image,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.text-button.flat:last-child image, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:last-child,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:last-child,
+filechooser box.path-bar-box.horizontal .linked > button.image-button.text-button:last-child,
+filechooser box.path-bar-box.horizontal .linked button.image-button.text-button.flat:last-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:last-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:last-child,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button.text-button:last-child,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.text-button.flat:last-child {
   color: rgba(255, 255, 255, 0.9);
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child, headerbar .nautilus-path-bar:not(.vertical) > button.image-button:last-child, .primary-toolbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child, headerbar .nautilus-path-bar:not(.vertical) button.image-button.flat:last-child, .primary-toolbar .path-bar:not(.vertical) > button.image-button:last-child, headerbar .path-bar:not(.vertical) > button.image-button:last-child, .primary-toolbar .path-bar:not(.vertical) button.image-button.flat:last-child, headerbar .path-bar:not(.vertical) button.image-button.flat:last-child {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button:last-child,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.flat:last-child,
+filechooser box.path-bar-box.horizontal .linked > button.image-button:last-child,
+filechooser box.path-bar-box.horizontal .linked button.image-button.flat:last-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button:last-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.flat:last-child,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button:last-child,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.flat:last-child {
   padding: 0px 4px;
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button:active, headerbar .nautilus-path-bar:not(.vertical) > button:active, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:active, headerbar .nautilus-path-bar:not(.vertical) button.flat:active, .primary-toolbar .path-bar:not(.vertical) > button:active, headerbar .path-bar:not(.vertical) > button:active, .primary-toolbar .path-bar:not(.vertical) button.flat:active, headerbar .path-bar:not(.vertical) button.flat:active {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button:last-child:active label,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.flat:last-child:active label,
+filechooser box.path-bar-box.horizontal .linked > button.image-button:last-child:active label,
+filechooser box.path-bar-box.horizontal .linked button.image-button.flat:last-child:active label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button:last-child:active label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.flat:last-child:active label,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button:last-child:active label,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.flat:last-child:active label {
+  color: rgba(250, 250, 229, 0.4);
+}
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:only-child,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:only-child,
+filechooser box.path-bar-box.horizontal .linked > button.image-button.text-button:only-child,
+filechooser box.path-bar-box.horizontal .linked button.image-button.text-button.flat:only-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:only-child,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:only-child,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button.text-button:only-child,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.text-button.flat:only-child {
+  padding: 2px 4px;
+}
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:only-child label,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:only-child label,
+filechooser box.path-bar-box.horizontal .linked > button.image-button.text-button:only-child label,
+filechooser box.path-bar-box.horizontal .linked button.image-button.text-button.flat:only-child label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:only-child label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:only-child label,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button.text-button:only-child label,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.text-button.flat:only-child label, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:only-child image,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:only-child image,
+filechooser box.path-bar-box.horizontal .linked > button.image-button.text-button:only-child image,
+filechooser box.path-bar-box.horizontal .linked button.image-button.text-button.flat:only-child image,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button.image-button.text-button:only-child image,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.image-button.text-button.flat:only-child image,
+.nautilus-window box.path-bar-box.horizontal .linked > button.image-button.text-button:only-child image,
+.nautilus-window box.path-bar-box.horizontal .linked button.image-button.text-button.flat:only-child image {
+  padding: 0 1px;
+}
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active,
+filechooser box.path-bar-box.horizontal .linked > button:active,
+filechooser box.path-bar-box.horizontal .linked button.flat:active,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:active,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:active,
+.nautilus-window box.path-bar-box.horizontal .linked > button:active,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:active {
   border-right: 0.1px solid black;
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button:disabled, headerbar .nautilus-path-bar:not(.vertical) > button:disabled, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:disabled, headerbar .nautilus-path-bar:not(.vertical) button.flat:disabled, .primary-toolbar .path-bar:not(.vertical) > button:disabled, headerbar .path-bar:not(.vertical) > button:disabled, .primary-toolbar .path-bar:not(.vertical) button.flat:disabled, headerbar .path-bar:not(.vertical) button.flat:disabled {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:disabled,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:disabled,
+filechooser box.path-bar-box.horizontal .linked > button:disabled,
+filechooser box.path-bar-box.horizontal .linked button.flat:disabled,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:disabled,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:disabled,
+.nautilus-window box.path-bar-box.horizontal .linked > button:disabled,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:disabled {
   color: rgba(250, 250, 229, 0.46);
   background-color: rgba(61, 61, 31, 0.48);
   border-color: rgba(46, 46, 24, 0.92);
 }
-.primary-toolbar .nautilus-path-bar:not(.vertical) > button:disabled:active, headerbar .nautilus-path-bar:not(.vertical) > button:disabled:active, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:disabled:active, headerbar .nautilus-path-bar:not(.vertical) button.flat:disabled:active, .primary-toolbar .path-bar:not(.vertical) > button:disabled:active, headerbar .path-bar:not(.vertical) > button:disabled:active, .primary-toolbar .path-bar:not(.vertical) button.flat:disabled:active, headerbar .path-bar:not(.vertical) button.flat:disabled:active, .primary-toolbar .nautilus-path-bar:not(.vertical) > button:disabled:checked, headerbar .nautilus-path-bar:not(.vertical) > button:disabled:checked, .primary-toolbar .nautilus-path-bar:not(.vertical) button.flat:disabled:checked, headerbar .nautilus-path-bar:not(.vertical) button.flat:disabled:checked, .primary-toolbar .path-bar:not(.vertical) > button:disabled:checked, headerbar .path-bar:not(.vertical) > button:disabled:checked, .primary-toolbar .path-bar:not(.vertical) button.flat:disabled:checked, headerbar .path-bar:not(.vertical) button.flat:disabled:checked {
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:disabled:active,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:disabled:active,
+filechooser box.path-bar-box.horizontal .linked > button:disabled:active,
+filechooser box.path-bar-box.horizontal .linked button.flat:disabled:active,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:disabled:active,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:disabled:active,
+.nautilus-window box.path-bar-box.horizontal .linked > button:disabled:active,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:disabled:active, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:disabled:checked,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:disabled:checked,
+filechooser box.path-bar-box.horizontal .linked > button:disabled:checked,
+filechooser box.path-bar-box.horizontal .linked button.flat:disabled:checked,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) > button:disabled:checked,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:disabled:checked,
+.nautilus-window box.path-bar-box.horizontal .linked > button:disabled:checked,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat:disabled:checked {
   color: rgba(61, 57, 41, 0.75);
   border-color: rgba(241, 210, 40, 0.67);
   background-color: rgba(241, 210, 40, 0.67);
@@ -4854,6 +5054,43 @@ filechooser .linked entry.search:focus, filechooser .linked entry.search:disable
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   margin-right: 0px;
+}
+filechooser box.path-bar-box.horizontal,
+.nautilus-window box.path-bar-box.horizontal {
+  background-color: transparent;
+  border: 0.5px solid rgba(250, 250, 229, 0.14);
+  border-radius: 4px;
+}
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat,
+filechooser box.path-bar-box.horizontal .linked button.flat,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat,
+.nautilus-window box.path-bar-box.horizontal .linked button.flat {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0px;
+}
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) .dim-label, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) label.separator, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) headerbar .subtitle, headerbar filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) .subtitle,
+filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) .titlebar:not(headerbar) .subtitle,
+.titlebar:not(headerbar) filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) .subtitle,
+filechooser box.path-bar-box.horizontal .linked .dim-label,
+filechooser box.path-bar-box.horizontal .linked label.separator,
+filechooser box.path-bar-box.horizontal .linked headerbar .subtitle,
+headerbar filechooser box.path-bar-box.horizontal .linked .subtitle,
+filechooser box.path-bar-box.horizontal .linked .titlebar:not(headerbar) .subtitle,
+.titlebar:not(headerbar) filechooser box.path-bar-box.horizontal .linked .subtitle,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) .dim-label,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) label.separator,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) headerbar .subtitle,
+headerbar .nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) .subtitle,
+.nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) .titlebar:not(headerbar) .subtitle,
+.titlebar:not(headerbar) .nautilus-window box.path-bar-box.horizontal .path-bar:not(.vertical) .subtitle,
+.nautilus-window box.path-bar-box.horizontal .linked .dim-label,
+.nautilus-window box.path-bar-box.horizontal .linked label.separator,
+.nautilus-window box.path-bar-box.horizontal .linked headerbar .subtitle,
+headerbar .nautilus-window box.path-bar-box.horizontal .linked .subtitle,
+.nautilus-window box.path-bar-box.horizontal .linked .titlebar:not(headerbar) .subtitle,
+.titlebar:not(headerbar) .nautilus-window box.path-bar-box.horizontal .linked .subtitle {
+  color: transparent;
 }
 
 .nemo-window .nemo-places-sidebar scrollbar, filechooser placessidebar.sidebar scrollbar,
