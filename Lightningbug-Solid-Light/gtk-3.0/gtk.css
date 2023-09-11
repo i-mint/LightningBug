@@ -5123,67 +5123,32 @@ headerbar .nautilus-window box.path-bar-box.horizontal .linked .subtitle,
   background-color: #ebebe1;
 }
 
-.path-buttons-box:not(.vertical) {
+headerbar.windowhandle box.path-buttons-box {
   background-color: #dfdfcf;
   color: rgba(18, 18, 18, 0.57);
   border: 0.1px solid rgba(0, 0, 0, 0.58);
   border-radius: 4px 0 0 4px;
+  margin: 6px 0;
+  padding: 0;
+  border-right: 0px solid transparent;
 }
-.path-buttons-box:not(.vertical) label.dim-label, .path-buttons-box:not(.vertical) label.separator, .path-buttons-box:not(.vertical) headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) label.subtitle,
-.path-buttons-box:not(.vertical) .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) label.subtitle {
-  color: rgba(18, 18, 18, 0.9);
-}
-.path-buttons-box:not(.vertical) button {
-  padding: 0 4px;
-  margin: 0;
+headerbar.windowhandle box.path-buttons-box box > button {
   background-color: transparent;
-  border-color: transparent;
+  color: rgba(18, 18, 18, 0.9);
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 6px;
+  padding-right: 6px;
 }
-.path-buttons-box:not(.vertical) button label.dim-label, .path-buttons-box:not(.vertical) button label.separator, .path-buttons-box:not(.vertical) button headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button label.subtitle,
-.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button label.subtitle,
-.path-buttons-box:not(.vertical) button image.dim-label,
-.path-buttons-box:not(.vertical) button headerbar image.subtitle,
-headerbar .path-buttons-box:not(.vertical) button image.subtitle,
-.path-buttons-box:not(.vertical) button .titlebar:not(headerbar) image.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button image.subtitle, .path-buttons-box:not(.vertical) button {
+headerbar.windowhandle box.path-buttons-box box > button:active, headerbar.windowhandle box.path-buttons-box box > button.current-dir:active {
+  opacity: 0.5;
+}
+headerbar.windowhandle box.path-buttons-box box > button.current-dir {
   color: rgba(18, 18, 18, 0.9);
 }
-.path-buttons-box:not(.vertical) button:hover label.dim-label, .path-buttons-box:not(.vertical) button:hover label.separator, .path-buttons-box:not(.vertical) button:hover headerbar label.subtitle, headerbar .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.path-buttons-box:not(.vertical) button:hover .titlebar:not(headerbar) label.subtitle,
-.titlebar:not(headerbar) .path-buttons-box:not(.vertical) button:hover label.subtitle,
-.path-buttons-box:not(.vertical) button:hover image, .path-buttons-box:not(.vertical) button:hover {
-  color: black;
-}
-.path-buttons-box:not(.vertical) button.current-dir {
-  color: rgba(18, 18, 18, 0.9);
-}
-.path-buttons-box:not(.vertical) button.current-dir:active {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.nautilus-path-bar > button.popup.toggle {
-  color: rgba(18, 18, 18, 0.9);
-  outline-offset: -3px;
-  background-color: #d9d9c6;
-  border-color: #d0d0b9;
-  border-right-width: 0;
-}
-.nautilus-path-bar > button.popup.toggle:hover {
-  color: rgba(18, 18, 18, 0.9);
-  background-color: #cacab0;
-  border-color: #d0d0b9;
-  border-right-width: 0;
-}
-.nautilus-path-bar > button.popup.toggle:active, .nautilus-path-bar > button.popup.toggle:checked {
-  color: #3d3929;
-  background-color: #f1d228;
-  border-color: #d0d0b9;
-  border-right-width: 0;
-}
-.nautilus-path-bar > button.popup.toggle:active label, .nautilus-path-bar > button.popup.toggle:active image, .nautilus-path-bar > button.popup.toggle:checked label, .nautilus-path-bar > button.popup.toggle:checked image {
-  color: inherit;
+headerbar.windowhandle box.nautilus-path-bar.linked > button.popup.toggle {
+  border-radius: 0 4px 4px 0;
 }
 
 terminal-window notebook > header.top,
