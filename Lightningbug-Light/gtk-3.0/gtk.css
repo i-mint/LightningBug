@@ -628,6 +628,15 @@ button.popup menuitem:hover label, button.popup menuitem:active label, button.po
   background-color: #f1d228;
 }
 
+headerbar.windowhandle viewswitcher > box > button.radio {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
 .inline-toolbar toolbutton > button {
   color: #333333;
   border-color: #e2e2e2;
