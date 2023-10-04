@@ -4593,19 +4593,27 @@ label.header {
   border-bottom-width: 0;
 }
 
-event, .sidebar event {
+event.horizontal,
+.sidebar event {
   margin: 0 1px 1px 2px;
   font-size: 0.9rem;
+  box-shadow: inset 0 -100px 0 0 #f1d228;
 }
-event label, event, .sidebar event label, .sidebar event {
+event.horizontal label, event.horizontal,
+.sidebar event label,
+.sidebar event {
   color: #6a5f29;
 }
-event:backdrop, .sidebar event:backdrop {
+event.horizontal:backdrop,
+.sidebar event:backdrop {
   opacity: 0.5;
 }
 
+event.slanted-end {
+  box-shadow: inset 0 -100px 0 0 #f4dc58;
+}
 event.slanted-end label, event.slanted-end {
-  color: #6a5f29;
+  color: #3d3929;
 }
 
 label.month-name {
