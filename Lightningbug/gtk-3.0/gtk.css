@@ -5283,6 +5283,9 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .csd .thunar .inline-toolbar:backdrop {
   background-color: #2a2a16;
 }
+.thunar toolbar > toolitem > widget > box.horizontal > entry:focus, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry:focus {
+  color: rgba(250, 250, 229, 0.9);
+}
 .thunar .linked.path-bar > button:not(.toggle),
 .thunar button.path-bar-button:not(.toggle) {
   color: rgba(250, 250, 229, 0.9);
