@@ -5596,16 +5596,21 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .budgie-popover:not(.csd).user-menu row button image, .budgie-popover:not(.csd).user-menu list button image, .budgie-popover:not(.csd).places-menu row button image, .budgie-popover:not(.csd).places-menu list button image {
   color: #f1d228;
 }
-.budgie-popover:not(.csd).budgie-menu row, .budgie-popover:not(.csd).budgie-menu list {
-  background: transparent;
+.budgie-popover:not(.csd).budgie-menu row,
+.budgie-popover:not(.csd).budgie-menu list {
+  background: #ffffff;
 }
-.budgie-popover:not(.csd).budgie-menu row button, .budgie-popover:not(.csd).budgie-menu list button {
+.budgie-popover:not(.csd).budgie-menu row button,
+.budgie-popover:not(.csd).budgie-menu list button {
   padding: 3px 6px;
 }
-.budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover {
+.budgie-popover:not(.csd).budgie-menu row button:hover,
+.budgie-popover:not(.csd).budgie-menu list button:hover {
   background-color: transparent;
 }
-.budgie-popover:not(.csd).budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu row button:hover, .budgie-popover:not(.csd).budgie-menu list button:hover label, .budgie-popover:not(.csd).budgie-menu list button:hover {
+.budgie-popover:not(.csd).budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu row button:hover,
+.budgie-popover:not(.csd).budgie-menu list button:hover label,
+.budgie-popover:not(.csd).budgie-menu list button:hover {
   color: #333333;
 }
 .budgie-popover:not(.csd).workspace-popover button {
@@ -5750,19 +5755,21 @@ terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: none;
   border-color: transparent;
   margin: 2px 4px;
+  border-right: 4px solid transparent;
 }
 .budgie-panel button#tasklist-button label, .budgie-panel button#tasklist-button image {
-  color: #F6F6D4;
+  color: rgba(246, 246, 212, 0.6);
 }
 .budgie-panel button#tasklist-button:hover {
-  background: rgba(241, 210, 40, 0.3);
+  background-color: #242419;
+}
+.budgie-panel button#tasklist-button:hover label, .budgie-panel button#tasklist-button:hover {
+  color: #F6F6D4;
 }
 .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected {
-  background-color: #f1d228;
-  border-color: #f1d228;
-}
-.budgie-panel button#tasklist-button:active label, .budgie-panel button#tasklist-button:active image, .budgie-panel button#tasklist-button:checked label, .budgie-panel button#tasklist-button:checked image, .budgie-panel button#tasklist-button:selected label, .budgie-panel button#tasklist-button:selected image {
-  color: #3d3929;
+  color: #F6F6D4;
+  background-color: #303022;
+  border-right: 4px solid #f1d228;
 }
 .budgie-panel button.launcher:not(.running) {
   margin: 4px;
