@@ -5459,7 +5459,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
   animation-iteration-count: infinite;
 }
 .budgie-popover:not(.csd).budgie-menu .category-button:hover label, .budgie-popover:not(.csd).user-menu row button:hover label, .budgie-popover:not(.csd).user-menu list button:hover label, .budgie-popover:not(.csd).places-menu row button:hover label, .budgie-popover:not(.csd).places-menu list button:hover label, .budgie-menu .category-button:hover label, .budgie-popover:not(.csd).budgie-menu .category-button:hover, .budgie-popover:not(.csd).user-menu row button:hover, .budgie-popover:not(.csd).user-menu list button:hover, .budgie-popover:not(.csd).places-menu row button:hover, .budgie-popover:not(.csd).places-menu list button:hover, .budgie-menu .category-button:hover {
-  color: #333333;
+  color: rgba(51, 51, 51, 0.7);
 }
 .budgie-popover:not(.csd).budgie-menu .category-button:hover image, .budgie-popover:not(.csd).user-menu row button:hover image, .budgie-popover:not(.csd).user-menu list button:hover image, .budgie-popover:not(.csd).places-menu row button:hover image, .budgie-popover:not(.csd).places-menu list button:hover image, .budgie-menu .category-button:hover image {
   color: #f1d228;
@@ -5501,7 +5501,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
   animation-iteration-count: infinite;
 }
 .budgie-menu row button:hover label, .budgie-menu row button:hover {
-  color: #333333;
+  color: rgba(51, 51, 51, 0.7);
 }
 @keyframes sidebarbugright {
   0% {
@@ -5611,7 +5611,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .budgie-popover:not(.csd).budgie-menu row button:hover label, .budgie-popover:not(.csd).budgie-menu row button:hover,
 .budgie-popover:not(.csd).budgie-menu list button:hover label,
 .budgie-popover:not(.csd).budgie-menu list button:hover {
-  color: #333333;
+  color: rgba(51, 51, 51, 0.7);
 }
 .budgie-popover:not(.csd).workspace-popover button {
   padding: 4px 6px;
