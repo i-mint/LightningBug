@@ -5755,9 +5755,11 @@ terminal-window notebook > header.top > tabs > tab:checked {
   color: #F6F6D4;
 }
 .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected {
-  color: #F6F6D4;
   background-color: #303022;
   border-right: 4px solid #B8860B;
+}
+.budgie-panel button#tasklist-button:active label, .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked label, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected label, .budgie-panel button#tasklist-button:selected {
+  color: #F6F6D4;
 }
 .budgie-panel button.launcher:not(.running) {
   margin: 4px;

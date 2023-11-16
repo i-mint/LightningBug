@@ -5551,7 +5551,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
   margin-top: -2px;
 }
 .budgie-notification-window, .budgie-popover:not(.csd).background {
-  background-color: #ffffff;
+  background-color: #f5f5f0;
 }
 .budgie-notification-window label, .budgie-popover:not(.csd).background label {
   color: #333333;
@@ -5767,9 +5767,11 @@ terminal-window notebook > header.top > tabs > tab:checked {
   color: #424242;
 }
 .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected {
-  color: #424242;
   background-color: #e6e6df;
   border-right: 4px solid #f1d228;
+}
+.budgie-panel button#tasklist-button:active label, .budgie-panel button#tasklist-button:active, .budgie-panel button#tasklist-button:checked label, .budgie-panel button#tasklist-button:checked, .budgie-panel button#tasklist-button:selected label, .budgie-panel button#tasklist-button:selected {
+  color: #424242;
 }
 .budgie-panel button.launcher:not(.running) {
   margin: 4px;
