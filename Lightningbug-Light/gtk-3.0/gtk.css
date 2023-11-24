@@ -2549,7 +2549,6 @@ notebook > header > tabs > tab:checked {
   background-color: rgba(247, 247, 243, 0.94);
   color: #333333;
   border-right: 4px solid #f1d228;
-  font-weight: bold;
   animation-name: notebooktabchecked;
   animation-duration: 1s;
   animation-iteration-count: 2;
