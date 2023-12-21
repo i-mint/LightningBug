@@ -5757,15 +5757,12 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .budgie-panel label, .budgie-panel image {
   color: #424242;
 }
-.bottom .budgie-panel {
-  box-shadow: inset 0 1px 0 0 #c1c1b2;
-}
 .budgie-panel button {
   background-color: transparent;
   box-shadow: none;
   border-radius: 4px;
-  border-color: transparent;
-  margin: 3px;
+  border: none;
+  margin: 0 1px;
 }
 .budgie-panel button label, .budgie-panel button image {
   color: #424242;
@@ -6020,7 +6017,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .raven,
 .raven-notifications-view > .raven-background > .frame > list {
   background-color: #f5f5f0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 .raven-background label, .raven-background image, .raven-background,
 .raven-header label,
