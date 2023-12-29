@@ -5331,35 +5331,44 @@ terminal-window notebook > header.top > tabs > tab:checked {
   background-color: #242419;
 }
 
-.xfce4-panel.panel button.flat, .xfce4-panel.panel button.toggle, .xfce4-panel.panel button {
+.xfce4-panel.panel button.flat, .xfce4-panel.panel button, .xfce4-panel.panel button:not(.toggle) {
   color: #F6F6D4;
   background-color: transparent;
-  border-radius: 4px;
-  border-color: transparent;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  box-shadow: none;
+  text-shadow: none;
 }
-.xfce4-panel.panel button.flat label, .xfce4-panel.panel button.toggle label, .xfce4-panel.panel button label,
+.xfce4-panel.panel button.flat label, .xfce4-panel.panel button label, .xfce4-panel.panel button:not(.toggle) label,
 .xfce4-panel.panel button.flat image,
-.xfce4-panel.panel button.toggle image,
-.xfce4-panel.panel button image {
+.xfce4-panel.panel button image,
+.xfce4-panel.panel button:not(.toggle) image {
   color: inherit;
 }
-.xfce4-panel.panel button:hover {
+.xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button:hover, .xfce4-panel.panel button:hover:not(.toggle) {
   color: #F6F6D4;
   background-color: rgba(184, 134, 11, 0.3);
-  border-color: rgba(184, 134, 11, 0.3);
+  border: 4px solid transparent;
+  border-radius: 8px;
+  box-shadow: none;
+  text-shadow: none;
 }
-.xfce4-panel.panel button:active {
+.xfce4-panel.panel button.flat:active, .xfce4-panel.panel button:active, .xfce4-panel.panel button:active:not(.toggle), .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button:checked, .xfce4-panel.panel button:checked:not(.toggle), .xfce4-panel.panel button.flat:checked:hover, .xfce4-panel.panel button:checked:hover, .xfce4-panel.panel button:checked:hover:not(.toggle) {
   color: #2c2a21;
-  background-color: #f1b627;
-  border-color: #f1b627;
+  border: 4px solid #181811;
+  box-shadow: inset 0 0 0 100px #B8860B;
+  border-radius: 8px;
 }
-.xfce4-panel.panel button:checked {
-  color: #2c2a21;
-  background-color: #B8860B;
-  border-color: #B8860B;
-}
-.xfce4-panel.panel button:checked label,
-.xfce4-panel.panel button:checked image {
+.xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active:not(.toggle) label,
+.xfce4-panel.panel button.flat:active image,
+.xfce4-panel.panel button:active image,
+.xfce4-panel.panel button:active:not(.toggle) image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked:not(.toggle) label,
+.xfce4-panel.panel button.flat:checked image,
+.xfce4-panel.panel button:checked image,
+.xfce4-panel.panel button:checked:not(.toggle) image, .xfce4-panel.panel button.flat:checked:hover label, .xfce4-panel.panel button:checked:hover label, .xfce4-panel.panel button:checked:hover:not(.toggle) label,
+.xfce4-panel.panel button.flat:checked:hover image,
+.xfce4-panel.panel button:checked:hover image,
+.xfce4-panel.panel button:checked:hover:not(.toggle) image {
   color: inherit;
 }
 
@@ -5381,6 +5390,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
   background-color: #181811;
   border-radius: 4px;
   border-color: #0f0f0b;
+  border: none;
 }
 .xfce4-panel.panel .tasklist .toggle label,
 .xfce4-panel.panel .tasklist .toggle image {
@@ -5395,7 +5405,9 @@ terminal-window notebook > header.top > tabs > tab:checked {
   color: #F6F6D4;
   background-color: #303022;
   font-weight: normal;
-  border-color: #242419;
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
 }
 .xfce4-panel.panel .horizontal .tasklist .toggle {
   border-right: 4px solid transparent;
@@ -5419,7 +5431,6 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .xfce4-panel.panel #pulseaudio-button menu .linked button {
   color: #e3e3e3;
 }
-
 .budgie-container {
   background-color: transparent;
   border: none;
