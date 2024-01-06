@@ -5487,7 +5487,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
   color: rgba(44, 42, 33, 0.5);
 }
 
-.budgie-popover:not(.csd) row button, .budgie-menu row button {
+.budgie-menu row button {
   background-color: transparent;
   border-color: transparent;
   border-right: 2px solid transparent;
@@ -5495,7 +5495,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
   border-radius: 4px;
   transition: 200ms ease-out;
 }
-.budgie-popover:not(.csd) row button:hover, .budgie-menu row button:hover {
+.budgie-menu row button:hover {
   background-color: transparent;
   border-right: 2px solid #B8860B;
   border-top-right-radius: 0;
@@ -5504,7 +5504,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
-.budgie-popover:not(.csd) row button:hover label, .budgie-menu row button:hover label, .budgie-popover:not(.csd) row button:hover, .budgie-menu row button:hover {
+.budgie-menu row button:hover label, .budgie-menu row button:hover {
   color: rgba(227, 227, 227, 0.7);
 }
 @keyframes sidebarbugright {
@@ -5518,17 +5518,17 @@ terminal-window notebook > header.top > tabs > tab:checked {
     border-right: 2px solid #f1b627;
   }
 }
-.budgie-popover:not(.csd) row button:active, .budgie-menu row button:active, .budgie-popover:not(.csd) row button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd) row button:checked, .budgie-menu row button:checked {
+.budgie-menu row button:active, .budgie-menu row button:selected, .budgie-menu row button:checked {
   background-color: #B8860B;
   font-weight: normal;
 }
-.budgie-popover:not(.csd) row button:active label, .budgie-menu row button:active label, .budgie-popover:not(.csd) row button:active, .budgie-menu row button:active, .budgie-popover:not(.csd) row button:selected label, .budgie-menu row button:selected label, .budgie-popover:not(.csd) row button:selected, .budgie-menu row button:selected, .budgie-popover:not(.csd) row button:checked label, .budgie-menu row button:checked label, .budgie-popover:not(.csd) row button:checked, .budgie-menu row button:checked {
+.budgie-menu row button:active label, .budgie-menu row button:active, .budgie-menu row button:selected label, .budgie-menu row button:selected, .budgie-menu row button:checked label, .budgie-menu row button:checked {
   color: #2c2a21;
 }
-.budgie-popover:not(.csd) row button:disabled label, .budgie-menu row button:disabled label, .budgie-popover:not(.csd) row button:disabled, .budgie-menu row button:disabled {
+.budgie-menu row button:disabled label, .budgie-menu row button:disabled {
   color: rgba(227, 227, 227, 0.5);
 }
-.budgie-popover:not(.csd) row button:checked:disabled label, .budgie-menu row button:checked:disabled label, .budgie-popover:not(.csd) row button:checked:disabled, .budgie-menu row button:checked:disabled {
+.budgie-menu row button:checked:disabled label, .budgie-menu row button:checked:disabled {
   color: rgba(44, 42, 33, 0.5);
 }
 
