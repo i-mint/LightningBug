@@ -5330,6 +5330,9 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar notebook tabs > tab button.flat:active > image {
   background-color: #242419;
 }
+.thunar paned > .frame.sidebar {
+  border-color: #12120d;
+}
 
 .xfce4-panel.panel button.flat, .xfce4-panel.panel button, .xfce4-panel.panel button:not(.toggle) {
   color: #F6F6D4;
