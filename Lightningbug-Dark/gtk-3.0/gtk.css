@@ -5360,7 +5360,8 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar notebook tabs > tab button.flat:active > image {
   background-color: #242419;
 }
-.thunar paned > .frame.sidebar {
+.thunar paned > .frame.sidebar,
+.thunar paned > box > .frame.sidebar {
   border-color: #12120d;
 }
 
