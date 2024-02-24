@@ -5349,20 +5349,43 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar button.path-bar-button:backdrop {
   opacity: 0.7;
 }
-.thunar notebook tabs > tab button.flat > image {
-  border-radius: 4px;
-}
-.thunar notebook tabs > tab button.flat:hover > image {
-  color: #e3e3e3;
-  border-color: #171711;
-  background-color: #2d2d20;
-}
-.thunar notebook tabs > tab button.flat:active > image {
-  background-color: #242419;
-}
 .thunar paned > .frame.sidebar,
 .thunar paned > box > .frame.sidebar {
   border-color: #12120d;
+}
+.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat,
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat {
+  background-color: #1e1e15;
+  border-radius: 50%;
+}
+.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image,
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image {
+  padding: 4px;
+}
+.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover,
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover {
+  background-color: #030302;
+  border-radius: 50%;
+}
+.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active,
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active {
+  background-color: #cc575d;
+  border-radius: 50%;
+}
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat {
+  background-color: #1e1e15;
+  border-radius: 50%;
+}
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image {
+  padding: 4px;
+}
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover {
+  background-color: #030302;
+  border-radius: 50%;
+}
+.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active {
+  background-color: #cc575d;
+  border-radius: 50%;
 }
 
 .xfce4-panel.panel button.flat, .xfce4-panel.panel button, .xfce4-panel.panel button:not(.toggle) {
