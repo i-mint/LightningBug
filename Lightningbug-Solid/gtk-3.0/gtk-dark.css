@@ -4437,6 +4437,9 @@ paned.gedit-side-panel-paned treeview.view:backdrop {
 paned.gedit-side-panel-paned treeview.view:backdrop label, paned.gedit-side-panel-paned treeview.view:backdrop {
   color: rgba(168, 168, 168, 0.6);
 }
+paned.gedit-side-panel-paned treeview.view.separator, paned.gedit-side-panel-paned treeview.view.separator:backdrop {
+  color: rgba(0, 0, 0, 0.2);
+}
 
 paned.gedit-side-panel-paned {
   background-color: #2a2a1d;
@@ -5349,43 +5352,26 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar button.path-bar-button:backdrop {
   opacity: 0.7;
 }
+.thunar notebook tabs > tab.reorderable-page button.flat > image {
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid transparent;
+}
+.thunar notebook tabs > tab.reorderable-page button.flat:hover > image {
+  background-color: #2a2a1e;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid transparent;
+}
+.thunar notebook tabs > tab.reorderable-page button.flat:active > image {
+  background-color: #363626;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid #060604;
+}
 .thunar paned > .frame.sidebar,
 .thunar paned > box > .frame.sidebar {
   border-color: #12120d;
-}
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat,
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat {
-  background-color: #1e1e15;
-  border-radius: 50%;
-}
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image,
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image {
-  padding: 4px;
-}
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover,
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover {
-  background-color: #030302;
-  border-radius: 50%;
-}
-.thunar paned > grid.horizontal > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active,
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active {
-  background-color: #cc575d;
-  border-radius: 50%;
-}
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat {
-  background-color: #1e1e15;
-  border-radius: 50%;
-}
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat image {
-  padding: 4px;
-}
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:hover {
-  background-color: #030302;
-  border-radius: 50%;
-}
-.thunar paned > notebook tabs > tab.reorderable-page > box.horizontal > button.flat:active {
-  background-color: #cc575d;
-  border-radius: 50%;
 }
 
 .xfce4-panel.panel button.flat, .xfce4-panel.panel button, .xfce4-panel.panel button:not(.toggle) {
