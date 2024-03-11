@@ -853,7 +853,7 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
   box-shadow: none;
 }
 
-.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .budgie-popover:not(.csd) .linked button, .xfce4-panel.panel #pulseaudio-button menu .linked button, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button,
+.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .budgie-popover:not(.csd) .linked button, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button,
 filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat,
 filechooser box.path-bar-box.horizontal .linked > button,
 filechooser box.path-bar-box.horizontal .linked button.flat,
@@ -885,7 +885,7 @@ spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.ve
   border-right-style: none;
 }
 
-.budgie-popover:not(.csd) .linked button:first-child, .xfce4-panel.panel #pulseaudio-button menu .linked button:first-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:first-child,
+.budgie-popover:not(.csd) .linked button:first-child, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:first-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:first-child,
 filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:first-child,
 filechooser box.path-bar-box.horizontal .linked > button:first-child,
 filechooser box.path-bar-box.horizontal .linked button.flat:first-child,
@@ -900,7 +900,7 @@ spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:firs
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.budgie-popover:not(.csd) .linked button:last-child, .xfce4-panel.panel #pulseaudio-button menu .linked button:last-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:last-child,
+.budgie-popover:not(.csd) .linked button:last-child, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:last-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:last-child,
 filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:last-child,
 filechooser box.path-bar-box.horizontal .linked > button:last-child,
 filechooser box.path-bar-box.horizontal .linked button.flat:last-child,
@@ -916,7 +916,7 @@ spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-
   border-bottom-right-radius: 4px;
   border-right-style: solid;
 }
-.budgie-popover:not(.csd) .linked button:only-child, .xfce4-panel.panel #pulseaudio-button menu .linked button:only-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:only-child,
+.budgie-popover:not(.csd) .linked button:only-child, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:only-child, filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) > button:only-child,
 filechooser box.path-bar-box.horizontal .path-bar:not(.vertical) button.flat:only-child,
 filechooser box.path-bar-box.horizontal .linked > button:only-child,
 filechooser box.path-bar-box.horizontal .linked button.flat:only-child,
@@ -5471,8 +5471,27 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .xfce4-panel.panel wnck-pager:hover, .xfce4-panel.panel wnck-pager:selected {
   background-color: #B8860B;
 }
-.xfce4-panel.panel #pulseaudio-button menu .linked button {
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button {
+  background-color: #181811;
+  box-shadow: none;
+  border: 1px solid #12120d;
+}
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button image, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button {
   color: #e3e3e3;
+}
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button image {
+  padding: 2px;
+  border-radius: 4px;
+}
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:first-child {
+  border-right: none;
+}
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:last-child {
+  border-left: none;
+}
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:active image {
+  background-color: #B8860B;
+  color: #2c2a21;
 }
 .budgie-container {
   background-color: transparent;
