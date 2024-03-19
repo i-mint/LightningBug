@@ -217,7 +217,7 @@ entry:focus {
   background-clip: border-box;
   color: #e3e3e3;
   border-color: #f1b627;
-  background-color: transparent;
+  background-color: #181811;
   box-shadow: inset 1px 0 #B8860B, inset -1px 0 #B8860B, inset 0 1px #B8860B, inset 0 -1px #B8860B;
   caret-color: #f1b627;
 }
@@ -5773,7 +5773,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .night-light-indicator spinbutton entry:focus {
   color: #e3e3e3;
   border-color: #f1b627;
-  background-color: transparent;
+  background-color: #181811;
   box-shadow: inset 1px 0 #B8860B, inset -1px 0 #B8860B, inset 0 1px #B8860B, inset 0 -1px #B8860B;
 }
 .night-light-indicator button.combo {
