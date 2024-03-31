@@ -5315,8 +5315,34 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .csd .thunar .inline-toolbar:backdrop {
   background-color: #2a2a16;
 }
-.thunar toolbar > toolitem > widget > box.horizontal > entry:focus, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry:focus {
+.thunar toolbar > toolitem > widget > box.horizontal > entry, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry {
   color: rgba(250, 250, 229, 0.9);
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: #3e2e04;
+}
+.thunar toolbar > toolitem > widget > box.horizontal > entry image, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry image, .thunar toolbar > toolitem > widget > box.horizontal > entry image:hover {
+  color: inherit;
+}
+.thunar toolbar > toolitem > widget > box.horizontal > entry:focus, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry:focus {
+  color: #3d3929;
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: #f1d228;
+  background-clip: border-box;
+  caret-color: currentColor;
+}
+.thunar toolbar > toolitem > widget > box.horizontal > entry:focus label, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry:focus label,
+.thunar toolbar > toolitem > widget > box.horizontal > entry:focus image,
+.thunar .inline-toolbar > toolitem > widget > box.horizontal > entry:focus image {
+  color: inherit;
+}
+.thunar toolbar > toolitem > widget > box.horizontal > entry:backdrop, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry:backdrop, .thunar toolbar > toolitem > widget > box.horizontal > entry:disabled, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry:disabled {
+  color: rgba(250, 250, 229, 0.45);
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(62, 46, 4, 0.55);
+}
+.thunar toolbar > toolitem > widget > box.horizontal > entry selection:focus, .thunar .inline-toolbar > toolitem > widget > box.horizontal > entry selection:focus {
+  background-color: #3d3929;
+  color: #f1d228;
 }
 .thunar .linked.path-bar > button:not(.toggle),
 .thunar button.path-bar-button:not(.toggle) {
