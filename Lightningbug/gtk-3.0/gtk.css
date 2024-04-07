@@ -1316,7 +1316,8 @@ headerbar.default-decoration, .csd headerbar.default-decoration, headerbar.defau
   border-radius: 4px 4px 0 0;
 }
 
-headerbar entry, headerbar button {
+headerbar entry,
+headerbar button {
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -5303,12 +5304,29 @@ terminal-window notebook > header.top > tabs > tab:checked {
   background-color: #f1d228;
   border-color: rgba(46, 46, 24, 0.92);
 }
+.thunar menubar button.flat:backdrop label, .thunar menubar button.flat:backdrop image, .thunar menubar button.flat:backdrop,
+.thunar toolbar button.flat:backdrop label,
+.thunar .inline-toolbar button.flat:backdrop label,
+.thunar toolbar button.flat:backdrop image,
+.thunar .inline-toolbar button.flat:backdrop image,
+.thunar toolbar button.flat:backdrop,
+.thunar .inline-toolbar button.flat:backdrop {
+  color: rgba(250, 250, 229, 0.6);
+}
 .thunar menubar:backdrop,
 .thunar toolbar:backdrop,
 .thunar .inline-toolbar:backdrop {
   transition: 200ms ease-out;
-  color: rgba(250, 250, 229, 0.6);
   background-color: #2a2a16;
+}
+.thunar menubar:backdrop label, .thunar menubar:backdrop image, .thunar menubar:backdrop,
+.thunar toolbar:backdrop label,
+.thunar .inline-toolbar:backdrop label,
+.thunar toolbar:backdrop image,
+.thunar .inline-toolbar:backdrop image,
+.thunar toolbar:backdrop,
+.thunar .inline-toolbar:backdrop {
+  color: rgba(250, 250, 229, 0.6);
 }
 .csd .thunar menubar:backdrop,
 .csd .thunar toolbar:backdrop,
