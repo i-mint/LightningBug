@@ -1014,7 +1014,6 @@ spinbutton:not(.vertical):dir(rtl) button.up {
 spinbutton:not(.vertical) > button + button {
   border-left-style: none;
 }
-.night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover:not(:active),
 spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 #171711;
@@ -1023,8 +1022,6 @@ spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active)
 spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
   box-shadow: inset 1px 0 rgba(23, 23, 17, 0.5);
 }
-.night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -1036,13 +1033,10 @@ spinbutton:not(.vertical) > entry:focus + button {
 spinbutton:not(.vertical) > entry:drop(active) + button {
   border-left-color: #f08437;
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover:not(:active),
 .osd spinbutton:not(.vertical) > button:hover + button {
   box-shadow: inset 1px 0 rgba(6, 6, 4, 0.33);
 }
-.osd .night-light-indicator spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.osd .night-light-indicator spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
 .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
 .osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
@@ -5238,6 +5232,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 .thunar .sidebar treeview.view:hover {
   background-color: rgba(184, 134, 11, 0.12);
   border-left: 4px solid #f1b627;
+  color: rgba(255, 255, 255, 0.8);
 }
 .thunar .sidebar treeview.view:selected, .thunar .sidebar treeview.view:selected:hover {
   color: #2c2a21;
