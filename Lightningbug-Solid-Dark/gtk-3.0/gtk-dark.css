@@ -4007,16 +4007,16 @@ popover.background.touch-selection,
 
 button.circular,
 button.circular-button {
-  padding: 0;
+  padding: 4px;
   min-width: 16px;
-  min-height: 24px;
-  padding: 2px 6px;
-  border-radius: 50%;
-  -gtk-outline-radius: 50%;
+  min-height: 16px;
+  border-radius: 100%;
+  -gtk-outline-radius: 100%;
 }
-button.circular label,
-button.circular-button label {
-  padding: 0;
+button.circular label, button.circular image,
+button.circular-button label,
+button.circular-button image {
+  padding: 2px;
 }
 
 .keycap {
