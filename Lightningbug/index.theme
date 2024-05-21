@@ -4,6 +4,7 @@ Type=X-GNOME-Metatheme
 Comment= Lightningbug Gtk Themes 
 Encoding=UTF-8
 GtkTheme=Lightningbug
+MetacityTheme=Lightningbug
 IconTheme=Mintows
 CursorTheme=Adwaita
 CursorSize=24

@@ -1,9 +1,10 @@
 [X-GNOME-Metatheme]
-Name=Lightningbug-Light-Solid
+Name=Lightningbug-Solid-Light
 Type=X-GNOME-Metatheme
-Comment= Lightningbug Gtk Themes 
+Comment=Lightningbug-Solid-Light Gtk Themes 
 Encoding=UTF-8
-GtkTheme=Lightningbug-Light-Solid
+GtkTheme=Lightningbug-Solid-Light
+MetacityTheme=Lightningbug-Solid-Light
 IconTheme=Mintows
 CursorTheme=Adwaita
 CursorSize=24
