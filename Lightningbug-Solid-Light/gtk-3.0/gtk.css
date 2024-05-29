@@ -4186,7 +4186,7 @@ headerbar button.titlebutton.minimize:active,
   background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"), url("assets/titlebutton-minimize-active@2.png"));
 }
 
-.night-light-indicator spinbutton entry selection:focus, .night-light-indicator spinbutton entry selection, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:selected.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:active.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:active, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover, filechooser placessidebar.sidebar row.sidebar-row:active,
+.caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .night-light-indicator spinbutton entry selection:focus, .night-light-indicator spinbutton entry selection, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:selected.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:active.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:active, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover, filechooser placessidebar.sidebar row.sidebar-row:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
@@ -4202,7 +4202,7 @@ modelbutton.flat:checked,
 modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(list) .view:selected, .sidebar:not(list) iconview:selected, .sidebar:not(list) row.sidebar-row:selected, .sidebar:not(list) .view.cell:selected, .sidebar:not(list):selected {
   background-color: #f1d228;
 }
-row:selected label, label:selected, .night-light-indicator spinbutton entry selection:focus, .night-light-indicator spinbutton entry selection, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:selected.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:active.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:active, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover, filechooser placessidebar.sidebar row.sidebar-row:active,
+row:selected label, label:selected, .caja-side-pane .frame treeview.view:active, .caja-side-pane .frame treeview.view:selected, .caja-side-pane .frame treeview.view:selected:hover, .night-light-indicator spinbutton entry selection:focus, .night-light-indicator spinbutton entry selection, .nemo-window paned > .nemo-window-pane widget.entry:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:selected.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:active.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:active, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover.cell, .nemo-window .nemo-places-sidebar .places-treeview.view:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup, filechooser placessidebar.sidebar row.sidebar-row:selected, filechooser placessidebar.sidebar row.sidebar-row:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:active:hover, filechooser placessidebar.sidebar row.sidebar-row:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover,
@@ -4218,7 +4218,7 @@ modelbutton.flat:checked,
 modelbutton.flat:checked arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .sidebar:not(list) .view:selected, .sidebar:not(list) iconview:selected, .sidebar:not(list) row.sidebar-row:selected, .sidebar:not(list) .view.cell:selected, .sidebar:not(list):selected {
   color: #3d3929;
 }
-row:selected label:disabled, label:disabled:selected, .night-light-indicator spinbutton entry selection:disabled, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:disabled:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:disabled:active, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:disabled:active,
+row:selected label:disabled, label:disabled:selected, .caja-side-pane .frame treeview.view:disabled:active, .caja-side-pane .frame treeview.view:disabled:selected, .night-light-indicator spinbutton entry selection:disabled, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:disabled:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:disabled:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:disabled:active, .nemo-window .nemo-places-sidebar .places-treeview.view:disabled:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:disabled:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active, flowbox flowboxchild:disabled:selected, entry selection:disabled, menuitem.button.flat:disabled:hover, menuitem.button.flat:hover arrow:disabled, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled, menuitem.button.flat:disabled:checked, menuitem.button.flat:checked arrow:disabled,
 modelbutton.flat:disabled:hover,
 modelbutton.flat:hover arrow:disabled,
@@ -4231,7 +4231,7 @@ modelbutton.flat:checked arrow:disabled, treeview.view:disabled:selected, row:di
   color: #978629;
 }
 
-.night-light-indicator spinbutton entry selection:backdrop, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:backdrop:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:backdrop:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:backdrop:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:backdrop:active, .nemo-window .nemo-places-sidebar .places-treeview.view:backdrop:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active,
+.caja-side-pane .frame treeview.view:backdrop:active, .caja-side-pane .frame treeview.view:backdrop:selected, .night-light-indicator spinbutton entry selection:backdrop, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected:focus, .nemo-window paned > .nemo-window-pane widget.entry:backdrop:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:backdrop:selected, .nemo-window .nemo-places-sidebar iconview.places-treeview:backdrop:selected, .nemo-window .nemo-places-sidebar .places-treeview.view:backdrop:active, .nemo-window .nemo-places-sidebar iconview.places-treeview:backdrop:active, .nemo-window .nemo-places-sidebar .places-treeview.view:backdrop:selected:hover, filechooser placessidebar.sidebar row.sidebar-row:backdrop:active,
 .nautilus-window placessidebar.sidebar row.sidebar-row:backdrop:active, flowbox flowboxchild:backdrop:selected, entry selection:backdrop, menuitem.button.flat:backdrop:hover, menuitem.button.flat:hover arrow:backdrop, menuitem.button.flat:backdrop:active, menuitem.button.flat:active arrow:backdrop, menuitem.button.flat:backdrop:selected, menuitem.button.flat:selected arrow:backdrop, menuitem.button.flat:backdrop:checked, menuitem.button.flat:checked arrow:backdrop,
 modelbutton.flat:backdrop:hover,
 modelbutton.flat:hover arrow:backdrop,
@@ -4795,13 +4795,16 @@ button.documents-favorite:active:hover {
   border-radius: 2px;
 }
 
+.caja-desktop,
 .nautilus-desktop.nautilus-canvas-item {
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
 }
+.caja-desktop:active,
 .nautilus-desktop.nautilus-canvas-item:active {
   color: #333333;
 }
+.caja-desktop:selected,
 .nautilus-desktop.nautilus-canvas-item:selected {
   color: #3d3929;
   text-shadow: none;
@@ -5425,7 +5428,8 @@ terminal-window notebook > header.top > tabs > tab:checked {
   border-color: #d8d8c5;
 }
 
-.xfce4-panel.panel button.flat, .xfce4-panel.panel button, .xfce4-panel.panel button:not(.toggle) {
+.mate-panel-menu-bar button:not(#tasklist-button),
+panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat, .xfce4-panel.panel button, .xfce4-panel.panel button:not(.toggle) {
   color: #424242;
   background-color: transparent;
   border-radius: 8px;
@@ -5433,13 +5437,17 @@ terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: none;
   text-shadow: none;
 }
-.xfce4-panel.panel button.flat label, .xfce4-panel.panel button label, .xfce4-panel.panel button:not(.toggle) label,
+.mate-panel-menu-bar button:not(#tasklist-button) label,
+panel-toplevel.background button:not(#tasklist-button) label, .xfce4-panel.panel button.flat label, .xfce4-panel.panel button label, .xfce4-panel.panel button:not(.toggle) label,
+.mate-panel-menu-bar button:not(#tasklist-button) image,
+panel-toplevel.background button:not(#tasklist-button) image,
 .xfce4-panel.panel button.flat image,
 .xfce4-panel.panel button image,
 .xfce4-panel.panel button:not(.toggle) image {
   color: inherit;
 }
-.xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button:hover, .xfce4-panel.panel button:hover:not(.toggle) {
+.mate-panel-menu-bar button:hover:not(#tasklist-button),
+panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button:hover, .xfce4-panel.panel button:hover:not(.toggle) {
   color: #424242;
   background-color: rgba(241, 210, 40, 0.3);
   border: 4px solid transparent;
@@ -5447,16 +5455,24 @@ terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: none;
   text-shadow: none;
 }
-.xfce4-panel.panel button.flat:active, .xfce4-panel.panel button:active, .xfce4-panel.panel button:active:not(.toggle), .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button:checked, .xfce4-panel.panel button:checked:not(.toggle), .xfce4-panel.panel button.flat:checked:hover, .xfce4-panel.panel button:checked:hover, .xfce4-panel.panel button:checked:hover:not(.toggle) {
+.mate-panel-menu-bar button:active:not(#tasklist-button),
+panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button:active, .xfce4-panel.panel button:active:not(.toggle), .mate-panel-menu-bar button:checked:not(#tasklist-button),
+panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button:checked, .xfce4-panel.panel button:checked:not(.toggle), .xfce4-panel.panel button.flat:checked:hover, .xfce4-panel.panel button:checked:hover, .xfce4-panel.panel button:checked:hover:not(.toggle) {
   color: #3d3929;
   border: 4px solid #CFCFC3;
   box-shadow: inset 0 0 0 100px #f1d228;
   border-radius: 8px;
 }
-.xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active:not(.toggle) label,
+.mate-panel-menu-bar button:active:not(#tasklist-button) label,
+panel-toplevel.background button:active:not(#tasklist-button) label, .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active:not(.toggle) label,
+.mate-panel-menu-bar button:active:not(#tasklist-button) image,
+panel-toplevel.background button:active:not(#tasklist-button) image,
 .xfce4-panel.panel button.flat:active image,
 .xfce4-panel.panel button:active image,
-.xfce4-panel.panel button:active:not(.toggle) image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked:not(.toggle) label,
+.xfce4-panel.panel button:active:not(.toggle) image, .mate-panel-menu-bar button:checked:not(#tasklist-button) label,
+panel-toplevel.background button:checked:not(#tasklist-button) label, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked:not(.toggle) label,
+.mate-panel-menu-bar button:checked:not(#tasklist-button) image,
+panel-toplevel.background button:checked:not(#tasklist-button) image,
 .xfce4-panel.panel button.flat:checked image,
 .xfce4-panel.panel button:checked image,
 .xfce4-panel.panel button:checked:not(.toggle) image, .xfce4-panel.panel button.flat:checked:hover label, .xfce4-panel.panel button:checked:hover label, .xfce4-panel.panel button:checked:hover:not(.toggle) label,
@@ -6223,6 +6239,98 @@ terminal-window notebook > header.top > tabs > tab:checked {
 }
 .budgie-notification-window button {
   border-radius: 4px;
+}
+
+.mate-panel-menu-bar, .mate-panel-menu-bar menubar,
+panel-toplevel.background,
+panel-toplevel.background menubar {
+  background-color: #cfcfc3;
+}
+.mate-panel-menu-bar menubar,
+.mate-panel-menu-bar #PanelApplet label,
+.mate-panel-menu-bar #PanelApplet image,
+panel-toplevel.background menubar,
+panel-toplevel.background #PanelApplet label,
+panel-toplevel.background #PanelApplet image {
+  color: #424242;
+}
+.mate-panel-menu-bar button label, .mate-panel-menu-bar button image, .mate-panel-menu-bar button,
+panel-toplevel.background button label,
+panel-toplevel.background button image,
+panel-toplevel.background button {
+  color: inherit;
+}
+.mate-panel-menu-bar #tasklist-button,
+panel-toplevel.background #tasklist-button {
+  color: rgba(66, 66, 66, 0.7);
+  background-color: #CFCFC3;
+  border-radius: 4px;
+  border-color: #c1c1b2;
+  border: none;
+}
+.mate-panel-menu-bar #tasklist-button label,
+.mate-panel-menu-bar #tasklist-button image,
+panel-toplevel.background #tasklist-button label,
+panel-toplevel.background #tasklist-button image {
+  color: inherit;
+}
+.mate-panel-menu-bar #tasklist-button:hover,
+panel-toplevel.background #tasklist-button:hover {
+  color: #424242;
+  background-color: #c6c6b8;
+  border-color: #c1c1b2;
+}
+.mate-panel-menu-bar #tasklist-button:active, .mate-panel-menu-bar #tasklist-button:checked,
+panel-toplevel.background #tasklist-button:active,
+panel-toplevel.background #tasklist-button:checked {
+  color: #424242;
+  background-color: #e6e6df;
+  font-weight: normal;
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+}
+.mate-panel-menu-bar .wnck-pager,
+panel-toplevel.background .wnck-pager {
+  background-color: rgba(241, 210, 40, 0.2);
+  border-right: 2px solid #CFCFC3;
+}
+.mate-panel-menu-bar .wnck-pager:hover, .mate-panel-menu-bar .wnck-pager:selected,
+panel-toplevel.background .wnck-pager:hover,
+panel-toplevel.background .wnck-pager:selected {
+  background-color: #f1d228;
+}
+.mate-panel-menu-bar na-tray-applet,
+panel-toplevel.background na-tray-applet {
+  -NaTrayApplet-icon-padding: 0;
+  -NaTrayApplet-icon-size: 16px;
+}
+
+.caja-notebook {
+  border-top: 1px solid #d8d8c5;
+}
+
+.caja-side-pane .frame {
+  border-width: 1px 0 0;
+}
+.caja-side-pane .frame treeview.view {
+  color: #4d4d4d;
+  background-color: #efefe7;
+}
+.caja-side-pane .frame treeview.view:hover {
+  background-color: #f7f7f7;
+  border-left: 4px solid #eecd15;
+  color: rgba(0, 0, 0, 0.8);
+}
+.caja-side-pane .frame treeview.view:selected:backdrop label, .caja-side-pane .frame treeview.view:selected:backdrop image, .caja-side-pane .frame treeview.view:selected:backdrop {
+  color: rgba(61, 57, 41, 0.7);
+}
+.caja-side-pane .frame treeview.view:backdrop label, .caja-side-pane .frame treeview.view:backdrop image, .caja-side-pane .frame treeview.view:backdrop {
+  color: rgba(77, 77, 77, 0.7);
+}
+
+.caja-notebook .frame {
+  border-width: 0 0 1px;
 }
 
 @define-color theme_fg_color #333333;
