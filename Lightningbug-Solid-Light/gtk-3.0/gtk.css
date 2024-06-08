@@ -6260,35 +6260,55 @@ panel-toplevel.background button image,
 panel-toplevel.background button {
   color: inherit;
 }
+.mate-panel-menu-bar button:not(#tasklist-button),
+panel-toplevel.background button:not(#tasklist-button) {
+  font-weight: bold;
+}
 .mate-panel-menu-bar #tasklist-button,
 panel-toplevel.background #tasklist-button {
-  color: rgba(66, 66, 66, 0.7);
   background-color: #CFCFC3;
   border-radius: 4px;
   border-color: #c1c1b2;
-  border: none;
+  border-right: 4px solid transparent;
 }
-.mate-panel-menu-bar #tasklist-button label,
-.mate-panel-menu-bar #tasklist-button image,
+.mate-panel-menu-bar #tasklist-button label, .mate-panel-menu-bar #tasklist-button image, .mate-panel-menu-bar #tasklist-button,
 panel-toplevel.background #tasklist-button label,
-panel-toplevel.background #tasklist-button image {
-  color: inherit;
+panel-toplevel.background #tasklist-button image,
+panel-toplevel.background #tasklist-button {
+  color: rgba(66, 66, 66, 0.7);
 }
 .mate-panel-menu-bar #tasklist-button:hover,
 panel-toplevel.background #tasklist-button:hover {
-  color: #424242;
   background-color: #c6c6b8;
   border-color: #c1c1b2;
+  border-right: 4px solid transparent;
 }
-.mate-panel-menu-bar #tasklist-button:active, .mate-panel-menu-bar #tasklist-button:checked,
-panel-toplevel.background #tasklist-button:active,
-panel-toplevel.background #tasklist-button:checked {
+.mate-panel-menu-bar #tasklist-button:hover label, .mate-panel-menu-bar #tasklist-button:hover image, .mate-panel-menu-bar #tasklist-button:hover,
+panel-toplevel.background #tasklist-button:hover label,
+panel-toplevel.background #tasklist-button:hover image,
+panel-toplevel.background #tasklist-button:hover {
   color: #424242;
+}
+.mate-panel-menu-bar #tasklist-button:active, .mate-panel-menu-bar #tasklist-button:checked, .mate-panel-menu-bar #tasklist-button:checked:hover,
+panel-toplevel.background #tasklist-button:active,
+panel-toplevel.background #tasklist-button:checked,
+panel-toplevel.background #tasklist-button:checked:hover {
   background-color: #e6e6df;
   font-weight: normal;
   border-radius: 4px;
-  border: none;
-  box-shadow: none;
+  border-right: 4px solid #f1d228;
+}
+.mate-panel-menu-bar #tasklist-button:active label, .mate-panel-menu-bar #tasklist-button:active image, .mate-panel-menu-bar #tasklist-button:active, .mate-panel-menu-bar #tasklist-button:checked label, .mate-panel-menu-bar #tasklist-button:checked image, .mate-panel-menu-bar #tasklist-button:checked, .mate-panel-menu-bar #tasklist-button:checked:hover label, .mate-panel-menu-bar #tasklist-button:checked:hover image, .mate-panel-menu-bar #tasklist-button:checked:hover,
+panel-toplevel.background #tasklist-button:active label,
+panel-toplevel.background #tasklist-button:active image,
+panel-toplevel.background #tasklist-button:active,
+panel-toplevel.background #tasklist-button:checked label,
+panel-toplevel.background #tasklist-button:checked image,
+panel-toplevel.background #tasklist-button:checked,
+panel-toplevel.background #tasklist-button:checked:hover label,
+panel-toplevel.background #tasklist-button:checked:hover image,
+panel-toplevel.background #tasklist-button:checked:hover {
+  color: #424242;
 }
 .mate-panel-menu-bar .wnck-pager,
 panel-toplevel.background .wnck-pager {
