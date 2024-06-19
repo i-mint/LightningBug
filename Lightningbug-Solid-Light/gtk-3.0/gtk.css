@@ -6326,13 +6326,6 @@ panel-toplevel.background na-tray-applet {
   -NaTrayApplet-icon-size: 16px;
 }
 
-.caja-notebook {
-  border-top: 1px solid #d8d8c5;
-}
-
-.caja-side-pane .frame {
-  border-width: 1px 0 0;
-}
 .caja-side-pane .frame treeview.view {
   color: #4d4d4d;
   background-color: #efefe7;
@@ -6350,7 +6343,47 @@ panel-toplevel.background na-tray-applet {
 }
 
 .caja-notebook .frame {
-  border-width: 0 0 1px;
+  border-width: 0 0 1px 0;
+  border-color: #d8d8c5;
+}
+
+.caja-side-pane .frame {
+  border-width: 1px 0 0;
+}
+
+.caja-notebook {
+  border-top: 1px solid #d8d8c5;
+}
+
+.caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
+  border-bottom: 1px solid #d8d8c5;
+}
+
+entry.caja-location-entry {
+  background: image(#fcf5cf);
+  border-color: rgba(18, 18, 18, 0.2);
+  caret-color: currentColor;
+  box-shadow: none;
+}
+entry.caja-location-entry label, entry.caja-location-entry image, entry.caja-location-entry {
+  color: rgba(18, 18, 18, 0.9);
+}
+entry.caja-location-entry:focus {
+  background: image(#f1d228);
+  border-color: rgba(18, 18, 18, 0.2);
+  box-shadow: none;
+}
+entry.caja-location-entry:focus label, entry.caja-location-entry:focus image, entry.caja-location-entry:focus {
+  color: #3d3929;
+}
+entry.caja-location-entry selection:focus {
+  background-color: #3d3929;
+  color: #f1d228;
+}
+entry.caja-location-entry:backdrop, entry.caja-location-entry:disabled {
+  color: rgba(18, 18, 18, 0.45);
+  border-color: rgba(18, 18, 18, 0.2);
+  background-color: rgba(252, 245, 207, 0.55);
 }
 
 @define-color theme_fg_color #333333;
