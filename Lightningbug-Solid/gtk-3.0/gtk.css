@@ -6344,19 +6344,20 @@ panel-toplevel.background na-tray-applet {
 
 .caja-notebook .frame {
   border-width: 0 0 1px 0;
-  border-color: #d8d8c5;
+  border-color: #12120c;
 }
 
 .caja-side-pane .frame {
   border-width: 1px 0 0;
+  border-color: #12120c;
 }
 
 .caja-notebook {
-  border-top: 1px solid #d8d8c5;
+  border-top: 1px solid #12120c;
 }
 
 .caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
-  border-bottom: 1px solid #d8d8c5;
+  border-bottom: 1px solid #12120c;
 }
 
 entry.caja-location-entry {
@@ -6384,6 +6385,73 @@ entry.caja-location-entry:backdrop, entry.caja-location-entry:disabled {
   color: rgba(250, 250, 229, 0.45);
   border-color: rgba(0, 0, 0, 0.4);
   background-color: rgba(62, 46, 4, 0.55);
+}
+
+.caja-navigation-window paned > box {
+  background-color: #434323;
+}
+.caja-navigation-window paned > box label, .caja-navigation-window paned > box image, .caja-navigation-window paned > box {
+  color: rgba(250, 250, 229, 0.9);
+}
+.caja-navigation-window paned > box > box > button.image-button {
+  color: rgba(250, 250, 229, 0.9);
+  outline-offset: -3px;
+  background-color: #3d3d1f;
+  border-color: #2e2e18;
+}
+.caja-navigation-window paned > box > box > button.image-button:backdrop {
+  opacity: 0.7;
+}
+.caja-navigation-window paned > box > box > button.image-button:backdrop label, .caja-navigation-window paned > box > box > button.image-button:backdrop {
+  color: rgba(250, 250, 229, 0.9);
+}
+.caja-navigation-window paned > box > box > button.image-button:hover {
+  color: rgba(250, 250, 229, 0.9);
+  background-color: #54542b;
+  border-color: #2e2e18;
+}
+.caja-navigation-window paned > box > box > button.image-button:active, .caja-navigation-window paned > box > box > button.image-button:checked {
+  color: #3d3929;
+  background-color: #f1d228;
+  border-color: #2e2e18;
+  background-clip: border-box;
+}
+.caja-navigation-window paned > box > box > button.image-button:disabled {
+  color: rgba(250, 250, 229, 0.46);
+  background-color: rgba(61, 61, 31, 0.56);
+  border-color: #2e2e18;
+}
+.caja-navigation-window paned > box > box > button.image-button:disabled:active, .caja-navigation-window paned > box > box > button.image-button:disabled:checked {
+  color: rgba(61, 57, 41, 0.75);
+  border-color: rgba(241, 210, 40, 0.67);
+  background-color: rgba(241, 210, 40, 0.67);
+}
+
+.caja-pathbar button.toggle, .caja-pathbar button.slider-button, .caja-pathbar button.text-button, .caja-pathbar button.image-button {
+  background-color: #434323;
+  color: rgba(250, 250, 229, 0.57);
+  border: 0.1px solid rgba(0, 0, 0, 0.95);
+}
+.caja-pathbar button.toggle label, .caja-pathbar button.toggle image, .caja-pathbar button.slider-button label, .caja-pathbar button.slider-button image, .caja-pathbar button.text-button label, .caja-pathbar button.text-button image, .caja-pathbar button.image-button label, .caja-pathbar button.image-button image {
+  color: inherit;
+}
+.caja-pathbar button.toggle:hover, .caja-pathbar button.slider-button:hover, .caja-pathbar button.text-button:hover, .caja-pathbar button.image-button:hover {
+  background-color: #626232;
+  color: rgba(250, 250, 229, 0.9);
+  border-right: 0.1px solid rgba(0, 0, 0, 0.95);
+}
+.caja-pathbar button.toggle:hover label, .caja-pathbar button.toggle:hover image, .caja-pathbar button.slider-button:hover label, .caja-pathbar button.slider-button:hover image, .caja-pathbar button.text-button:hover label, .caja-pathbar button.text-button:hover image, .caja-pathbar button.image-button:hover label, .caja-pathbar button.image-button:hover image {
+  color: inherit;
+}
+.caja-pathbar button.toggle:active, .caja-pathbar button.toggle:checked, .caja-pathbar button.toggle:checked:hover, .caja-pathbar button.slider-button:active, .caja-pathbar button.slider-button:checked, .caja-pathbar button.slider-button:checked:hover, .caja-pathbar button.text-button:active, .caja-pathbar button.text-button:checked, .caja-pathbar button.text-button:checked:hover, .caja-pathbar button.image-button:active, .caja-pathbar button.image-button:checked, .caja-pathbar button.image-button:checked:hover {
+  background-color: #686836;
+  border-right: 0.1px solid rgba(0, 0, 0, 0.95);
+}
+.caja-pathbar button.toggle:active label, .caja-pathbar button.toggle:active image, .caja-pathbar button.toggle:active, .caja-pathbar button.toggle:checked label, .caja-pathbar button.toggle:checked image, .caja-pathbar button.toggle:checked, .caja-pathbar button.toggle:checked:hover label, .caja-pathbar button.toggle:checked:hover image, .caja-pathbar button.toggle:checked:hover, .caja-pathbar button.slider-button:active label, .caja-pathbar button.slider-button:active image, .caja-pathbar button.slider-button:active, .caja-pathbar button.slider-button:checked label, .caja-pathbar button.slider-button:checked image, .caja-pathbar button.slider-button:checked, .caja-pathbar button.slider-button:checked:hover label, .caja-pathbar button.slider-button:checked:hover image, .caja-pathbar button.slider-button:checked:hover, .caja-pathbar button.text-button:active label, .caja-pathbar button.text-button:active image, .caja-pathbar button.text-button:active, .caja-pathbar button.text-button:checked label, .caja-pathbar button.text-button:checked image, .caja-pathbar button.text-button:checked, .caja-pathbar button.text-button:checked:hover label, .caja-pathbar button.text-button:checked:hover image, .caja-pathbar button.text-button:checked:hover, .caja-pathbar button.image-button:active label, .caja-pathbar button.image-button:active image, .caja-pathbar button.image-button:active, .caja-pathbar button.image-button:checked label, .caja-pathbar button.image-button:checked image, .caja-pathbar button.image-button:checked, .caja-pathbar button.image-button:checked:hover label, .caja-pathbar button.image-button:checked:hover image, .caja-pathbar button.image-button:checked:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.caja-pathbar button.toggle:active label, .caja-pathbar button.toggle:active image, .caja-pathbar button.toggle:checked label, .caja-pathbar button.toggle:checked image, .caja-pathbar button.toggle:checked:hover label, .caja-pathbar button.toggle:checked:hover image, .caja-pathbar button.slider-button:active label, .caja-pathbar button.slider-button:active image, .caja-pathbar button.slider-button:checked label, .caja-pathbar button.slider-button:checked image, .caja-pathbar button.slider-button:checked:hover label, .caja-pathbar button.slider-button:checked:hover image, .caja-pathbar button.text-button:active label, .caja-pathbar button.text-button:active image, .caja-pathbar button.text-button:checked label, .caja-pathbar button.text-button:checked image, .caja-pathbar button.text-button:checked:hover label, .caja-pathbar button.text-button:checked:hover image, .caja-pathbar button.image-button:active label, .caja-pathbar button.image-button:active image, .caja-pathbar button.image-button:checked label, .caja-pathbar button.image-button:checked image, .caja-pathbar button.image-button:checked:hover label, .caja-pathbar button.image-button:checked:hover image {
+  color: inherit;
 }
 
 @define-color theme_fg_color #333333;
