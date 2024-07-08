@@ -324,6 +324,65 @@ treeview entry.flat:focus, treeview entry:focus {
   border-color: #B8860B;
 }
 
+.entry-tag {
+  padding: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-style: none;
+  color: #2c2a21;
+  background-color: #B8860B;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.6);
+}
+:dir(ltr) .entry-tag {
+  margin-left: 8px;
+  margin-right: -5px;
+}
+:dir(rtl) .entry-tag {
+  margin-left: -5px;
+  margin-right: 8px;
+}
+.entry-tag:hover {
+  color: #2c2a21;
+  background-color: #e3a60e;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.6);
+}
+:backdrop .entry-tag {
+  color: #2c2a21;
+  background-color: rgba(184, 134, 11, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.6);
+}
+.entry-tag.button {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.6);
+}
+:not(:backdrop) .entry-tag.button {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.6);
+}
+:not(:backdrop) .entry-tag.button:hover {
+  border: 1px solid #2e2e18;
+  color: rgba(44, 42, 33, 0.6);
+}
+:not(:backdrop) .entry-tag.button:active {
+  color: #2c2a21;
+  background-color: #a5780a;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
 @keyframes needs_attention {
   from {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.01, to(#B8860B), to(transparent));
