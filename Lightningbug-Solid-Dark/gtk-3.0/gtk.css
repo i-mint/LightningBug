@@ -4457,12 +4457,12 @@ paned.gedit-side-panel-paned treeview.view label, paned.gedit-side-panel-paned t
   color: #a8a8a8;
 }
 paned.gedit-side-panel-paned treeview.view:hover {
-  background: image(#2a2a1d);
+  background-color: rgba(184, 134, 11, 0.12);
   border-left: 4px solid #f1b627;
   padding-left: 0px;
 }
 paned.gedit-side-panel-paned treeview.view:hover label, paned.gedit-side-panel-paned treeview.view:hover {
-  color: #a8a8a8;
+  color: rgba(255, 255, 255, 0.8);
 }
 paned.gedit-side-panel-paned treeview.view:hover:backdrop {
   background-color: rgba(184, 134, 11, 0.1);

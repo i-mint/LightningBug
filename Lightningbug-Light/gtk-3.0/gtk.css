@@ -4463,12 +4463,12 @@ paned.gedit-side-panel-paned treeview.view label, paned.gedit-side-panel-paned t
   color: #4d4d4d;
 }
 paned.gedit-side-panel-paned treeview.view:hover {
-  background: image(rgba(239, 239, 231, 0.94));
+  background-color: #f7f7f7;
   border-left: 4px solid #eecd15;
   padding-left: 0px;
 }
 paned.gedit-side-panel-paned treeview.view:hover label, paned.gedit-side-panel-paned treeview.view:hover {
-  color: #4d4d4d;
+  color: rgba(0, 0, 0, 0.8);
 }
 paned.gedit-side-panel-paned treeview.view:hover:backdrop {
   background-color: #f4f4f4;
