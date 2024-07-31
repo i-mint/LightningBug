@@ -6418,6 +6418,20 @@ panel-toplevel.background na-tray-applet {
 .caja-notebook {
   border-top: 1px solid #ceceb6;
 }
+.caja-notebook tabs > tab.reorderable-page > box > button.flat image {
+  margin: 1px 0;
+  padding: 2px;
+  border-radius: 54%;
+  border: 2px solid transparent;
+}
+.caja-notebook tabs > tab.reorderable-page > box > button.flat:hover image {
+  background-color: #bfbfbf;
+  border: 2px solid transparent;
+}
+.caja-notebook tabs > tab.reorderable-page > box > button.flat:active image {
+  background-color: #e3e3e3;
+  border: 2px solid #b4b48e;
+}
 
 .caja-navigation-window toolbar.horizontal.primary-toolbar, .caja-navigation-window .horizontal.primary-toolbar.inline-toolbar {
   border-bottom: 1px solid #ceceb6;
