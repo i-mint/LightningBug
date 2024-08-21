@@ -1203,6 +1203,16 @@ toolbar:not(.inline-toolbar) .linked > entry,
   border-style: solid;
   border-image: linear-gradient(to bottom, #252513, #0d0d07) 1 0 1 0;
 }
+.primary-toolbar toolitem > grid > button.scale,
+.primary-toolbar toolitem > grid > button.flat {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.primary-toolbar toolitem > button.raised.toggle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .inline-toolbar {
   background-color: #0f0f0b;
   border-style: solid;
