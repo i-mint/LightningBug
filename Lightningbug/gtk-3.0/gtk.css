@@ -4828,6 +4828,10 @@ filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdr
 .nautilus-window placessidebar.sidebar row.sidebar-row:active:backdrop {
   border-left: 4px solid #e6c50f;
 }
+filechooser placessidebar.sidebar row.sidebar-row:selected:hover,
+.nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover {
+  background-color: #d9bd24;
+}
 filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop label, filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon label, filechooser placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop label, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop .sidebar-icon label, filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup:backdrop .sidebar-icon,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop label,
 .nautilus-window placessidebar.sidebar row.sidebar-row:selected:backdrop,
