@@ -2521,6 +2521,10 @@ switch, switch slider {
   border: none;
   box-shadow: none;
 }
+switch > image {
+  outline-color: transparent;
+  color: transparent;
+}
 switch.restricts {
   background-image: -gtk-scaled(url("assets/switch-restricts-dark.png"), url("assets/switch-restricts-dark@2.png"));
 }
