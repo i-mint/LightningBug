@@ -5409,6 +5409,13 @@ panel-toplevel.background button:checked:not(#tasklist-button) image,
   background-color: #f1d228;
   color: #3d3929;
 }
+.mousepad .popup menu > menuitem:hover check:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected.png"), url("assets/checkbox-checked-selected@2.png"));
+}
+.mousepad .popup menu > menuitem:hover radio:checked {
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-selected.png"), url("assets/radio-checked-selected@2.png"));
+}
+
 .budgie-container {
   background-color: transparent;
   border: none;
