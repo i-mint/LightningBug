@@ -5209,50 +5209,36 @@ terminal-window notebook > header.top > tabs > tab:checked {
   background-color: #3d3929;
   color: #f1d228;
 }
-.thunar .linked.path-bar > button:not(.toggle),
-.thunar button.path-bar-button:not(.toggle) {
+.thunar .linked.path-bar > button.path-bar-button {
+  border: none;
+}
+.thunar .linked.path-bar > button.path-bar-button:not(.toggle) {
   color: rgba(250, 250, 229, 0.9);
   outline-offset: -3px;
   background-color: #3d3d1f;
   border-color: #1e1e10;
 }
-.thunar .linked.path-bar > button:not(.toggle):hover,
-.thunar button.path-bar-button:not(.toggle):hover {
+.thunar .linked.path-bar > button.path-bar-button:not(.toggle):hover {
   background-color: #f1d228;
 }
-.thunar .linked.path-bar > button.toggle,
-.thunar button.path-bar-button.toggle {
+.thunar .linked.path-bar > button.path-bar-button.toggle {
   color: rgba(250, 250, 229, 0.57);
   background-color: #434323;
   border-color: #1e1e10;
 }
-.thunar .linked.path-bar > button.toggle:hover,
-.thunar button.path-bar-button.toggle:hover {
+.thunar .linked.path-bar > button.path-bar-button.toggle:hover {
   color: rgba(250, 250, 229, 0.9);
   background-color: #626232;
   border-color: #1e1e10;
 }
-.thunar .linked.path-bar > button.toggle:hover:not(:checked):not(:active):not(:only-child):hover,
-.thunar button.path-bar-button.toggle:hover:not(:checked):not(:active):not(:only-child):hover {
-  box-shadow: inset 1px 0 rgba(30, 30, 16, 0.5), inset -1px 0 rgba(30, 30, 16, 0.5);
-}
-.thunar .linked.path-bar > button.toggle:active, .thunar .linked.path-bar > button.toggle:checked,
-.thunar button.path-bar-button.toggle:active,
-.thunar button.path-bar-button.toggle:checked {
+.thunar .linked.path-bar > button.path-bar-button.toggle:active, .thunar .linked.path-bar > button.path-bar-button.toggle:checked {
   background-color: #76763d;
   border-color: #1e1e10;
 }
-.thunar .linked.path-bar > button.toggle:active label, .thunar .linked.path-bar > button.toggle:active image, .thunar .linked.path-bar > button.toggle:active, .thunar .linked.path-bar > button.toggle:checked label, .thunar .linked.path-bar > button.toggle:checked image, .thunar .linked.path-bar > button.toggle:checked,
-.thunar button.path-bar-button.toggle:active label,
-.thunar button.path-bar-button.toggle:active image,
-.thunar button.path-bar-button.toggle:active,
-.thunar button.path-bar-button.toggle:checked label,
-.thunar button.path-bar-button.toggle:checked image,
-.thunar button.path-bar-button.toggle:checked {
+.thunar .linked.path-bar > button.path-bar-button.toggle:active label, .thunar .linked.path-bar > button.path-bar-button.toggle:active image, .thunar .linked.path-bar > button.path-bar-button.toggle:active, .thunar .linked.path-bar > button.path-bar-button.toggle:checked label, .thunar .linked.path-bar > button.path-bar-button.toggle:checked image, .thunar .linked.path-bar > button.path-bar-button.toggle:checked {
   color: rgba(255, 255, 255, 0.9);
 }
-.thunar .linked.path-bar > button:backdrop,
-.thunar button.path-bar-button:backdrop {
+.thunar .linked.path-bar > button.path-bar-button:backdrop {
   opacity: 0.7;
 }
 .thunar notebook tabs > tab.reorderable-page button.flat > image {
