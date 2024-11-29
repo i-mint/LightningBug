@@ -3346,11 +3346,10 @@ expander arrow:checked {
 calendar {
   color: #e3e3e3;
   border: 1px solid #12120d;
-  border-radius: 3px;
-  padding: 2px;
+  border-radius: 4px;
 }
 calendar:selected {
-  border-radius: 1.5px;
+  border-radius: 4px;
 }
 calendar.header {
   color: #e3e3e3;

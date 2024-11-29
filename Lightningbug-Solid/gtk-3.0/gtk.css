@@ -3351,11 +3351,10 @@ expander arrow:checked {
 calendar {
   color: #333333;
   border: 1px solid #d8d8c5;
-  border-radius: 3px;
-  padding: 2px;
+  border-radius: 4px;
 }
 calendar:selected {
-  border-radius: 1.5px;
+  border-radius: 4px;
 }
 calendar.header {
   color: #333333;
