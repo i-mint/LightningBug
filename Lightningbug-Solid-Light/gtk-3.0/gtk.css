@@ -3435,10 +3435,11 @@ filechooser .linked.path-bar > button:hover {
   border-color: #ccccb3;
 }
 filechooser .linked.path-bar > button:active, filechooser .linked.path-bar > button:checked {
-  color: #3d3929;
-  border-color: #e2e2e2;
-  background-color: #f1d228;
-  border-right: 0.1px solid #000000;
+  background-color: #c6c6aa;
+  border-color: #ccccb3;
+}
+filechooser .linked.path-bar > button:active label, filechooser .linked.path-bar > button:active image, filechooser .linked.path-bar > button:active, filechooser .linked.path-bar > button:checked label, filechooser .linked.path-bar > button:checked image, filechooser .linked.path-bar > button:checked {
+  color: rgba(0, 0, 0, 0.9);
 }
 filechooser .linked.path-bar > button:backdrop {
   opacity: 0.7;
