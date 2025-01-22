@@ -3418,36 +3418,6 @@ messagedialog.csd .dialog-action-area button:only-child {
   border-right-style: none;
 }
 
-filechooser #pathbarbox {
-  border-bottom: 1px solid rgba(216, 216, 197, 0.5);
-}
-filechooser #pathbarbox.view.vertical > stack, filechooser iconview#pathbarbox.vertical > stack {
-  background-color: rgba(231, 231, 219, 0.93);
-}
-filechooser #pathbarbox.view.vertical > stack:backdrop, filechooser iconview#pathbarbox.vertical > stack:backdrop {
-  background-color: rgba(237, 237, 228, 0.93);
-}
-filechooser .linked.path-bar > button {
-  color: rgba(18, 18, 18, 0.57);
-  background-color: rgba(223, 223, 207, 0.93);
-  border-color: rgba(204, 204, 179, 0.93);
-}
-filechooser .linked.path-bar > button:hover {
-  color: rgba(18, 18, 18, 0.9);
-  background-color: rgba(207, 207, 182, 0.93);
-  border-color: rgba(204, 204, 179, 0.93);
-}
-filechooser .linked.path-bar > button:active, filechooser .linked.path-bar > button:checked {
-  background-color: rgba(198, 198, 170, 0.93);
-  border-color: rgba(204, 204, 179, 0.93);
-}
-filechooser .linked.path-bar > button:active label, filechooser .linked.path-bar > button:active image, filechooser .linked.path-bar > button:active, filechooser .linked.path-bar > button:checked label, filechooser .linked.path-bar > button:checked image, filechooser .linked.path-bar > button:checked {
-  color: rgba(0, 0, 0, 0.9);
-}
-filechooser .linked.path-bar > button:backdrop {
-  opacity: 0.7;
-}
-
 filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent;
@@ -4278,21 +4248,31 @@ paned.gedit-side-panel-paned treeview.view.separator, paned.gedit-side-panel-pan
 paned.gedit-side-panel-paned {
   background-color: rgba(239, 239, 231, 0.94);
 }
-paned.gedit-side-panel-paned button {
+paned.gedit-side-panel-paned button:not(.flat), paned.gedit-side-panel-paned button.toggle:not(.flat), paned.gedit-side-panel-paned button.popup:not(.flat), paned.gedit-side-panel-paned button.small-button:not(.flat) {
   color: rgba(18, 18, 18, 0.9);
   outline-offset: -3px;
   background-color: rgba(217, 217, 198, 0.93);
   border-color: rgba(204, 204, 179, 0.93);
 }
-paned.gedit-side-panel-paned button:hover {
+paned.gedit-side-panel-paned button:not(.flat):hover, paned.gedit-side-panel-paned button.toggle:not(.flat):hover, paned.gedit-side-panel-paned button.popup:not(.flat):hover, paned.gedit-side-panel-paned button.small-button:not(.flat):hover {
   color: rgba(18, 18, 18, 0.9);
   background-color: rgba(202, 202, 176, 0.93);
   border-color: rgba(204, 204, 179, 0.93);
 }
-paned.gedit-side-panel-paned button:active, paned.gedit-side-panel-paned button:checked, paned.gedit-side-panel-paned button:selected {
+paned.gedit-side-panel-paned button:not(.flat):active, paned.gedit-side-panel-paned button:not(.flat):checked, paned.gedit-side-panel-paned button:not(.flat):selected, paned.gedit-side-panel-paned button.toggle:not(.flat):active, paned.gedit-side-panel-paned button.toggle:not(.flat):checked, paned.gedit-side-panel-paned button.toggle:not(.flat):selected, paned.gedit-side-panel-paned button.popup:not(.flat):active, paned.gedit-side-panel-paned button.popup:not(.flat):checked, paned.gedit-side-panel-paned button.popup:not(.flat):selected, paned.gedit-side-panel-paned button.small-button:not(.flat):active, paned.gedit-side-panel-paned button.small-button:not(.flat):checked, paned.gedit-side-panel-paned button.small-button:not(.flat):selected {
   color: #3d3929;
   background-color: #f1d228;
   border-color: rgba(204, 204, 179, 0.93);
+}
+paned.gedit-side-panel-paned button:not(.flat):disabled, paned.gedit-side-panel-paned button.toggle:not(.flat):disabled, paned.gedit-side-panel-paned button.popup:not(.flat):disabled, paned.gedit-side-panel-paned button.small-button:not(.flat):disabled {
+  color: rgba(18, 18, 18, 0.46);
+  background-color: rgba(217, 217, 198, 0.49);
+  border-color: rgba(204, 204, 179, 0.93);
+}
+paned.gedit-side-panel-paned button:not(.flat):disabled:active, paned.gedit-side-panel-paned button:not(.flat):disabled:checked, paned.gedit-side-panel-paned button.toggle:not(.flat):disabled:active, paned.gedit-side-panel-paned button.toggle:not(.flat):disabled:checked, paned.gedit-side-panel-paned button.popup:not(.flat):disabled:active, paned.gedit-side-panel-paned button.popup:not(.flat):disabled:checked, paned.gedit-side-panel-paned button.small-button:not(.flat):disabled:active, paned.gedit-side-panel-paned button.small-button:not(.flat):disabled:checked {
+  color: rgba(61, 57, 41, 0.75);
+  border-color: rgba(241, 210, 40, 0.67);
+  background-color: rgba(241, 210, 40, 0.67);
 }
 paned.gedit-side-panel-paned .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover:not(:only-child),
 paned.gedit-side-panel-paned .linked:not(.vertical) > button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action):hover + button:not(:checked):not(:active):not(.suggested-action):not(.destructive-action) {
