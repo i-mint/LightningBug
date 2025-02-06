@@ -2478,10 +2478,10 @@ scrollbar slider {
   border: 4px solid transparent;
   border-radius: 8px;
   background-clip: padding-box;
-  background-color: #e2e2dd;
+  background-color: #cececa;
 }
 scrollbar slider:hover {
-  background-color: #cececa;
+  background-color: #a7a7a4;
 }
 scrollbar slider:hover:active {
   background-color: #f1d228;
