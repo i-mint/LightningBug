@@ -1828,7 +1828,7 @@ StScrollBar StButton#hhandle:hover:active {
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color: rgba(42, 42, 29, 0.2);
+  background-color: rgba(72, 72, 50, 0.6);
   border-radius: 9px;
 }
 
