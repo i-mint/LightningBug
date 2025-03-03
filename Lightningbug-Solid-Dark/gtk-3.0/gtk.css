@@ -3609,12 +3609,19 @@ separator {
 }
 
 separator.sidebar:dir(ltr), separator.sidebar.left, separator.sidebar.left:dir(rtl), separator.sidebar:dir(rtl), separator.sidebar.right {
-  background-color: #12120d;
+  background-image: linear-gradient(to bottom, #12120d, #12120d);
   border: 0;
 }
 .titlebar separator.sidebar:dir(ltr), .titlebar separator.sidebar.left, .titlebar separator.sidebar.left:dir(rtl), .titlebar separator.sidebar:dir(rtl), .titlebar separator.sidebar.right {
-  background-color: #18180c;
+  background-image: linear-gradient(to bottom, #18180c, #18180c);
   margin: 0;
+}
+separator.sidebar.selection-mode, .selection-mode separator.sidebar {
+  background-image: linear-gradient(to bottom, #584005, #584005);
+}
+
+hdyleaflet:not(.titlebar) > separator {
+  background-image: linear-gradient(to bottom, #12120d, #12120d);
 }
 
 infobar {
@@ -4147,7 +4154,7 @@ modelbutton.flat:checked arrow:backdrop, treeview.view:backdrop:selected, row:ba
 }
 
 .gedit-side-panel-paned > separator {
-  background-image: linear-gradient(to bottom, #1b1b13, #1b1b13);
+  background-image: linear-gradient(to bottom, #18180c, #18180c);
 }
 
 .gedit-bottom-panel-paned > separator {
