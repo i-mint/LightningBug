@@ -5942,31 +5942,47 @@ panel-toplevel.background button:checked:not(#tasklist-button) image,
 
 .raven-background,
 .raven-header,
-.raven-frame,
 .raven,
-.raven-notifications-view > .raven-background > .frame > list {
-  background-color: #181811;
-  border-radius: 0;
-}
-.raven-background label, .raven-background image, .raven-background,
-.raven-header label,
-.raven-header image,
-.raven-header,
-.raven-frame label,
-.raven-frame image,
-.raven-frame,
-.raven label,
-.raven image,
-.raven,
-.raven-notifications-view > .raven-background > .frame > list label,
-.raven-notifications-view > .raven-background > .frame > list image,
 .raven-notifications-view > .raven-background > .frame > list {
   color: #e3e3e3;
+  background-color: #2a2a1d;
+  border-radius: 0;
 }
 
-.raven-frame > border {
-  border: none 0 transparent;
-  border-left: 0.2px solid #B8860B;
+.right frame.raven-frame {
+  margin-left: 32px;
+}
+.right frame.raven-frame > border {
+  border: none;
+  border-left: 1px solid #12120d;
+}
+
+.left frame.raven-frame {
+  margin-right: 32px;
+}
+.left frame.raven-frame > border {
+  border: none;
+  border-right: 1px solid #12120d;
+}
+
+.top frame.raven-frame {
+  margin-bottom: 32px;
+}
+.top frame.raven-frame > border {
+  border: none;
+  border-bottom: 1px solid #12120d;
+}
+
+.bottom frame.raven-frame {
+  margin-top: 32px;
+}
+.bottom frame.raven-frame > border {
+  border: none;
+  border-top: 1px solid #12120d;
+}
+
+frame.raven-frame > border {
+  box-shadow: 0 8px 8px -5px rgba(0, 0, 0, 0.28), 0 6px 6px 2px rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 .raven {
