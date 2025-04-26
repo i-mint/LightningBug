@@ -904,7 +904,7 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, .inline-toolbar tool
   box-shadow: none;
 }
 
-.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .budgie-popover:not(.csd) .linked button, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
+.linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl), .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button, headerbar .linked:not(.vertical):not(.path-bar) > button, .night-light-indicator spinbutton:not(.vertical) button, .night-light-indicator spinbutton:not(.vertical) entry,
 spinbutton:not(.vertical) button,
@@ -913,7 +913,7 @@ spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.ve
   border-right-style: none;
 }
 
-.budgie-popover:not(.csd) .linked button:first-child, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:first-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:first-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:first-child, headerbar .linked:not(.vertical):not(.path-bar) > button:first-child,
 spinbutton:not(.vertical) button:first-child,
@@ -921,7 +921,7 @@ spinbutton:not(.vertical) entry:first-child, .linked:not(.vertical) > entry:firs
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-.budgie-popover:not(.csd) .linked button:last-child, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:last-child, headerbar .linked:not(.vertical):not(.path-bar) > button:last-child,
 spinbutton:not(.vertical) button:last-child,
@@ -930,7 +930,7 @@ spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > entry:last-
   border-bottom-right-radius: 4px;
   border-right-style: solid;
 }
-.budgie-popover:not(.csd) .linked button:only-child, .xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
+.xfce4-panel.panel #pulseaudio-button > window.popup.csd .linked > button:only-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:only-child,
 .primary-toolbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child, .primary-toolbar .linked:not(.vertical):not(.path-bar) > button:only-child, headerbar .linked:not(.vertical):not(.path-bar) > button:only-child,
 spinbutton:not(.vertical) button:only-child,
@@ -5510,14 +5510,9 @@ panel-toplevel.background button:checked:not(#tasklist-button) image,
 .budgie-menu .category-button:first-child {
   margin-top: -2px;
 }
-.budgie-notification-window, .budgie-popover:not(.csd).user-menu row, .budgie-popover:not(.csd).user-menu list, .budgie-popover:not(.csd).places-menu row, .budgie-popover:not(.csd).places-menu list, .budgie-popover:not(.csd).background {
-  background-color: rgba(42, 42, 29, 0.97);
-}
-.budgie-notification-window label, .budgie-popover:not(.csd).user-menu row label, .budgie-popover:not(.csd).user-menu list label, .budgie-popover:not(.csd).places-menu row label, .budgie-popover:not(.csd).places-menu list label, .budgie-popover:not(.csd).background label {
-  color: #e3e3e3;
-}
-
 .budgie-popover:not(.csd).background {
+  color: #e3e3e3;
+  background-color: rgba(42, 42, 29, 0.97);
   border-radius: 4px;
   border: 1px solid rgba(16, 16, 11, 0.988);
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2), 0 4px 8px 2px rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
@@ -5530,31 +5525,15 @@ panel-toplevel.background button:checked:not(#tasklist-button) image,
 .budgie-popover:not(.csd) .categories {
   border-right: 1px solid rgba(227, 227, 227, 0.1);
 }
-.budgie-popover:not(.csd) .linked button {
-  color: #e3e3e3;
-  border-color: #171711;
-  background-color: #242419;
-}
-.budgie-popover:not(.csd) .linked button:hover {
-  color: #e3e3e3;
-  border-color: #171711;
-  background-color: #2d2d20;
-}
-.budgie-popover:not(.csd) .linked button:active {
-  color: #2c2a21;
-  border-color: #171711;
-  background-color: #B8860B;
-}
-.budgie-popover:not(.csd) .linked button:not(:first-child) {
-  border-left: 1px solid #171711;
-}
 .budgie-popover:not(.csd).user-menu row, .budgie-popover:not(.csd).user-menu list, .budgie-popover:not(.csd).places-menu row, .budgie-popover:not(.csd).places-menu list {
+  color: #e3e3e3;
+  background-color: rgba(42, 42, 29, 0.97);
   border-radius: 4px;
   margin: 0;
   padding: 0;
 }
-.budgie-popover:not(.csd).user-menu row label, .budgie-popover:not(.csd).user-menu row, .budgie-popover:not(.csd).user-menu list label, .budgie-popover:not(.csd).user-menu list, .budgie-popover:not(.csd).places-menu row label, .budgie-popover:not(.csd).places-menu row, .budgie-popover:not(.csd).places-menu list label, .budgie-popover:not(.csd).places-menu list {
-  color: #B8860B;
+.budgie-popover:not(.csd).user-menu row label, .budgie-popover:not(.csd).user-menu list label, .budgie-popover:not(.csd).places-menu row label, .budgie-popover:not(.csd).places-menu list label {
+  color: inherit;
 }
 .budgie-popover:not(.csd).user-menu row:hover, .budgie-popover:not(.csd).user-menu list:hover, .budgie-popover:not(.csd).places-menu row:hover, .budgie-popover:not(.csd).places-menu list:hover {
   background-color: transparent;
@@ -5619,30 +5598,16 @@ panel-toplevel.background button:checked:not(#tasklist-button) image,
 .budgie-popover:not(.csd) stack.clock-applet-stack button:active label {
   color: inherit;
 }
+.budgie-popover:not(.csd) button.flat:not(:hover), .budgie-popover:not(.csd) button.flat:not(:active), .budgie-popover:not(.csd) button.flat:not(:checked), .budgie-popover:not(.csd) button.flat:not(:checked:active), .budgie-popover:not(.csd) button.flat:not(:checked:hover), .budgie-popover:not(.csd) button.flat:not(:focus) {
+  border-color: transparent;
+  background-color: transparent;
+}
 
 .night-light-indicator .container {
   padding: 4px 6px;
 }
 .night-light-indicator .view-header {
   background: transparent;
-}
-.night-light-indicator button, .night-light-indicator button.display-settings-button {
-  color: #e3e3e3;
-  border-color: #171711;
-  background-color: #242419;
-}
-.night-light-indicator button:hover, .night-light-indicator button.display-settings-button:hover {
-  color: #e3e3e3;
-  border-color: #171711;
-  background-color: #2d2d20;
-}
-.night-light-indicator button:active, .night-light-indicator button.display-settings-button:active {
-  color: #2c2a21;
-  border-color: #171711;
-  background-color: #B8860B;
-}
-.night-light-indicator button:active label, .night-light-indicator button.display-settings-button:active label {
-  color: inherit;
 }
 .night-light-indicator spinbutton label, .night-light-indicator spinbutton {
   color: #e3e3e3;
@@ -6067,8 +6032,13 @@ frame.raven-frame > border {
 }
 
 .budgie-notification-window {
+  color: #e3e3e3;
+  background-color: rgba(42, 42, 29, 0.97);
   border-radius: 4px;
   background-clip: border-box;
+}
+.budgie-notification-window label {
+  color: inherit;
 }
 .budgie-notification-window button {
   border-radius: 4px;
