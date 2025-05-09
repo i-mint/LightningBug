@@ -6040,8 +6040,22 @@ frame.raven-frame > border {
 .budgie-notification-window label {
   color: inherit;
 }
-.budgie-notification-window button {
+.budgie-notification-window button.close {
   border-radius: 4px;
+  margin-top: 7px;
+  margin-right: 2px;
+  border-color: transparent;
+  background-color: transparent;
+}
+.budgie-notification-window button.close:hover {
+  color: #e3e3e3;
+  border-color: #171711;
+  background-color: #2d2d20;
+}
+.budgie-notification-window button.close:active {
+  color: #2c2a21;
+  border-color: #171711;
+  background-color: #B8860B;
 }
 
 .mate-panel-menu-bar, .mate-panel-menu-bar menubar,
