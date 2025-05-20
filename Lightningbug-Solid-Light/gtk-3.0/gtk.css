@@ -6183,6 +6183,38 @@ panel-toplevel.background na-tray-applet {
   border-width: 1px 0 0;
   border-color: #ceceb6;
 }
+.caja-side-pane > box button.flat:not(:active):not(:checked),
+.caja-side-pane > box button.flat.toggle:not(:active):not(:checked) {
+  color: #4d4d4d;
+}
+.caja-side-pane > box button.flat:hover:not(:active),
+.caja-side-pane > box button.flat.toggle:hover:not(:active) {
+  color: rgba(18, 18, 18, 0.9);
+  background-color: #cacab0;
+  border-color: #ccccb3;
+}
+.caja-side-pane > box button.flat:hover:not(:active) label,
+.caja-side-pane > box button.flat.toggle:hover:not(:active) label {
+  color: inherit;
+}
+.caja-side-pane > box button.flat:active, .caja-side-pane > box button.flat:checked,
+.caja-side-pane > box button.flat.toggle:active,
+.caja-side-pane > box button.flat.toggle:checked {
+  color: #3d3929;
+  background-color: #f1d228;
+  border-color: #ccccb3;
+}
+.caja-side-pane > box button.flat:active label, .caja-side-pane > box button.flat:checked label,
+.caja-side-pane > box button.flat.toggle:active label,
+.caja-side-pane > box button.flat.toggle:checked label {
+  color: inherit;
+}
+.caja-side-pane .csd.popup > menu > menuitem:not(:hover):not(:active) label, .caja-side-pane .csd.popup > menu > menuitem:not(:hover):not(:active) {
+  color: #333333;
+}
+.caja-side-pane .csd.popup > menu > menuitem:hover label, .caja-side-pane .csd.popup > menu > menuitem:hover {
+  color: #3d3929;
+}
 
 .caja-notebook {
   border-top: 1px solid #ceceb6;
