@@ -5419,6 +5419,9 @@ panel-toplevel.background button:checked:not(#tasklist-button) image,
     border-left: 2px solid #f1b627;
   }
 }
+.budgie-popover:not(.csd).user-menu row button:checked:hover, .budgie-popover:not(.csd).user-menu list button:checked:hover, .budgie-popover:not(.csd).places-menu row button:checked:hover, .budgie-popover:not(.csd).places-menu list button:checked:hover, .budgie-popover:not(.csd) .category-button:checked:hover, .budgie-menu .category-button:checked:hover {
+  background-color: #a6790a;
+}
 .budgie-popover:not(.csd).user-menu row button:active, .budgie-popover:not(.csd).user-menu list button:active, .budgie-popover:not(.csd).places-menu row button:active, .budgie-popover:not(.csd).places-menu list button:active, .budgie-popover:not(.csd) .category-button:active, .budgie-menu .category-button:active, .budgie-popover:not(.csd).user-menu row button:selected, .budgie-popover:not(.csd).user-menu list button:selected, .budgie-popover:not(.csd).places-menu row button:selected, .budgie-popover:not(.csd).places-menu list button:selected, .budgie-popover:not(.csd) .category-button:selected, .budgie-menu .category-button:selected, .budgie-popover:not(.csd).user-menu row button:checked, .budgie-popover:not(.csd).user-menu list button:checked, .budgie-popover:not(.csd).places-menu row button:checked, .budgie-popover:not(.csd).places-menu list button:checked, .budgie-popover:not(.csd) .category-button:checked, .budgie-menu .category-button:checked {
   background-color: #B8860B;
   font-weight: normal;
@@ -5598,7 +5601,24 @@ panel-toplevel.background button:checked:not(#tasklist-button) image,
 .budgie-popover:not(.csd) stack.clock-applet-stack button:active label {
   color: inherit;
 }
-.budgie-popover:not(.csd) button.flat:not(:hover), .budgie-popover:not(.csd) button.flat:not(:active), .budgie-popover:not(.csd) button.flat:not(:checked), .budgie-popover:not(.csd) button.flat:not(:checked:active), .budgie-popover:not(.csd) button.flat:not(:checked:hover), .budgie-popover:not(.csd) button.flat:not(:focus) {
+.budgie-popover:not(.csd):not(.budgie-menu) button.flat {
+  border-color: transparent;
+  background-color: transparent;
+}
+.budgie-popover:not(.csd):not(.budgie-menu) button.flat:hover {
+  color: #e3e3e3;
+  border-color: #171711;
+  background-color: #2d2d20;
+}
+.budgie-popover:not(.csd):not(.budgie-menu) button.flat:active, .budgie-popover:not(.csd):not(.budgie-menu) button.flat:checked {
+  color: #2c2a21;
+  border-color: #171711;
+  background-color: #B8860B;
+}
+.budgie-popover:not(.csd):not(.budgie-menu) button.flat:checked:hover {
+  background-color: #a6790a;
+}
+.budgie-popover:not(.csd):not(.budgie-menu) button.flat:disabled {
   border-color: transparent;
   background-color: transparent;
 }
