@@ -5239,7 +5239,7 @@ terminal-window notebook > header.top > tabs > tab:checked {
 }
 
 .mate-panel-menu-bar button:not(#tasklist-button),
-panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat, .xfce4-panel.panel button, .xfce4-panel.panel button:not(.toggle) {
+panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel button.flat, .xfce4-panel.panel button {
   color: #F6F6D4;
   background-color: transparent;
   border-radius: 8px;
@@ -5248,16 +5248,15 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   text-shadow: none;
 }
 .mate-panel-menu-bar button:not(#tasklist-button) label,
-panel-toplevel.background button:not(#tasklist-button) label, .xfce4-panel.panel button.flat label, .xfce4-panel.panel button label, .xfce4-panel.panel button:not(.toggle) label,
+panel-toplevel.background button:not(#tasklist-button) label, .xfce4-panel.panel button.flat label, .xfce4-panel.panel button label,
 .mate-panel-menu-bar button:not(#tasklist-button) image,
 panel-toplevel.background button:not(#tasklist-button) image,
 .xfce4-panel.panel button.flat image,
-.xfce4-panel.panel button image,
-.xfce4-panel.panel button:not(.toggle) image {
+.xfce4-panel.panel button image {
   color: inherit;
 }
 .mate-panel-menu-bar button:hover:not(#tasklist-button),
-panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button:hover, .xfce4-panel.panel button:hover:not(.toggle) {
+panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel button:hover {
   color: #F6F6D4;
   background-color: rgba(184, 134, 11, 0.3);
   border: 4px solid transparent;
@@ -5266,29 +5265,22 @@ panel-toplevel.background button:hover:not(#tasklist-button), .xfce4-panel.panel
   text-shadow: none;
 }
 .mate-panel-menu-bar button:active:not(#tasklist-button),
-panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button:active, .xfce4-panel.panel button:active:not(.toggle), .mate-panel-menu-bar button:checked:not(#tasklist-button),
-panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button:checked, .xfce4-panel.panel button:checked:not(.toggle), .xfce4-panel.panel button.flat:checked:hover, .xfce4-panel.panel button:checked:hover, .xfce4-panel.panel button:checked:hover:not(.toggle) {
+panel-toplevel.background button:active:not(#tasklist-button), .xfce4-panel.panel button:active, .mate-panel-menu-bar button:checked:not(#tasklist-button),
+panel-toplevel.background button:checked:not(#tasklist-button), .xfce4-panel.panel button:checked {
   color: #2c2a21;
   border: 4px solid #181811;
   box-shadow: inset 0 0 0 100px #B8860B;
   border-radius: 8px;
 }
 .mate-panel-menu-bar button:active:not(#tasklist-button) label,
-panel-toplevel.background button:active:not(#tasklist-button) label, .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active:not(.toggle) label,
+panel-toplevel.background button:active:not(#tasklist-button) label, .xfce4-panel.panel button:active label,
 .mate-panel-menu-bar button:active:not(#tasklist-button) image,
 panel-toplevel.background button:active:not(#tasklist-button) image,
-.xfce4-panel.panel button.flat:active image,
-.xfce4-panel.panel button:active image,
-.xfce4-panel.panel button:active:not(.toggle) image, .mate-panel-menu-bar button:checked:not(#tasklist-button) label,
-panel-toplevel.background button:checked:not(#tasklist-button) label, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked:not(.toggle) label,
+.xfce4-panel.panel button:active image, .mate-panel-menu-bar button:checked:not(#tasklist-button) label,
+panel-toplevel.background button:checked:not(#tasklist-button) label, .xfce4-panel.panel button:checked label,
 .mate-panel-menu-bar button:checked:not(#tasklist-button) image,
 panel-toplevel.background button:checked:not(#tasklist-button) image,
-.xfce4-panel.panel button.flat:checked image,
-.xfce4-panel.panel button:checked image,
-.xfce4-panel.panel button:checked:not(.toggle) image, .xfce4-panel.panel button.flat:checked:hover label, .xfce4-panel.panel button:checked:hover label, .xfce4-panel.panel button:checked:hover:not(.toggle) label,
-.xfce4-panel.panel button.flat:checked:hover image,
-.xfce4-panel.panel button:checked:hover image,
-.xfce4-panel.panel button:checked:hover:not(.toggle) image {
+.xfce4-panel.panel button:checked image {
   color: inherit;
 }
 
@@ -5370,6 +5362,7 @@ panel-toplevel.background button:checked:not(#tasklist-button) image,
   background-color: #B8860B;
   color: #2c2a21;
 }
+
 .mousepad .popup menu > menuitem:hover check:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-selected-dark.png"), url("assets/checkbox-checked-selected-dark@2.png"));
 }
