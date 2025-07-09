@@ -133,24 +133,27 @@ StScrollBar {
   padding: 8px;
 }
 StScrollView StScrollBar {
-  min-width: 5px;
-  min-height: 5px;
+  min-width: 10px;
+  min-height: 10px;
 }
 StScrollBar StBin#trough {
-  background-color: rgba(184, 134, 11, 0.1);
+  background-color: #1b1b13;
   border-radius: 8px;
 }
-StScrollBar StButton#vhandle, StScrollBar StButton#hhandle {
-  border-radius: 2px;
-  background-color: rgba(184, 134, 11, 0.3);
-  border: 0px solid;
+StScrollBar StButton#vhandle,
+StScrollBar StButton#hhandle {
+  border-radius: 8px;
+  background-color: #2c2c26;
+  border: 2px solid #1b1b13;
   margin: 0px;
 }
-StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
-  background-color: #f3be3f;
+StScrollBar StButton#vhandle:hover,
+StScrollBar StButton#hhandle:hover {
+  background-color: #41413b;
 }
-StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
-  background-color: #f1b627;
+StScrollBar StButton#vhandle:active,
+StScrollBar StButton#hhandle:active {
+  background-color: #B8860B;
 }
 
 .separator {
