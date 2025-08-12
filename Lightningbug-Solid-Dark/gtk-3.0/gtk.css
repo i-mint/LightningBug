@@ -5114,6 +5114,13 @@ terminal-window notebook > header.top > tabs > tab:checked {
   border-radius: 4px;
   caret-color: currentColor;
 }
+/************
+* Rhythmbox *
+************/
+toolbar > toolitem > box > button, .inline-toolbar > toolitem > box > button {
+  padding: 3px 6px;
+}
+
 .thunar .sidebar treeview.view:hover {
   background-color: rgba(184, 134, 11, 0.12);
   border-left: 4px solid #f1b627;
