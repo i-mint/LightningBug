@@ -779,9 +779,6 @@ StScrollBar StButton#hhandle:active {
 }
 
 .calendar-day {
-  border-width: 2px;
-  border-style: solid;
-  border-color: transparent;
   color: #333333;
   border-radius: 999px;
 }
