@@ -1505,10 +1505,16 @@ headerbar entry:focus image {
   background-color: rgba(61, 61, 31, 0.56);
   border-color: #1e1e10;
 }
+.primary-toolbar button:disabled label, headerbar button:disabled label {
+  color: inherit;
+}
 .primary-toolbar button:disabled:active, headerbar button:disabled:active, .primary-toolbar button:disabled:checked, headerbar button:disabled:checked {
   color: rgba(44, 42, 33, 0.75);
   border-color: rgba(184, 134, 11, 0.67);
   background-color: rgba(184, 134, 11, 0.67);
+}
+.primary-toolbar button:disabled:active label, headerbar button:disabled:active label, .primary-toolbar button:disabled:checked label, headerbar button:disabled:checked label {
+  color: inherit;
 }
 .selection-mode.primary-toolbar button, headerbar.selection-mode button {
   border-color: transparent;
