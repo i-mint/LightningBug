@@ -560,83 +560,97 @@ button.osd:disabled {
 .osd .linked:not(.vertical):not(.path-bar) > button:hover:not(:checked):not(:active):not(:only-child), .osd .linked:not(.vertical):not(.path-bar) > button:hover:not(:checked):not(:active) + button:not(:checked):not(:active) {
   box-shadow: none;
 }
-button.suggested-action, button.suggested-action.text-button {
+button.suggested-action {
   background-clip: border-box;
   background-color: #f1d228;
   border-color: #f1d228;
 }
-button.suggested-action label, button.suggested-action, button.suggested-action.text-button label, button.suggested-action.text-button {
+button.suggested-action label, button.suggested-action {
   color: #3d3929;
 }
-button.suggested-action.flat, button.suggested-action.text-button.flat {
+button.suggested-action.flat {
   border-color: transparent;
   background-color: transparent;
+}
+button.suggested-action.flat label, button.suggested-action.flat {
   color: #f1d228;
 }
-button.suggested-action:hover, button.suggested-action.text-button:hover {
+button.suggested-action:hover {
   background-clip: border-box;
   background-color: #f4dc58;
   border-color: #f4dc58;
 }
-button.suggested-action:hover label, button.suggested-action:hover, button.suggested-action.text-button:hover label, button.suggested-action.text-button:hover {
+button.suggested-action:hover label, button.suggested-action:hover {
   color: #3d3929;
 }
-button.suggested-action:active, button.suggested-action:checked, button.suggested-action.text-button:active, button.suggested-action.text-button:checked {
+button.suggested-action:active, button.suggested-action:checked {
   background-clip: border-box;
   background-color: #d8b90e;
   border-color: #d8b90e;
 }
-button.suggested-action:active label, button.suggested-action:active, button.suggested-action:checked label, button.suggested-action:checked, button.suggested-action.text-button:active label, button.suggested-action.text-button:active, button.suggested-action.text-button:checked label, button.suggested-action.text-button:checked {
+button.suggested-action:active label, button.suggested-action:active, button.suggested-action:checked label, button.suggested-action:checked {
   color: #3d3929;
 }
-button.suggested-action.flat:disabled, button.suggested-action.text-button.flat:disabled {
-  border-color: transparent;
-  background-color: transparent;
-  color: rgba(51, 51, 51, 0.55);
-}
-button.suggested-action:disabled, button.suggested-action.text-button:disabled {
-  color: rgba(51, 51, 51, 0.55);
+button.suggested-action.flat:disabled {
   border-color: transparent;
   background-color: transparent;
 }
-button.destructive-action, button.destructive-action.text-button {
+button.suggested-action.flat:disabled label, button.suggested-action.flat:disabled {
+  color: rgba(51, 51, 51, 0.55);
+}
+button.suggested-action:disabled {
+  color: rgba(51, 51, 51, 0.55);
+  border-color: transparent;
+  background-color: transparent;
+}
+button.suggested-action:disabled label {
+  color: inherit;
+}
+button.destructive-action {
   background-clip: border-box;
   background-color: #F04A50;
   border-color: #F04A50;
 }
-button.destructive-action label, button.destructive-action, button.destructive-action.text-button label, button.destructive-action.text-button {
+button.destructive-action label, button.destructive-action {
   color: white;
 }
-button.destructive-action.flat, button.destructive-action.text-button.flat {
+button.destructive-action.flat {
   border-color: transparent;
   background-color: transparent;
+}
+button.destructive-action.flat label, button.destructive-action.flat {
   color: #F04A50;
 }
-button.destructive-action:hover, button.destructive-action.text-button:hover {
+button.destructive-action:hover {
   background-clip: border-box;
   background-color: #f4797e;
   border-color: #f4797e;
 }
-button.destructive-action:hover label, button.destructive-action:hover, button.destructive-action.text-button:hover label, button.destructive-action.text-button:hover {
+button.destructive-action:hover label, button.destructive-action:hover {
   color: white;
 }
-button.destructive-action:active, button.destructive-action:checked, button.destructive-action.text-button:active, button.destructive-action.text-button:checked {
+button.destructive-action:active, button.destructive-action:checked {
   background-clip: border-box;
   background-color: #ec1b22;
   border-color: #ec1b22;
 }
-button.destructive-action:active label, button.destructive-action:active, button.destructive-action:checked label, button.destructive-action:checked, button.destructive-action.text-button:active label, button.destructive-action.text-button:active, button.destructive-action.text-button:checked label, button.destructive-action.text-button:checked {
+button.destructive-action:active label, button.destructive-action:active, button.destructive-action:checked label, button.destructive-action:checked {
   color: white;
 }
-button.destructive-action.flat:disabled, button.destructive-action.text-button.flat:disabled {
+button.destructive-action.flat:disabled {
   border-color: transparent;
   background-color: transparent;
+}
+button.destructive-action.flat:disabled label, button.destructive-action.flat:disabled {
   color: rgba(51, 51, 51, 0.55);
 }
-button.destructive-action:disabled, button.destructive-action.text-button:disabled {
+button.destructive-action:disabled {
   color: rgba(51, 51, 51, 0.55);
   border-color: transparent;
   background-color: transparent;
+}
+button.destructive-action:disabled label {
+  color: inherit;
 }
 .stack-switcher > button {
   outline-offset: -3px;
@@ -1744,6 +1758,8 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:checked + entry {
 .primary-toolbar button.suggested-action.flat, headerbar button.suggested-action.flat {
   border-color: transparent;
   background-color: transparent;
+}
+.primary-toolbar button.suggested-action.flat label, headerbar button.suggested-action.flat label, .primary-toolbar button.suggested-action.flat, headerbar button.suggested-action.flat {
   color: #f1d228;
 }
 .primary-toolbar button.suggested-action:hover, headerbar button.suggested-action:hover {
@@ -1762,12 +1778,22 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:checked + entry {
 .primary-toolbar button.suggested-action:active label, headerbar button.suggested-action:active label, .primary-toolbar button.suggested-action:active, headerbar button.suggested-action:active, .primary-toolbar button.suggested-action:checked label, headerbar button.suggested-action:checked label, .primary-toolbar button.suggested-action:checked, headerbar button.suggested-action:checked {
   color: #3d3929;
 }
+.primary-toolbar button.suggested-action.flat:disabled, headerbar button.suggested-action.flat:disabled {
+  border-color: transparent;
+  background-color: transparent;
+}
+.primary-toolbar button.suggested-action.flat:disabled label, headerbar button.suggested-action.flat:disabled label, .primary-toolbar button.suggested-action.flat:disabled, headerbar button.suggested-action.flat:disabled {
+  color: rgba(18, 18, 18, 0.46);
+}
 .primary-toolbar button.suggested-action:disabled, headerbar button.suggested-action:disabled {
   color: rgba(18, 18, 18, 0.46);
   background-color: rgba(217, 217, 198, 0.56);
   border-color: #ccccb3;
 }
-.primary-toolbar button.suggested-action:backdrop, headerbar button.suggested-action:backdrop {
+.primary-toolbar button.suggested-action:disabled label, headerbar button.suggested-action:disabled label {
+  color: inherit;
+}
+.primary-toolbar button.suggested-action button.suggested-action:backdrop, headerbar button.suggested-action button.suggested-action:backdrop {
   opacity: 0.8;
 }
 .primary-toolbar button.destructive-action, headerbar button.destructive-action {
@@ -1781,6 +1807,8 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:checked + entry {
 .primary-toolbar button.destructive-action.flat, headerbar button.destructive-action.flat {
   border-color: transparent;
   background-color: transparent;
+}
+.primary-toolbar button.destructive-action.flat label, headerbar button.destructive-action.flat label, .primary-toolbar button.destructive-action.flat, headerbar button.destructive-action.flat {
   color: #F04A50;
 }
 .primary-toolbar button.destructive-action:hover, headerbar button.destructive-action:hover {
@@ -1799,12 +1827,22 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:checked + entry {
 .primary-toolbar button.destructive-action:active label, headerbar button.destructive-action:active label, .primary-toolbar button.destructive-action:active, headerbar button.destructive-action:active, .primary-toolbar button.destructive-action:checked label, headerbar button.destructive-action:checked label, .primary-toolbar button.destructive-action:checked, headerbar button.destructive-action:checked {
   color: white;
 }
+.primary-toolbar button.destructive-action.flat:disabled, headerbar button.destructive-action.flat:disabled {
+  border-color: transparent;
+  background-color: transparent;
+}
+.primary-toolbar button.destructive-action.flat:disabled label, headerbar button.destructive-action.flat:disabled label, .primary-toolbar button.destructive-action.flat:disabled, headerbar button.destructive-action.flat:disabled {
+  color: rgba(18, 18, 18, 0.46);
+}
 .primary-toolbar button.destructive-action:disabled, headerbar button.destructive-action:disabled {
   color: rgba(18, 18, 18, 0.46);
   background-color: rgba(217, 217, 198, 0.56);
   border-color: #ccccb3;
 }
-.primary-toolbar button.destructive-action:backdrop, headerbar button.destructive-action:backdrop {
+.primary-toolbar button.destructive-action:disabled label, headerbar button.destructive-action:disabled label {
+  color: inherit;
+}
+.primary-toolbar button.destructive-action button.destructive-action:backdrop, headerbar button.destructive-action button.destructive-action:backdrop {
   opacity: 0.8;
 }
 .primary-toolbar spinbutton:not(.vertical):focus, headerbar spinbutton:not(.vertical):focus {
