@@ -6333,10 +6333,8 @@ entry.caja-location-entry:backdrop, entry.caja-location-entry:disabled {
 }
 
 .caja-navigation-window paned > box {
-  background-color: #434323;
-}
-.caja-navigation-window paned > box label, .caja-navigation-window paned > box image, .caja-navigation-window paned > box {
   color: rgba(250, 250, 229, 0.9);
+  background-color: #434323;
 }
 .caja-navigation-window paned > box > box > button.image-button {
   color: rgba(250, 250, 229, 0.9);
