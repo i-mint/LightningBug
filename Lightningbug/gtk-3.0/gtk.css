@@ -4370,7 +4370,7 @@ paned.gedit-side-panel-paned treeview.view:backdrop label, paned.gedit-side-pane
   color: rgba(168, 168, 168, 0.6);
 }
 paned.gedit-side-panel-paned treeview.view.separator, paned.gedit-side-panel-paned treeview.view.separator:backdrop {
-  color: rgba(0, 0, 0, 0.07);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 paned.gedit-side-panel-paned {
