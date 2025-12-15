@@ -404,16 +404,16 @@ button {
 button separator {
   margin: 4px 1px;
 }
-toolbar.primary-toolbar button.flat, .primary-toolbar.inline-toolbar button.flat, toolbar button.flat, .inline-toolbar button.flat, button.flat {
+viewswitcher button, toolbar.primary-toolbar button.flat, .primary-toolbar.inline-toolbar button.flat, toolbar button.flat, .inline-toolbar button.flat, button.flat {
   border-color: transparent;
   background-color: transparent;
   transition: none;
 }
-toolbar button.flat:hover, .inline-toolbar button.flat:hover, button.flat:hover {
+viewswitcher button:hover, toolbar button.flat:hover, .inline-toolbar button.flat:hover, button.flat:hover {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 350ms;
 }
-button.flat:hover:active {
+viewswitcher button:hover:active, button.flat:hover:active {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -1411,28 +1411,6 @@ headerbar:last-child, headerbar:last-child:backdrop {
 }
 .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
   border-radius: 0;
-}
-headerbar.windowhandle viewswitcher > box > button {
-  margin: 0;
-  padding: 0;
-  min-width: 140px;
-  min-height: 22px;
-  box-shadow: none;
-  border-radius: 0;
-  border: none;
-}
-headerbar.windowhandle viewswitcher > box > button:not(:hover):not(:active):not(:checked):not(:disabled) {
-  border-color: transparent;
-  background-color: transparent;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box {
-  padding: 0 20px;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.wide {
-  font-size: 1em;
-}
-headerbar.windowhandle viewswitcher > box > button > stack > box.narrow {
-  font-size: 0.8em;
 }
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
@@ -6413,6 +6391,126 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration,
 window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay {
   border-radius: 4px;
+}
+
+viewswitcher, viewswitcher button {
+  margin: 0;
+  padding: 0;
+}
+viewswitcher button {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1rem;
+}
+viewswitcher button:not(:only-child):not(:last-child) {
+  border-right-width: 0px;
+}
+viewswitcher button:not(:only-child):not(:first-child) {
+  border-left-width: 0px;
+}
+viewswitcher button > stack > box {
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+viewswitcher button > stack > box.narrow {
+  font-size: 1rem;
+  padding-top: 7px;
+  padding-bottom: 2px;
+}
+viewswitcher button > stack > box.narrow > stack {
+  margin-top: -25px;
+}
+viewswitcher button > stack > box.narrow image,
+viewswitcher button > stack > box.narrow label {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+viewswitcher button > stack > box.narrow image {
+  color: transparent;
+}
+viewswitcher button > stack > box.wide {
+  padding: 4px 12px;
+}
+viewswitcher button > stack > box.wide image:dir(ltr) {
+  padding-left: 7px;
+}
+viewswitcher button > stack > box.wide image:dir(rtl) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(ltr) {
+  padding-right: 7px;
+}
+viewswitcher button > stack > box.wide label:dir(rtl) {
+  padding-left: 7px;
+}
+headerbar viewswitcher button {
+  color: rgba(18, 18, 18, 0.57);
+  background-color: rgba(223, 223, 207, 0.93);
+  border-color: rgba(204, 204, 179, 0.93);
+}
+headerbar viewswitcher button > stack > box {
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+headerbar viewswitcher button > stack > box.narrow image {
+  color: transparent;
+}
+headerbar viewswitcher button:hover {
+  color: rgba(18, 18, 18, 0.9);
+  background-color: rgba(207, 207, 182, 0.93);
+  border-color: rgba(204, 204, 179, 0.93);
+}
+headerbar viewswitcher button:active, headerbar viewswitcher button:checked {
+  background-color: rgba(198, 198, 170, 0.93);
+  border-color: rgba(204, 204, 179, 0.93);
+}
+headerbar viewswitcher button:active label, headerbar viewswitcher button:active image, headerbar viewswitcher button:active, headerbar viewswitcher button:checked label, headerbar viewswitcher button:checked image, headerbar viewswitcher button:checked {
+  color: rgba(0, 0, 0, 0.9);
+}
+headerbar viewswitcher button:checked:first-child {
+  box-shadow: inset 4px 0 0 0 #d1b30f;
+}
+headerbar viewswitcher button:checked:last-child {
+  box-shadow: inset -4px 0 0 0 #d1b30f;
+}
+headerbar viewswitcher button:checked {
+  box-shadow: inset -4px 0 0 0 #d1b30f;
+}
+headerbar viewswitcher button:first-child:not(:only-child) {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+headerbar viewswitcher button:last-child:not(:only-child) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+headerbar viewswitcher button:only-child {
+  border-radius: 4px;
+}
+viewswitcher button.needs-attention:active > stack > box label, viewswitcher button.needs-attention:checked > stack > box label {
+  animation: none;
+  background-image: none;
+}
+viewswitcher button.needs-attention > stack > box label {
+  animation: needs_attention 150ms ease-in;
+  background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#f1d228), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#3d3929), to(transparent));
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  background-position: right 0px, right 1px;
+}
+viewswitcher button.needs-attention > stack > box label:backdrop {
+  background-size: 6px 6px, 0 0;
+}
+viewswitcher button.needs-attention > stack > box label:dir(rtl) {
+  background-position: left 0px, left 1px;
+}
+headerbar viewswitcher {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+viewswitcherbar actionbar > revealer > box {
+  padding: 0;
 }
 
 @define-color theme_fg_color #333333;
